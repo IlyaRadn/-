@@ -166,6 +166,7 @@ select:hover,input[type="search"]:hover{box-shadow:0 2px 3px -1px rgba(0,0,0,.08
 .who{display:flex;flex-direction:column;gap:2px}
 .buyer{margin:0;font-size:17px;line-height:1.3;font-weight:700;text-wrap:balance}
 .sup{margin:0;color:var(--muted)}
+.sup .pd{color:var(--ink);opacity:.78}
 .facts{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1.2fr) minmax(0,.8fr);gap:12px 20px;padding-block:12px;border-block:1px solid var(--line)}
 .k{display:block;font-size:12px;color:var(--muted);margin-bottom:2px}
 .v{overflow-wrap:anywhere}
@@ -195,7 +196,7 @@ select:hover,input[type="search"]:hover{box-shadow:0 2px 3px -1px rgba(0,0,0,.08
 <div class="wrap">
   <header>
     <h1>ИИ-закупки</h1>
-    <p class="lede">Что покупали из ИИ государства, институты ЕС и НАТО, банки, университеты, страховые, консалтинг, частная медицина и телеком: ассистенты и лицензии, ноутейкеры и расшифровка, свои модели, аналитика, оборона. По каждой сделке указаны сумма, срок, условия и источник. Список пополняется раз в день; новые сделки отмечены меткой «Новое».</p>
+    <p class="lede">Что покупали из ИИ государства, институты ЕС и НАТО, банки, университеты, страховые, консалтинг, частная медицина и телеком: ассистенты и лицензии, ноутейкеры и расшифровка, свои модели, аналитика, оборона. По каждой сделке указаны сумма, срок, условия и источник. Список пополняется раз в неделю, по воскресеньям; новые сделки отмечены меткой «Новое».</p>
     <div class="stats" id="stats"></div>
     <p class="meta" id="updated"></p>
   </header>
@@ -404,7 +405,7 @@ function card(d){
   const nil=/^не раскрыто/i.test(d.v)||d.v==="—";
   return `<article class="deal">
     <div class="tags">${chips.join("")}</div>
-    <div class="who"><h3 class="buyer">${esc(d.b)}</h3><p class="sup">${esc(d.p)}</p></div>
+    <div class="who"><h3 class="buyer">${esc(d.b)}</h3><p class="sup">${esc(d.p)}${d.pd?` <span class="pd">(${esc(d.pd)})</span>`:""}</p></div>
     <div class="facts">
       <div class="fact fact-money"><span class="k">Сумма</span><span class="v money${nil?" nil":""}">${esc(d.v)}</span>${hasSum(d)?`<span class="eur">для сравнения ≈ ${fmtEur(d.e)}</span>`:""}</div>
       <div class="fact"><span class="k">Срок</span><span class="v">${esc(d.t)}</span></div>
@@ -433,7 +434,7 @@ function render(){
   save();
   const q=state.q.trim().toLowerCase();
   const band=state.band==="all"?null:BANDS[+state.band];
-  ROWS=D.filter(d=>(state.s==="all"||d.s===state.s)&&(state.region==="all"||d.r===state.region)&&(!state.fresh||isNew(d))&&(state.cat==="all"||d.k===state.cat)&&(state.country==="all"||d.c===state.country)&&(state.year==="all"||Math.max(2022,Math.floor(d.y))===+state.year)&&(!band||(hasSum(d)&&d.e>=band[0]&&d.e<band[1]))&&(!state.sum||hasSum(d))&&(!q||[d.c,d.b,d.p,d.w,d.u,d.v].join(" ").toLowerCase().includes(q)));
+  ROWS=D.filter(d=>(state.s==="all"||d.s===state.s)&&(state.region==="all"||d.r===state.region)&&(!state.fresh||isNew(d))&&(state.cat==="all"||d.k===state.cat)&&(state.country==="all"||d.c===state.country)&&(state.year==="all"||Math.max(2022,Math.floor(d.y))===+state.year)&&(!band||(hasSum(d)&&d.e>=band[0]&&d.e<band[1]))&&(!state.sum||hasSum(d))&&(!q||[d.c,d.b,d.p,d.pd||"",d.w,d.u,d.v].join(" ").toLowerCase().includes(q)));
   if(state.sort==="date")ROWS.sort((a,b)=>b.y-a.y);
   else if(state.sort==="date_old")ROWS.sort((a,b)=>a.y-b.y);
   else if(state.sort==="sum_desc")ROWS.sort((a,b)=>(b.e??-1)-(a.e??-1));

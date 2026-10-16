@@ -11,7 +11,7 @@
    "k": "frame",
    "st": null,
    "b": "Crown Commercial Service (для всего госсектора)",
-   "p": "Microsoft — соглашение SPA24 (M365, Azure, M365 Copilot)",
+   "p": "Microsoft — соглашение SPA24 на M365, Azure и M365 Copilot",
    "w": "Соглашение о скидках; впервые включает Copilot для всего госсектора",
    "v": "Фиксированной суммы нет. Госсектор потратил ≈£1,9 млрд на лицензии Microsoft за 2024/25 финансовый год; оценка The Register — ≈£9 млрд за 5 лет",
    "e": null,
@@ -24,7 +24,8 @@
     "https://www.publictechnology.net/2024/10/21/business-and-industry/ccs-agrees-five-year-discount-agreement-with-microsoft/",
     "https://www.theregister.com/2025/08/14/debate_microsoft_in_public_sector/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "скидки госсектору на облако, офис и ИИ"
   },
   {
    "id": "eu-002",
@@ -46,7 +47,8 @@
    "src": [
     "https://www.gov.uk/government/news/landmark-government-trial-shows-ai-could-save-civil-servants-nearly-2-weeks-a-year"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-ассистент в Word, Excel, Outlook и Teams"
   },
   {
    "id": "eu-003",
@@ -69,7 +71,8 @@
     "https://www.find-tender.service.gov.uk/Notice/024950-2025",
     "https://www.publictechnology.net/?p=12447"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "офисные лицензии и ИИ-ассистент Copilot"
   },
   {
    "id": "eu-004",
@@ -92,7 +95,8 @@
     "https://computerweekly.com/news/366633421/Ministry-of-Justices-OpenAI-deal-paves-way-to-sovereign-AI",
     "https://www.ukauthority.com/articles/ministry-of-justice-reaches-agreement-with-openai"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "корпоративная версия ChatGPT"
   },
   {
    "id": "eu-005",
@@ -114,7 +118,8 @@
    "src": [
     "https://www.gov.uk/government/publications/memorandum-of-understanding-between-the-uk-and-anthropic-on-ai-opportunities/memorandum-of-understanding-between-uk-and-anthropic-on-ai-opportunities"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "разработчик ИИ-ассистента Claude"
   },
   {
    "id": "eu-006",
@@ -136,7 +141,8 @@
    "src": [
     "https://www.gov.uk/government/publications/memorandum-of-understanding-between-the-uk-and-openai-on-ai-opportunities/memorandum-of-understanding-between-uk-and-openai-on-ai-opportunities"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "разработчик ChatGPT и моделей GPT"
   },
   {
    "id": "eu-007",
@@ -146,7 +152,7 @@
    "k": "build",
    "st": "pilot",
    "b": "DSIT / GDS",
-   "p": "Anthropic (Claude)",
+   "p": "Anthropic — Claude",
    "w": "Разработка и пилот ИИ-агента для GOV.UK; первый сценарий — поиск работы",
    "v": "не раскрыто",
    "e": null,
@@ -158,7 +164,8 @@
    "src": [
     "https://www.anthropic.com/news/gov-UK-partnership"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-агент госпортала, начиная с поиска работы"
   },
   {
    "id": "eu-008",
@@ -181,7 +188,8 @@
     "https://www.gov.uk/government/news/new-google-partnership-will-help-rid-taxpayer-of-ball-and-chain-legacy-tech-and-aim-to-upskill-100000-civil-servants-in-tech-and-ai",
     "https://www.ukauthority.com/articles/uk-government-enters-partnership-with-google-deepmind"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "облако и ИИ-лаборатория, создатели Gemini"
   },
   {
    "id": "eu-009",
@@ -204,7 +212,8 @@
     "https://www.nao.org.uk/wp-content/uploads/2026/10/Productivity-improvement-the-Justice-Transcribe-AIenabled-transcription-tool.pdf",
     "https://ai.justice.gov.uk/our-work/justice-transcribe"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-конспект встреч инспектора с подопечным"
   },
   {
    "id": "eu-010",
@@ -226,7 +235,8 @@
    "src": [
     "https://www.find-tender.service.gov.uk/Notice/070733-2025"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-ноутейкер для соцработников"
   },
   {
    "id": "eu-011",
@@ -248,7 +258,8 @@
    "src": [
     "https://www.find-tender.service.gov.uk/Notice/053743-2025"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-ноутейкер для соцработников"
   },
   {
    "id": "eu-012",
@@ -270,7 +281,8 @@
    "src": [
     "https://www.find-tender.service.gov.uk/Notice/052809-2025"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-конспекты и отчёты для соцработников"
   },
   {
    "id": "eu-013",
@@ -292,7 +304,8 @@
    "src": [
     "https://www.find-tender.service.gov.uk/Notice/041382-2025"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-ноутейкер для соцработников"
   },
   {
    "id": "eu-014",
@@ -314,7 +327,8 @@
    "src": [
     "https://www.find-tender.service.gov.uk/Notice/077982-2025"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-ноутейкер для соцработников"
   },
   {
    "id": "eu-015",
@@ -336,7 +350,8 @@
    "src": [
     "https://www.find-tender.service.gov.uk/Notice/051545-2025"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-ноутейкер для соцработников"
   },
   {
    "id": "eu-016",
@@ -358,7 +373,8 @@
    "src": [
     "https://www.contractsfinder.service.gov.uk/Notice/3120d3b3-7adb-4d84-891d-d4ed4aed665a"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-ноутейкер для соцработников"
   },
   {
    "id": "eu-017",
@@ -381,7 +397,8 @@
     "https://www.find-tender.service.gov.uk/Notice/069369-2025",
     "https://htn.co.uk/2026/01/19/nhs-england-lists-19-suppliers-meeting-criteria-for-ambient-voice-registry/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "сервисы, пишущие медкарту по разговору с пациентом"
   },
   {
    "id": "eu-018",
@@ -403,7 +420,8 @@
    "src": [
     "https://www.digitalhealth.net/2025/10/nhs-sbs-launches-150m-framework-to-accelerate-access-to-avt/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "рамочный договор на речевые технологии в медицине"
   },
   {
    "id": "eu-019",
@@ -426,7 +444,8 @@
     "https://www.find-tender.service.gov.uk/Notice/002099-2023",
     "https://www.find-tender.service.gov.uk/Notice/000723-2026"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "медицинская диктовка и перевод речи в текст"
   },
   {
    "id": "eu-020",
@@ -449,7 +468,8 @@
     "https://htn.co.uk/?p=88031",
     "https://www.find-tender.service.gov.uk/Notice/009501-2026"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "рамочный договор на ИИ-запись приёмов врачей"
   },
   {
    "id": "eu-021",
@@ -459,7 +479,7 @@
    "k": "notes",
    "st": null,
    "b": "Больницы Лестера и Нортгемптоншира",
-   "p": "Accurx Scribe (на базе Tandem)",
+   "p": "Accurx Scribe, на базе Tandem",
    "w": "ИИ-скрайб для ≈10 000 врачей в больницах и амбулаториях",
    "v": "£1 881 000 без НДС",
    "e": 2200000,
@@ -472,7 +492,8 @@
     "https://www.find-tender.service.gov.uk/Notice/012523-2026",
     "https://htn.co.uk/2026/03/03/university-hospitals-of-leicester-and-northamptonshire-award-1-9-million-ambient-voice-contract/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "пишет медкарту по разговору с пациентом"
   },
   {
    "id": "eu-022",
@@ -495,7 +516,8 @@
     "https://www.england.nhs.uk/midlands/2026/07/15/midlands-leads-the-way-on-ambient-voice-technology/",
     "https://htn.co.uk/2026/07/15/nhs-midlands-completes-at-scale-procurement-of-ambient-voice-tech-for-1239-gp-practices-and-15-trusts/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "пишет медкарту по разговору с пациентом"
   },
   {
    "id": "eu-023",
@@ -517,7 +539,8 @@
    "src": [
     "https://www.contractsfinder.service.gov.uk/Notice/90cc20e5-b02b-4245-a98f-21db00d1d328"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "пишет медкарту по разговору с пациентом"
   },
   {
    "id": "eu-024",
@@ -539,7 +562,8 @@
    "src": [
     "https://www.digitalhealth.net/2026/04/hertfordshire-community-nhs-trust-to-roll-out-ai-scribing/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "пишет медкарту по разговору с пациентом"
   },
   {
    "id": "eu-025",
@@ -561,7 +585,8 @@
    "src": [
     "https://www.stotles.com/explore/notices/c98e31f9-a8fe-4cf9-94d6-0b3164299bad/captions-system"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "автосубтитры для трансляций заседаний"
   },
   {
    "id": "eu-026",
@@ -584,7 +609,8 @@
     "https://digitalhealth.net/2023/11/nhs-england-awards-330m-federated-data-platform-contract-to-palantir",
     "https://www.theregister.com/2023/11/22/palantir_wins_nhs_contract/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "общая платформа данных для больниц"
   },
   {
    "id": "eu-027",
@@ -607,7 +633,8 @@
     "https://www.find-tender.service.gov.uk/Notice/083874-2025",
     "https://www.theregister.com/2026/01/28/mod_palantir_deal/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "платформа анализа и интеграции данных"
   },
   {
    "id": "eu-028",
@@ -629,7 +656,8 @@
    "src": [
     "https://www.gov.uk/government/news/new-strategic-partnership-to-unlock-billions-and-boost-military-ai-and-innovation"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-аналитика для обороны и целеуказания"
   },
   {
    "id": "eu-029",
@@ -639,7 +667,7 @@
    "k": "infra",
    "st": null,
    "b": "Министерство обороны",
-   "p": "Google Distributed Cloud (изолированное облако с ИИ-инструментами)",
+   "p": "Google Distributed Cloud",
    "w": "Суверенное облако",
    "v": "£400 млн",
    "e": 468000000,
@@ -651,7 +679,8 @@
    "src": [
     "https://www.theregister.com/2025/09/12/google_cloud_mod_contract/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "изолированное облако с ИИ-инструментами"
   },
   {
    "id": "eu-030",
@@ -673,7 +702,8 @@
    "src": [
     "https://news.bloombergtax.com/daily-tax-report-state/hmrc-hands-quantexa-175-million-contract-for-tax-system-upgrade"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ ищет связи и мошенничество в данных"
   },
   {
    "id": "eu-031",
@@ -696,7 +726,8 @@
     "https://www.find-tender.service.gov.uk/Notice/013432-2025",
     "https://www.contractsfinder.service.gov.uk/Notice/8e1547de-bebe-4c8c-8720-02e7339e869f"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "рамка на живое распознавание лиц для полиции"
   },
   {
    "id": "eu-032",
@@ -718,7 +749,8 @@
    "src": [
     "https://www.computing.co.uk/news/4037761/met-police-retrospective-facial-recognition-technology"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "система распознавания лиц на видео"
   },
   {
    "id": "eu-033",
@@ -740,7 +772,8 @@
    "src": [
     "https://www.computing.co.uk/news/2026/government/sadiq-khan-blocks-met-s-50m-ai-deal-with-palantir"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "платформа анализа данных для полиции"
   },
   {
    "id": "eu-034",
@@ -762,7 +795,8 @@
    "src": [
     "https://transform.england.nhs.uk/ai-lab/ai-lab-programmes/ai-in-imaging/ai-diagnostic-fund"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ ищет патологии на снимках грудной клетки"
   },
   {
    "id": "eu-035",
@@ -772,7 +806,7 @@
    "k": "frame",
    "st": null,
    "b": "Crown Commercial Service",
-   "p": "Динамическая система закупок ИИ (RM6200)",
+   "p": "Динамическая система закупок ИИ — RM6200",
    "w": "ИИ-ПО, машинное обучение, виртуальные ассистенты, консалтинг",
    "v": "≈£200 млн (оценка)",
    "e": 234000000,
@@ -785,7 +819,8 @@
     "https://www.find-tender.service.gov.uk/Notice/034346-2023",
     "https://www.crowncommercial.gov.uk/agreements/RM6200"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "открытый каталог поставщиков ИИ для госсектора"
   },
   {
    "id": "eu-036",
@@ -807,7 +842,8 @@
    "src": [
     "https://public-buyers-community.ec.europa.eu/communities/procurement-ai/news/irish-office-government-procurement-launches-major-ai-procurement"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "будущая централизованная закупка ИИ для госорганов"
   },
   {
    "id": "eu-037",
@@ -829,7 +865,8 @@
    "src": [
     "https://www.version1.com/news/department-of-social-protection-pioneers-ai-driven-transformation-in-irish-public-services-with-version-1/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ирландский ИТ-интегратор и ИИ-консультант"
   },
   {
    "id": "eu-038",
@@ -851,7 +888,8 @@
    "src": [
     "https://ted.europa.eu/en/notice/-/detail/476637-2026"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-стенограммы парламентских дебатов"
   },
   {
    "id": "eu-039",
@@ -873,7 +911,8 @@
    "src": [
     "https://ted.europa.eu/en/notice/-/detail/580220-2024"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "диктовка и распознавание речи для юристов"
   },
   {
    "id": "eu-040",
@@ -895,7 +934,8 @@
    "src": [
     "https://ted.europa.eu/en/notice/-/detail/192940-2025"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "диктовка и распознавание речи для врачей"
   },
   {
    "id": "eu-041",
@@ -918,7 +958,8 @@
     "https://www.solutions-numeriques.com/ia-generative-le-ministere-des-armees-securise-un-cadre-avec-mistral-ai/",
     "https://acteurspublics.fr/articles/le-ministere-des-armees-signe-un-accord-cadre-avec-le-champion-francais-de-lia-mistral/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "французские языковые модели"
   },
   {
    "id": "eu-042",
@@ -940,7 +981,8 @@
    "src": [
     "https://kulturegeek.fr/news-358312/france-renforce-accord-mistral-lia-ministeres"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "французские языковые модели"
   },
   {
    "id": "eu-043",
@@ -962,7 +1004,8 @@
    "src": [
     "https://www.solutions-numeriques.com/france-travail-adopte-mistral-ai"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-помощники для консультантов службы занятости"
   },
   {
    "id": "eu-044",
@@ -984,7 +1027,8 @@
    "src": [
     "https://next.ink/133921/mia-la-nouvelle-ia-de-leducation-nationale-coute-28-millions-deuros-sur-3-ans/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "адаптивный ИИ-тренажёр по математике и французскому"
   },
   {
    "id": "eu-045",
@@ -1006,7 +1050,8 @@
    "src": [
     "https://acteurspublics.fr/articles/leducation-nationale-renforce-lutilisation-de-lia-dans-toutes-les-classes-du-cp-a-la-seconde"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-помощники для учителей"
   },
   {
    "id": "eu-046",
@@ -1028,7 +1073,8 @@
    "src": [
     "https://acteurspublics.fr/articles/de-chatbot-experimental-a-socle-interministeriel-pour-lia-de-letat-le-parcours-dalbert-ia/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "госплатформа генеративного ИИ и расшифровка совещаний"
   },
   {
    "id": "eu-047",
@@ -1050,7 +1096,8 @@
    "src": [
     "https://www.labase-lextenso.fr/gazette-du-palais/2026-n16/ia-la-chancellerie-lance-mon-assistant-justice-GPL490r3"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ пишет, резюмирует и переводит документы"
   },
   {
    "id": "eu-048",
@@ -1072,7 +1119,8 @@
    "src": [
     "https://ted.europa.eu/en/notice/-/detail/164795-2023"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "французское ПО распознавания речи"
   },
   {
    "id": "eu-049",
@@ -1082,7 +1130,7 @@
    "k": "data",
    "st": null,
    "b": "Уголовная полиция Баварии (LKA)",
-   "p": "Palantir — VeRA (на базе Gotham)",
+   "p": "Palantir — VeRA, на базе Gotham",
    "w": "Рамочный договор на лицензии; федеральная полиция и другие земли могут присоединиться без своего тендера",
    "v": "≈€13,4 млн на лицензии (по МВД Баварии) / €25 млн за 5 лет (Netzpolitik)",
    "e": 25000000,
@@ -1094,7 +1142,8 @@
    "src": [
     "https://netzpolitik.org/2022/umstrittener-ueberwachungskonzern-bayerns-polizei-setzt-bald-software-von-palantir-ein/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "платформа анализа данных для полиции"
   },
   {
    "id": "eu-050",
@@ -1104,7 +1153,7 @@
    "k": "data",
    "st": null,
    "b": "МВД / полиция Баден-Вюртемберга",
-   "p": "Palantir (по баварскому рамочному договору)",
+   "p": "Palantir, по баварскому рамочному договору",
    "w": "Лицензия на автоматический анализ данных",
    "v": "≈€25 млн + €2 млн доп. расходов",
    "e": 27000000,
@@ -1116,7 +1165,8 @@
    "src": [
     "https://netzpolitik.org/2025/automatisierte-datenanalyse-der-gruene-palantir-spagat/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "платформа анализа данных для полиции"
   },
   {
    "id": "eu-051",
@@ -1138,7 +1188,8 @@
    "src": [
     "https://www.abgeordnetenwatch.de/profile/julia-hoeller/fragen-antworten/mit-wie-viel-geld-hat-bisher-die-gruene-schwarze-landesregierung-die-palantir-software-des-neurechten-tech"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "платформа анализа данных для полиции"
   },
   {
    "id": "eu-052",
@@ -1160,7 +1211,8 @@
    "src": [
     "https://www.startbase.de/news/die-bundesagentur-fuer-arbeit-schliesst-rahmenvertrag-mit-alep-alpha/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "немецкая суверенная платформа генеративного ИИ"
   },
   {
    "id": "eu-053",
@@ -1182,7 +1234,8 @@
    "src": [
     "https://esut.de/en/2024/04/meldungen/49005/grundlage-fuer-ki-in-der-bundeswehr-wird-verbessert/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "немецкие языковые модели и ИИ-платформа"
   },
   {
    "id": "eu-054",
@@ -1192,7 +1245,7 @@
    "k": "frame",
    "st": null,
    "b": "ITZBund (федеральный ИТ-центр)",
-   "p": "Победитель — SVA (по данным агрегатора, не подтверждено)",
+   "p": "Победитель — SVA, по данным агрегатора, не подтверждено",
    "w": "Рамочный договор на ИИ-услуги для федеральной администрации, 2 лота",
    "v": "Потолок ≈€249,7 млн (лот 1 — €116,3 млн, лот 2 — €133,4 млн); по агрегатору присуждено €40 млн",
    "e": 249700000,
@@ -1204,7 +1257,8 @@
    "src": [
     "https://bidsfactory.com/en/tenders/rahmenvereinbarung-uber-dienstleistung-fur-ki-itzb-ted-686b04c0778704be"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "рамочный договор на ИИ-услуги для госорганов"
   },
   {
    "id": "eu-055",
@@ -1226,7 +1280,8 @@
    "src": [
     "https://www.baden-wuerttemberg.de/de/service/presse/pressemitteilung/pid/ki-assistenz-f13-wird-zur-open-source-software"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-ассистент для текстов госслужащих"
   },
   {
    "id": "eu-056",
@@ -1236,7 +1291,7 @@
    "k": "data",
    "st": null,
    "b": "Бундесвер (ведомство закупок BAAINBw)",
-   "p": "Helsing — барражирующий боеприпас HX-2 с ИИ (параллельно Stark)",
+   "p": "Helsing — барражирующий боеприпас HX-2 с ИИ, параллельно Stark",
    "w": "Рамочный договор с первым заказом",
    "v": "Первый заказ €269 млн; рамка до €1,46 млрд; Бундестаг ограничил до €1 млрд на производителя",
    "e": 269000000,
@@ -1249,7 +1304,8 @@
     "https://resiliencemedia.co/germany-awards-stark-and-helsing-contracts-to-deliver-next-generation-strike-drones",
     "https://dronexl.co/2026/02/25/germany-helsing-stark-kamikaze-drone-deal"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ударный дрон с автономным наведением на цель"
   },
   {
    "id": "eu-057",
@@ -1271,7 +1327,8 @@
    "src": [
     "https://ted.europa.eu/en/notice/-/detail/837945-2025"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "распознавание речи для юридической диктовки"
   },
   {
    "id": "eu-058",
@@ -1281,7 +1338,7 @@
    "k": "notes",
    "st": null,
    "b": "ИТ-служба юстиции Бранденбурга",
-   "p": "4voice (поддержка Dragon) + Grundig (диктофоны, DigtaSoft)",
+   "p": "4voice — поддержка Dragon; Grundig — диктофоны и DigtaSoft",
    "w": "Продление поддержки распознавания речи и диктофоны",
    "v": "€405 301",
    "e": 405301,
@@ -1293,7 +1350,8 @@
    "src": [
     "https://ted.europa.eu/en/notice/-/detail/659718-2025"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "распознавание речи и устройства для диктовки"
   },
   {
    "id": "eu-059",
@@ -1315,7 +1373,8 @@
    "src": [
     "https://ted.europa.eu/en/notice/-/detail/274792-2026"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "облачная диктовка для врачей"
   },
   {
    "id": "eu-060",
@@ -1325,7 +1384,7 @@
    "k": "notes",
    "st": null,
    "b": "Университетские клиники Тюбингена, Гейдельберга и Ульма",
-   "p": "Solventum (бывш. 3M M*Modal)",
+   "p": "Solventum, бывш. 3M M*Modal",
    "w": "Рамочный договор на облачное распознавание речи: SaaS, приложения, поддержка, диктофоны",
    "v": "не раскрыто (допустимые заявки — €1,72–2,56 млн)",
    "e": null,
@@ -1337,7 +1396,8 @@
    "src": [
     "https://ted.europa.eu/en/notice/-/detail/693946-2024"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "облачное распознавание речи для врачей"
   },
   {
    "id": "eu-061",
@@ -1359,7 +1419,8 @@
    "src": [
     "https://ted.europa.eu/en/notice/-/detail/94411-2026"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "облачное распознавание речи с диалектами"
   },
   {
    "id": "eu-062",
@@ -1381,7 +1442,8 @@
    "src": [
     "https://ted.europa.eu/en/notice/-/detail/845834-2025"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "облачное распознавание речи для врачей"
   },
   {
    "id": "eu-063",
@@ -1403,7 +1465,8 @@
    "src": [
     "https://ted.europa.eu/en/notice/-/detail/822217-2025"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "медицинское распознавание речи для диктовки"
   },
   {
    "id": "eu-064",
@@ -1426,7 +1489,8 @@
     "https://www.trendingtopics.eu/brz-mistral-public-ai/",
     "https://www.bundeskanzleramt.gv.at/bundeskanzleramt/nachrichten-der-bundesregierung/2026/09/ki-zieht-in-den-elektronischen-akt-ein.html"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "госчат-бот и ИИ в электронном документообороте"
   },
   {
    "id": "eu-065",
@@ -1436,7 +1500,7 @@
    "k": "gpt",
    "st": null,
    "b": "Правительство Фландрии (Digitaal Vlaanderen)",
-   "p": "Microsoft 365 Copilot (партнёры Cegeka и KPMG)",
+   "p": "Microsoft 365 Copilot, партнёры Cegeka и KPMG",
    "w": "До 10 000 лицензий: 5 000 с 1.06.2025 и ещё 5 000 с середины 2026, для ведомств и местных властей",
    "v": "не раскрыто",
    "e": null,
@@ -1449,7 +1513,8 @@
     "https://www.vlaanderen.be/digitaal-vlaanderen/onze-diensten-en-platformen/uitrol-m365-copilot-binnen-de-vlaamse-overheid",
     "https://www.vrt.be/vrtnws/en/2025/01/24/flemish-authorities-close-big-ai-deal-10-000-civil-servants-wil/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-ассистент в Word, Excel, Outlook и Teams"
   },
   {
    "id": "eu-066",
@@ -1471,7 +1536,8 @@
    "src": [
     "https://projects.research-and-innovation.ec.europa.eu/en/strategy/support-policy-making/shaping-eu-research-and-innovation-policy/new-european-innovation-agenda/innovation-procurement/eafip/artificial-intelligence-solutions-federal-government-bosa"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "закупка инновационных ИИ-решений под ключ"
   },
   {
    "id": "eu-067",
@@ -1493,7 +1559,8 @@
    "src": [
     "https://ted.europa.eu/en/notice/-/detail/717303-2024"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-расшифровка аудио и видео в текст"
   },
   {
    "id": "eu-068",
@@ -1516,7 +1583,8 @@
     "https://gouvernement.lu/en/actualites/toutes_actualites/communiques/2025/06-juin/17-frieden-mistral-ai.html",
     "https://paperjam.lu/article/fonctionnaires-et-chercheurs-premiers-servis-par-mistralai"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "французские языковые модели"
   },
   {
    "id": "eu-069",
@@ -1538,7 +1606,8 @@
    "src": [
     "https://www.binnenlandsbestuur.nl/digitaal/rijk-en-microsoft-overleg-over-veiliger-gebruik-copilot"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-ассистент в Word, Excel, Outlook и Teams"
   },
   {
    "id": "eu-070",
@@ -1560,7 +1629,8 @@
    "src": [
     "https://ted.europa.eu/en/notice/-/detail/281028-2024"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "швейцарское ПО диктовки и распознавания речи"
   },
   {
    "id": "eu-071",
@@ -1583,7 +1653,8 @@
     "https://tihupe.ee/en/estonia-launches-nationwide-ai-leap-education-program-and-introduces-learning-supportive-ai-in-upper-secondary-schools/",
     "https://openai.com/index/estonia-schools-and-chatgpt/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-ассистенты для учёбы школьников и учителей"
   },
   {
    "id": "eu-072",
@@ -1593,7 +1664,7 @@
    "k": "gpt",
    "st": "pilot",
    "b": "Министерство образования",
-   "p": "Anthropic (Claude)",
+   "p": "Anthropic — Claude",
    "w": "Национальный пилот для сотен учителей: доступ к Claude, материалы, обучение",
    "v": "не раскрыто",
    "e": null,
@@ -1605,7 +1676,8 @@
    "src": [
     "https://www.anthropic.com/news/anthropic-and-iceland-announce-one-of-the-world-s-first-national-ai-education-pilots"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-ассистент для текстов, анализа и кода"
   },
   {
    "id": "eu-073",
@@ -1615,7 +1687,7 @@
    "k": "notes",
    "st": null,
    "b": "Helse Sør-Øst (закупку вёл Sykehusinnkjøp)",
-   "p": "4 поставщика ИИ-скрайбов (публично не названы)",
+   "p": "4 поставщика ИИ-скрайбов, публично не названы",
    "w": "Рамочный договор: 4 000 лицензий с опцией ещё на 8 000",
    "v": "не раскрыто",
    "e": null,
@@ -1627,7 +1699,8 @@
    "src": [
     "https://www.helse-sorost.no/497a50/siteassets/documents/styret/styremoter/2026/0423/064-2026-driftsorienteringer-fra-administrerende-direktor.pdf"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "сервисы, пишущие медкарту по разговору с пациентом"
   },
   {
    "id": "eu-074",
@@ -1637,7 +1710,7 @@
    "k": "notes",
    "st": null,
    "b": "Sykehusinnkjøp (для всех регионов здравоохранения)",
-   "p": "Omilon (Dragon)",
+   "p": "Omilon — Dragon",
    "w": "Общее облачное распознавание речи для медкарт, радиологии и лабораторий",
    "v": "не раскрыто",
    "e": null,
@@ -1649,7 +1722,8 @@
    "src": [
     "https://ted.europa.eu/en/notice/-/detail/685294-2023"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "облачное распознавание речи для медицины"
   },
   {
    "id": "eu-075",
@@ -1659,7 +1733,7 @@
    "k": "data",
    "st": null,
    "b": "Helse Vest",
-   "p": "Visma (пилот — стартап Dynamon)",
+   "p": "Visma, пилот — стартап Dynamon",
    "w": "ИИ-модуль планирования смен",
    "v": "не раскрыто",
    "e": null,
@@ -1671,7 +1745,8 @@
    "src": [
     "https://www.stortinget.no/no/Saker-og-publikasjoner/Sporsmal/Skriftlige-sporsmal-og-svar/Skriftlig-sporsmal/?qnid=98560"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ составляет графики смен персонала"
   },
   {
    "id": "eu-076",
@@ -1693,7 +1768,8 @@
    "src": [
     "https://auftragone.com/en/notices/qualification-phase-ki-based-work-plan-generator-for-helse-nord"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ составляет графики работы персонала"
   },
   {
    "id": "eu-077",
@@ -1715,7 +1791,8 @@
    "src": [
     "https://sikt.no/en/tjenester/sikt-ai"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-чат и ассистенты для учёбы"
   },
   {
    "id": "eu-078",
@@ -1725,7 +1802,7 @@
    "k": "notes",
    "st": null,
    "b": "Регион здравоохранения Западная Уусимаа",
-   "p": "Tandem Health (проиграл Gosta Labs)",
+   "p": "Tandem Health, проиграл Gosta Labs",
    "w": "ИИ-документирование приёмов в соцсфере и медицине: SaaS, внедрение, поддержка",
    "v": "≈€2,1 млн без НДС",
    "e": 2100000,
@@ -1737,7 +1814,8 @@
    "src": [
     "https://www.sttinfo.fi/tiedote/72079472/vastra-nylands-valfardsomrade-valde-ai-losning-for-klient-och-patientdokumentation?lang=fi"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "пишет медкарту по разговору с пациентом"
   },
   {
    "id": "eu-079",
@@ -1759,7 +1837,8 @@
    "src": [
     "https://www.sttinfo.fi/tiedote/72079472/vastra-nylands-valfardsomrade-valde-ai-losning-for-klient-och-patientdokumentation?lang=fi"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "пишет медкарту по разговору с пациентом"
   },
   {
    "id": "eu-080",
@@ -1781,7 +1860,8 @@
    "src": [
     "https://www.marketmate.se/?p=103130"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "пишет медкарту по разговору с пациентом"
   },
   {
    "id": "eu-081",
@@ -1803,7 +1883,8 @@
    "src": [
     "https://www.avropa.se/contentassets/7b5d50db94cf4b1c9fe16ebc7949ade7/volymavtalets-huvudavtal-1.0.pdf"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "общие условия закупки ПО и облака"
   },
   {
    "id": "eu-082",
@@ -1813,7 +1894,7 @@
    "k": "notes",
    "st": null,
    "b": "Муниципалитеты Мура, Орса и Эльвдален",
-   "p": "Omilon (участвовал и Lingsoft)",
+   "p": "Omilon, участвовал и Lingsoft",
    "w": "Система распознавания речи",
    "v": "до SEK 5,7 млн (оценка SEK 2,2 млн)",
    "e": 500000,
@@ -1825,7 +1906,8 @@
    "src": [
     "https://ted.europa.eu/en/notice/-/detail/247969-2024"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "распознавание речи для диктовки документов"
   },
   {
    "id": "eu-083",
@@ -1847,7 +1929,8 @@
    "src": [
     "https://www4.goteborg.se/prod/intraservice/namndhandlingar/samrumportal.nsf/6514BE6DFDD378B4C1258CAE003FF22F/$File/12%20Bilaga%209%20Juridisk%20Bedomning%20av%20Microsoft%20365%20Copilot%20Strategiska%20reflektioner%20fran%20stadens%20verksamheter.pdf"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "бесплатный ИИ-чат внутри офисного пакета"
   },
   {
    "id": "eu-084",
@@ -1869,7 +1952,8 @@
    "src": [
     "https://koege.dk/p/Nyheder og aktuelt/Budgetforlig-2025-28-taldel---endelig.pdf"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "генеративный ИИ-ассистент для сотрудников"
   },
   {
    "id": "eu-085",
@@ -1891,7 +1975,8 @@
    "src": [
     "https://sitti.vdu.lt/?p=2773"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "литовский языковой корпус и языковые модели"
   },
   {
    "id": "eu-086",
@@ -1901,7 +1986,7 @@
    "k": "build",
    "st": null,
    "b": "Министерство цифровизации",
-   "p": "Консорциумы PLLuM и HIVE (NASK, институты, университеты)",
+   "p": "Консорциумы PLLuM и HIVE — NASK, институты, университеты",
    "w": "Свои открытые польские LLM + ассистент в приложении mObywatel",
    "v": "PLN 14,5 млн (2024) + PLN 19 млн (2025), бюджетные деньги",
    "e": 7700000,
@@ -1913,7 +1998,8 @@
    "src": [
     "https://itwiz.pl/polski-rzad-udostepnia-polski-model-jezykowy-pllum/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "открытые польские языковые модели и госассистент"
   },
   {
    "id": "eu-087",
@@ -1935,7 +2021,8 @@
    "src": [
     "https://biznes.pap.pl/wiadomosci/gry-i-technologie/polands-defence-ministry-signs-letter-intent-american-palantir"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "платформа данных и ИИ для обороны"
   },
   {
    "id": "eu-088",
@@ -1957,7 +2044,8 @@
    "src": [
     "https://ted.europa.eu/en/notice/-/detail/9261-2024"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "чешское ПО распознавания речи"
   },
   {
    "id": "eu-089",
@@ -1979,7 +2067,8 @@
    "src": [
     "https://ted.europa.eu/en/notice/-/detail/640645-2025"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "запись и расшифровка судебных заседаний"
   },
   {
    "id": "eu-090",
@@ -2001,7 +2090,8 @@
    "src": [
     "https://ted.europa.eu/en/notice/-/detail/250248-2022"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "распознавание речи для диктовки текстов"
   },
   {
    "id": "eu-091",
@@ -2024,7 +2114,8 @@
     "https://ted.europa.eu/en/notice/-/detail/219103-2026",
     "https://ted.europa.eu/en/notice/-/detail/227523-2026"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "медицинская система распознавания речи"
   },
   {
    "id": "eu-092",
@@ -2046,7 +2137,8 @@
    "src": [
     "https://www.economica.net/ion-primul-consilier-onorific-guvernamental-cu-inteligenta-artificiala-a-fost-prezentat-de-ciuca_651268.html/amp"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-советник, собирающий мнения граждан"
   },
   {
    "id": "eu-093",
@@ -2056,7 +2148,7 @@
    "k": "gpt",
    "st": "free",
    "b": "Министерство цифровой трансформации",
-   "p": "Google Gemini (Vertex AI)",
+   "p": "Google Gemini — Vertex AI",
    "w": "Национальный ИИ-ассистент Diia.AI для 200+ госуслуг, в приложении Дія с мая 2026",
    "v": "На старте бесплатно (грантовые облачные кредиты Google)",
    "e": null,
@@ -2068,7 +2160,8 @@
    "src": [
     "https://www.kmu.gov.ua/news/mintsyfry-z-partneramy-hotuie-servery-dlia-diiaai-ta-vlasni-llm"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "языковые модели и облачная ИИ-платформа"
   },
   {
    "id": "eu-094",
@@ -2078,7 +2171,7 @@
    "k": "build",
    "st": null,
    "b": "Министерство цифровой трансформации",
-   "p": "ElevenLabs (голос) и Киевстар (украинская модель)",
+   "p": "ElevenLabs — голос, Киевстар — украинская модель",
    "w": "Партнёрства для Diia.AI",
    "v": "не раскрыто",
    "e": null,
@@ -2090,7 +2183,8 @@
    "src": [
     "https://www.kyivpost.com/amp/post/63986"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "синтез голоса и украинская языковая модель"
   },
   {
    "id": "eu-095",
@@ -2112,7 +2206,8 @@
    "src": [
     "https://en.lb.ua/news/2026/05/12/38044_ukraine_palantir_develop.html"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-анализ разведданных и планирование ударов"
   },
   {
    "id": "eu-096",
@@ -2134,7 +2229,8 @@
    "src": [
     "https://www.pravda.com.ua/eng/news/2025/02/13/7498114"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "немецкие ударные дроны с ИИ"
   },
   {
    "id": "eu-097",
@@ -2156,7 +2252,8 @@
    "src": [
     "https://openai.com/global-affairs/openai-for-greece/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-чат-бот для школ и вузов"
   },
   {
    "id": "eu-098",
@@ -2178,7 +2275,8 @@
    "src": [
     "https://www.lawspot.gr/nomika-nea/maigov-o-psifiakos-voithos-toy-govgr-stin-ypiresia-ton-politon/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "госчат-бот на моделях GPT"
   },
   {
    "id": "eu-099",
@@ -2200,7 +2298,8 @@
    "src": [
     "https://www.tovima.com/society/eppo-probes-greek-state-ai-project-backed-by-eu-funds/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-пилот для судмедэкспертизы"
   },
   {
    "id": "eu-100",
@@ -2222,7 +2321,8 @@
    "src": [
     "https://www.tovima.com/society/greek-court-interpreters-protest-ai-rollout-in-justice-system"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-перевод документов и расшифровка речи"
   },
   {
    "id": "eu-101",
@@ -2244,7 +2344,8 @@
    "src": [
     "https://www.iefimerida.gr/english/greece-secures-ai-pledges-tech-digital-services"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "французские языковые модели"
   },
   {
    "id": "eu-102",
@@ -2266,7 +2367,8 @@
    "src": [
     "https://www.athenarc.gr/en/news/ministry-digital-governance-elevenlabs-and-athena-research-center-launch-strategic-partnership"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "синтез и клонирование голоса"
   },
   {
    "id": "eu-103",
@@ -2276,7 +2378,7 @@
    "k": "gpt",
    "st": "pilot",
    "b": "Регион Эмилия-Романья",
-   "p": "Microsoft 365 Copilot через TIM (рамка Consip EA7)",
+   "p": "Microsoft 365 Copilot через TIM, рамка Consip EA7",
    "w": "≈100 лицензий Copilot для теста продуктивности",
    "v": "€44 940 без НДС (≈€450 за место за 21 мес)",
    "e": 44940,
@@ -2288,7 +2390,8 @@
    "src": [
     "https://wwwservizi.regione.emilia-romagna.it/amministrazionetrasparente/ProfiloCommittente/RegioneEmiliaRomagna/DownloadFile/208878"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-ассистент в Word, Excel, Outlook и Teams"
   },
   {
    "id": "eu-104",
@@ -2310,7 +2413,8 @@
    "src": [
     "https://www.consip.it/sites/default/files/bandi/documentazione_non_firmata/ID%202837-Determina%20a%20contrarre%20-%20D.Lgs_.%2036_2023.pdf"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "рамочный договор на медицинский ИИ и данные"
   },
   {
    "id": "eu-105",
@@ -2332,7 +2436,8 @@
    "src": [
     "https://www.italiaoggi.it/enti-locali-e-pa/appalti-pubblici/appalti-pubblici-consip-punta-sullia-per-ridurre-i-tempi-delle-gare-del-60-mebaqo3c"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "рамочный договор на ИИ для госорганов"
   },
   {
    "id": "eu-106",
@@ -2342,7 +2447,7 @@
    "k": "build",
    "st": null,
    "b": "Палата депутатов",
-   "p": "Университетские консорциумы (GenAI4Lex, Legislab, DepuChat)",
+   "p": "Университетские консорциумы — GenAI4Lex, Legislab, DepuChat",
    "w": "Конкурс идей → прототипы NORMA, MSE, DepuChat",
    "v": "не раскрыто",
    "e": null,
@@ -2354,7 +2459,8 @@
    "src": [
     "https://www.agi.it/politica/news/2025-07-10/prototipi-ai-parlamento-depuchat-32257341/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-прототипы для работы с законами"
   },
   {
    "id": "eu-107",
@@ -2364,7 +2470,7 @@
    "k": "gpt",
    "st": "pilot",
    "b": "Министерство образования",
-   "p": "Google (ассистент на Google Workspace)",
+   "p": "Google, ассистент на Google Workspace",
    "w": "Пилот ИИ-тьютора в 15 классах 4 регионов (STEM и языки)",
    "v": "не раскрыто",
    "e": null,
@@ -2376,7 +2482,8 @@
    "src": [
     "https://www.orizzontescuola.it/lintelligenza-artificiale-sbarca-a-scuola-15-classi-4-regioni-pilota-ecco-come-funzionera-la-sperimentazione-se-andra-bene-a-regime-nel-2026/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-тьютор для школьников"
   },
   {
    "id": "eu-108",
@@ -2398,7 +2505,8 @@
    "src": [
     "https://www.fiscal-focus.it/news,174016"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-ассистенты для поиска и пенсионных консультаций"
   },
   {
    "id": "eu-109",
@@ -2408,7 +2516,7 @@
    "k": "build",
    "st": null,
    "b": "Госсекретариат по цифровизации и ИИ (SEDIA)",
-   "p": "Barcelona Supercomputing Center (госструктура)",
+   "p": "Barcelona Supercomputing Center, госструктура",
    "w": "Открытые испанские модели ALIA",
    "v": "€2 млн + €3 млн + €3,4 млн (по сообщениям 2024)",
    "e": 8400000,
@@ -2420,7 +2528,8 @@
    "src": [
     "https://www.xataka.com/robotica-e-ia/pedro-sanchez-anuncia-lanzamiento-primeros-modelos-alia-asi-ia-publica-abierta-que-impulsa-estado"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "открытые испанские языковые модели"
   },
   {
    "id": "eu-110",
@@ -2430,7 +2539,7 @@
    "k": "data",
    "st": null,
    "b": "Андалузская служба здравоохранения (SAS)",
-   "p": "NTT DATA (конкуренты: T-Systems, Atech, KPMG)",
+   "p": "NTT DATA, конкуренты: T-Systems, Atech, KPMG",
    "w": "Офис управления данными и ИИ",
    "v": "до €5 476 763 с НДС (€13,95 в час без НДС)",
    "e": 5480000,
@@ -2442,7 +2551,8 @@
    "src": [
     "https://www.juntadeandalucia.es/haciendayadministracionpublica/apl/pdc_sirec_documentacion/rest/descargar/documento/361075"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "услуги по управлению данными и ИИ"
   },
   {
    "id": "eu-111",
@@ -2464,7 +2574,8 @@
    "src": [
     "https://ted.europa.eu/en/notice/314290-2026/pdf"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "офисные лицензии и внедрение Copilot"
   },
   {
    "id": "eu-112",
@@ -2486,7 +2597,8 @@
    "src": [
     "https://contratos.gobierto.es/contratos/10041732"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-ассистент Microsoft в офисных программах"
   },
   {
    "id": "eu-113",
@@ -2508,7 +2620,8 @@
    "src": [
     "https://contratos.gobierto.es/contratos/10277781"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "внедрение ИИ-агентов на Copilot"
   },
   {
    "id": "eu-114",
@@ -2530,7 +2643,8 @@
    "src": [
     "https://contratos.gobierto.es/licitaciones/5062821"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "офисные лицензии с ИИ-ассистентом и миграция"
   },
   {
    "id": "eu-115",
@@ -2552,7 +2666,8 @@
    "src": [
     "https://sirdoc.ccyl.es/SIRDOC/PDF/PUBLOFI/BO/CCL/11L/BOCCL1100432/BOCCL-11-012933.pdf"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-ассистент в Word, Excel, Outlook и Teams"
   },
   {
    "id": "eu-116",
@@ -2574,7 +2689,8 @@
    "src": [
     "https://www.cio.com/article/2514861/el-centro-de-ia-de-granada-arrancara-en-otono-de-2025-con-contratos-por-un-total-de-36-millones-de-euros.html"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-проекты для центра в Гранаде"
   },
   {
    "id": "eu-117",
@@ -2596,7 +2712,8 @@
    "src": [
     "https://www.vilaweb.cat/noticies/el-govern-injectara-dotze-milions-deuros-al-projecte-aina-el-futur-del-catala-es-juga-en-el-camp-digital/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "каталонские языковые модели и данные"
   },
   {
    "id": "eu-118",
@@ -2606,7 +2723,7 @@
    "k": "notes",
    "st": null,
    "b": "Министерство юстиции",
-   "p": "Telefónica + SpeechWare (DigaLaw X)",
+   "p": "Telefónica + SpeechWare — DigaLaw X",
    "w": "Голосовая диктовка для ≈3 000 судей",
    "v": "не раскрыто",
    "e": null,
@@ -2618,7 +2735,8 @@
    "src": [
     "https://www.telefonica.es/es/wp-content/uploads/sites/10/2022/06/ndp-speechware-telefonica.pdf"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "голосовая диктовка юридических текстов"
   },
   {
    "id": "eu-119",
@@ -2628,7 +2746,7 @@
    "k": "build",
    "st": null,
    "b": "Правительство Португалии",
-   "p": "Консорциум университетов (NOVA, IST, Коимбра, Минью, Порту)",
+   "p": "Консорциум университетов, NOVA, IST, Коимбра, Минью, Порту",
    "w": "Открытая португальская LLM AMÁLIA",
    "v": "€7 млн (было €5,5 млн)",
    "e": 7000000,
@@ -2640,7 +2758,8 @@
    "src": [
     "https://www.dn.pt/sociedade/ia-amlia-j-est-disponvel-em-cdigo-aberto-com-reforo-de-investimento-para-7-milhes-de-euros"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "открытая португальская языковая модель"
   },
   {
    "id": "eu-120",
@@ -2662,7 +2781,8 @@
    "src": [
     "https://www2.gov.pt/en/noticias/assistente-virtual-com-inteligencia-artificial-vai-apoiar-os-cidadaos-no-eportugal"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "госчат-бот с аватаром на моделях GPT"
   },
   {
    "id": "eu-121",
@@ -2684,7 +2804,8 @@
    "src": [
     "https://eco.sapo.pt/2025/10/09/governo-preve-investir-20-milhoes-de-euros-na-adocao-de-inteligencia-artificial-no-estado-em-2026/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "госпрограмма внедрения ИИ в ведомствах"
   },
   {
    "id": "eu-122",
@@ -2706,7 +2827,8 @@
    "src": [
     "https://businessnow.mt/microsoft-copilot-to-be-rolled-out-across-8000-public-sector-laptops-in-e4-million-ai-investment/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-ассистент в Word, Excel, Outlook и Teams"
   },
   {
    "id": "eu-123",
@@ -2728,7 +2850,8 @@
    "src": [
     "https://ted.europa.eu/de/notice/658155-2026/pdf"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "открытый отбор подрядчиков по внедрению Copilot"
   },
   {
    "id": "eu-124",
@@ -2750,7 +2873,8 @@
    "src": [
     "https://cyprus-mail.com/2025/10/31/cyprus-increases-digital-policy-budget-to-e172-8m-for-2026"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "первый государственный генеративный ИИ-ассистент"
   },
   {
    "id": "eu-125",
@@ -2773,7 +2897,8 @@
     "https://iccl.ie/?p=15564",
     "https://www.euronews.com/next/2024/10/22/an-ai-tool-is-making-the-european-parliaments-history-easier-to-understand-in-all-eu-langu"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-поиск по историческому архиву документов"
   },
   {
    "id": "eu-126",
@@ -2795,7 +2920,8 @@
    "src": [
     "https://www.rws.com/about/news/2021/rws-wins-eu-parliament-tender"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "живая расшифровка и машинный перевод речей"
   },
   {
    "id": "eu-127",
@@ -2817,7 +2943,8 @@
    "src": [
     "https://thenextweb.com/news/european-parliament-epgenai-hub-ai-platform-meps"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "внутренняя платформа генеративного ИИ"
   },
   {
    "id": "eu-128",
@@ -2839,7 +2966,8 @@
    "src": [
     "https://commission.europa.eu/news/commission-launches-new-general-purpose-ai-tool-gptec-2024-10-22_en"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "внутренний ИИ-ассистент для сотрудников"
   },
   {
    "id": "eu-129",
@@ -2849,7 +2977,7 @@
    "k": "frame",
    "st": null,
    "b": "Еврокомиссия (DG DIGIT) — Cloud III",
-   "p": "Облачные провайдеры (состав не подтверждён)",
+   "p": "Облачные провайдеры, состав не подтверждён",
    "w": "Главный канал покупки облака и облачного ИИ для институтов ЕС",
    "v": "€550 млн",
    "e": 550000000,
@@ -2861,7 +2989,8 @@
    "src": [
     "https://commission.europa.eu/news/commission-launches-new-procurement-process-cloud-services-2024-02-07_en"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "рамочный договор на облако и облачный ИИ"
   },
   {
    "id": "eu-130",
@@ -2883,7 +3012,8 @@
    "src": [
     "https://op.europa.eu/en/web/public-procurement/procurement-details/-/procurement/9ed53e7a-54b3-36c4-ac34-21909373b801"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "рамочный договор на ИТ-услуги с ИИ"
   },
   {
    "id": "eu-131",
@@ -2905,7 +3035,8 @@
    "src": [
     "https://www.eraneos.com/press-releases/eraneos-selected-as-a-supplier-under-a-e240-million-european-consulting-framework/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "рамка на стратегический консалтинг по ИИ"
   },
   {
    "id": "eu-132",
@@ -2915,7 +3046,7 @@
    "k": "data",
    "st": null,
    "b": "Офис ИИ Еврокомиссии",
-   "p": "Организации по безопасности ИИ (победители не найдены)",
+   "p": "Организации по безопасности ИИ, победители не найдены",
    "w": "Оценка рисков моделей общего назначения, 6 лотов",
    "v": "€9,08 млн",
    "e": 9080000,
@@ -2927,7 +3058,8 @@
    "src": [
     "https://babl.ai/eu-ai-office-opens-e9-million-tender-for-gpai-safety-monitoring/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "оценка рисков моделей общего назначения"
   },
   {
    "id": "eu-133",
@@ -2949,7 +3081,8 @@
    "src": [
     "https://www.edps.europa.eu/press-publications/press-news/press-releases/2024/european-commissions-use-microsoft-365-infringes-data-protection-law-eu-institutions-and-bodies"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "офисный пакет со встроенным ИИ-ассистентом"
   },
   {
    "id": "eu-134",
@@ -2969,7 +3102,8 @@
    "y": 2025.11,
    "q": "w",
    "src": [],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ для пограничного контроля"
   },
   {
    "id": "eu-135",
@@ -2979,7 +3113,7 @@
    "k": "fraud",
    "st": null,
    "b": "Европейский центральный банк",
-   "p": "Feedzai (+ PwC; второй поставщик Capgemini)",
+   "p": "Feedzai с PwC; второй поставщик — Capgemini",
    "w": "Выявление мошенничества для цифрового евро",
    "v": "€79,1 млн (оценка), максимум €237,3 млн",
    "e": 237300000,
@@ -2991,7 +3125,8 @@
    "src": [
     "https://www.feedzai.com/pressrelease/feedzai-to-safeguard-ecb-the-digital-euro/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ против мошенничества в платежах"
   },
   {
    "id": "eu-136",
@@ -3013,7 +3148,8 @@
    "src": [
     "https://www.eurohpc-ju.europa.eu/eurohpc-ju-selects-six-additional-ai-factories-expand-europes-ai-capabilities-2025-10-10_en"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "суперкомпьютерные центры для ИИ"
   },
   {
    "id": "eu-137",
@@ -3023,7 +3159,7 @@
    "k": "infra",
    "st": "tender",
    "b": "EuroHPC — ИИ-гигафабрики",
-   "p": "Консорциумы (идёт отбор)",
+   "p": "Консорциумы, идёт отбор",
    "w": "До 7 гигафабрик ИИ, 2 этапа",
    "v": "до €10 млрд госденег (ЕС + страны) + ≥€20 млрд частных",
    "e": 10000000000,
@@ -3035,7 +3171,8 @@
    "src": [
     "https://eurohpc-ju.europa.eu/eurohpc-joint-undertaking-launches-ai-gigafactories-call-2026-07-30_en"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "гигантские ИИ-дата-центры для обучения моделей"
   },
   {
    "id": "eu-138",
@@ -3057,7 +3194,8 @@
    "src": [
     "https://www.eurohpc-ju.europa.eu/eurohpc-ju-signs-contract-deploy-lumi-ai-supercomputer-2026-08-31_en"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "суперкомпьютер для обучения ИИ"
   },
   {
    "id": "eu-139",
@@ -3079,7 +3217,8 @@
    "src": [
     "https://www.eurohpc-ju.europa.eu/eurohpc-ju-signs-contract-boost-ai-capabilities-it4lia-ai-factory-2026-04-22_en"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "суперкомпьютер для обучения ИИ"
   },
   {
    "id": "eu-140",
@@ -3101,7 +3240,8 @@
    "src": [
     "https://eurohpc-ju.europa.eu/contract-signed-boost-marenostrum-5s-ai-capabilities-2026-01-26_en"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "расширение суперкомпьютера под ИИ"
   },
   {
    "id": "eu-141",
@@ -3123,7 +3263,8 @@
    "src": [
     "https://www.eurohpc-ju.europa.eu/eurohpc-ju-signs-contract-deploy-new-ai-optimised-supercomputer-sweden-2026-04-21_en"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "суперкомпьютер для обучения ИИ"
   },
   {
    "id": "eu-142",
@@ -3145,7 +3286,8 @@
    "src": [
     "https://eurohpc-ju.europa.eu/eurohpc-ju-signs-procurement-contract-daedalus-supercomputer-2025-03-28_en"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "суперкомпьютер для ИИ и науки"
   },
   {
    "id": "eu-143",
@@ -3167,7 +3309,8 @@
    "src": [
     "https://shape.nato.int/news-archive/2025/nato-acquires-aienabled-warfighting-system.aspx"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-платформа разведки и целеуказания"
   },
   {
    "id": "eu-144",
@@ -3189,7 +3332,8 @@
    "src": [
     "https://thedefensepost.com/2025/11/26/nato-google-cloud-ai"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "автономное облако на площадке заказчика"
   },
   {
    "id": "eu-145",
@@ -3211,7 +3355,8 @@
    "src": [
     "https://www.bbva.com/en/innovation/bbva-expands-its-agreement-with-openai-to-11000-chatgpt-licences-for-the-banks-employees/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "корпоративная версия ChatGPT"
   },
   {
    "id": "eu-146",
@@ -3233,7 +3378,8 @@
    "src": [
     "https://openai.com/index/bbva-collaboration-expansion/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "корпоративный ChatGPT и совместная ИИ-разработка"
   },
   {
    "id": "eu-147",
@@ -3255,7 +3401,8 @@
    "src": [
     "https://www.fintechfutures.com/ai-in-fintech/santander-charts-data-and-ai-first-future-with-new-openai-partnership"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "корпоративная версия ChatGPT"
   },
   {
    "id": "eu-148",
@@ -3277,7 +3424,8 @@
    "src": [
     "https://group.bnpparibas/en/press-release/bnp-paribas-and-mistral-ai-sign-a-partnership-agreement-covering-all-mistral-ai-models"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "французские языковые модели"
   },
   {
    "id": "eu-149",
@@ -3299,7 +3447,8 @@
    "src": [
     "https://group.bnpparibas/en/press-release/bnp-paribas-and-mistral-ai-extend-their-partnership-to-support-the-next-phase-of-generative-ai-deployment-within-the-group"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "французские языковые модели"
   },
   {
    "id": "eu-150",
@@ -3321,7 +3470,8 @@
    "src": [
     "https://www.hsbc.com/news-and-views/news/media-releases/2025/hsbc-and-mistral-ai-join-forces-to-accelerate-ai-adoption-across-global-bank"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "французские языковые модели"
   },
   {
    "id": "eu-151",
@@ -3343,7 +3493,8 @@
    "src": [
     "https://www.techradar.com/pro/microsoft-and-barclays-bank-sign-major-copilot-license-deal"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-ассистент в Word, Excel, Outlook и Teams"
   },
   {
    "id": "eu-152",
@@ -3365,7 +3516,8 @@
    "src": [
     "https://www.theregister.com/2025/10/20/lloyds_banking_copilot/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-ассистент в Word, Excel, Outlook и Teams"
   },
   {
    "id": "eu-153",
@@ -3387,7 +3539,8 @@
    "src": [
     "https://uktech.news/ai/lloyds-taps-microsoft-to-support-its-ai-adoption-plan-20260605"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "офисный пакет с ИИ-агентами и помощник программиста"
   },
   {
    "id": "eu-154",
@@ -3409,7 +3562,8 @@
    "src": [
     "https://www.finextra.com/newsarticle/45689/natwest-inks-collaboration-deal-with-openai"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "разработчик ChatGPT и моделей GPT"
   },
   {
    "id": "eu-155",
@@ -3431,7 +3585,8 @@
    "src": [
     "https://www.netzwoche.ch/news/2025-08-26/ubs-setzt-im-grossen-stil-auf-generative-ki"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-ассистент в Word, Excel, Outlook и Teams"
   },
   {
    "id": "eu-156",
@@ -3453,7 +3608,8 @@
    "src": [
     "https://cloud.google.com/blog/topics/financial-services/deutsche-bank-delivers-ai-powered-financial-research-with-db-lumina"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-помощник аналитиков для исследований"
   },
   {
    "id": "eu-157",
@@ -3475,7 +3631,8 @@
    "src": [
     "https://www.commerzbank.de/group/newsroom/press-releases/partnerships-with-gc-and-ms.html"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-протоколы встреч и помощник программиста"
   },
   {
    "id": "eu-158",
@@ -3497,7 +3654,8 @@
    "src": [
     "https://www.cio.de/article/4193616/ki-rollout-commerzbank-nutzt-copilot-und-gemini.html"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-ассистенты Google и в офисных программах"
   },
   {
    "id": "eu-159",
@@ -3519,7 +3677,8 @@
    "src": [
     "https://www.microsoft.com/en/customers/story/25676-commerzbank-ag-azure-ai-foundry-agent-service"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "виртуальный консультант на моделях GPT"
   },
   {
    "id": "eu-160",
@@ -3541,7 +3700,8 @@
    "src": [
     "https://hawk.ai/news-press/commerzbank-optimizes-anti-money-laundering-measures-through-ai-partnership-hawk"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-проверка операций на отмывание денег"
   },
   {
    "id": "eu-161",
@@ -3551,7 +3711,7 @@
    "k": "infra",
    "st": null,
    "b": "UniCredit (13 стран)",
-   "p": "Google Cloud (Vertex AI, Gemini)",
+   "p": "Google Cloud — Vertex AI, Gemini",
    "w": "Перенос всех банков группы в облако + ИИ-платформа",
    "v": "не раскрыто",
    "e": null,
@@ -3563,7 +3723,8 @@
    "src": [
     "https://www.googlecloudpresscorner.com/2025-05-12-UniCredit-Partners-with-Google-Cloud-to-Accelerate-Digital-Transformation-Across-13-Markets"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "облако и платформа для ИИ-моделей"
   },
   {
    "id": "eu-162",
@@ -3585,7 +3746,8 @@
    "src": [
     "https://group.intesasanpaolo.com/it/newsroom/comunicati-stampa/2023/09/intesa-sanpaolo-sceglie-igenius-per-la-generative-business-intel"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-аналитик, отвечающий на вопросы о данных"
   },
   {
    "id": "eu-163",
@@ -3595,7 +3757,7 @@
    "k": "infra",
    "st": null,
    "b": "CaixaBank",
-   "p": "Google Cloud (Gemini Enterprise)",
+   "p": "Google Cloud — Gemini Enterprise",
    "w": "ИИ-агенты, данные, инфраструктура, безопасность, обучение",
    "v": "не раскрыто",
    "e": null,
@@ -3607,7 +3769,8 @@
    "src": [
     "https://itbrief.co.uk/story/caixabank-deepens-google-cloud-deal-to-boost-ai-use"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "облако и платформа корпоративных ИИ-агентов"
   },
   {
    "id": "eu-164",
@@ -3629,7 +3792,8 @@
    "src": [
     "https://finextra.com/newsarticle/43417/caixabank-creates-100-strong-genai-team"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "закрытая среда для разработки на GPT"
   },
   {
    "id": "eu-165",
@@ -3651,7 +3815,8 @@
    "src": [
     "https://www.bankinter.com/webcorporativa/en/communication-room/news/institutional/bankinter-se-convierte-en-el-primer-banco-espanol-en-implantar-la-ia-generativa-avanzada-de-microsoft-para-toda-su-plantilla"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-ассистенты в офисе, CRM и коде"
   },
   {
    "id": "eu-166",
@@ -3673,7 +3838,8 @@
    "src": [
     "https://www.paconsulting.com/client-story/abn-amro-laying-the-foundations-in-the-age-of-ai-with-m365-copilot"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-ассистент в офисе и конструктор чат-ботов"
   },
   {
    "id": "eu-167",
@@ -3695,7 +3861,8 @@
    "src": [
     "https://ioplus.nl/en/posts/rabobank-invests-2-billion-in-ai-but-privacy-risks-loom"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-ассистент в офисе и помощник программиста"
   },
   {
    "id": "eu-168",
@@ -3717,7 +3884,8 @@
    "src": [
     "https://qconlondon.com/presentation/mar2026/pilot-impact-how-ai-transforming-large-scale-engineering"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-помощник программиста, дописывающий код"
   },
   {
    "id": "eu-169",
@@ -3739,7 +3907,8 @@
    "src": [
     "https://danskebank.com/news-and-insights/news-archive/news/2024/14032024"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "закрытый корпоративный чат-бот для сотрудников"
   },
   {
    "id": "eu-170",
@@ -3761,7 +3930,8 @@
    "src": [
     "https://finextra.com/newsarticle/43863/lhv-bank-to-offer-chatgpt-to-all-employees"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "корпоративная версия ChatGPT"
   },
   {
    "id": "eu-171",
@@ -3783,7 +3953,8 @@
    "src": [
     "https://microsoft.com/en/customers/story/21406-raiffeisen-bank-international-azure"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "облачный доступ к моделям GPT"
   },
   {
    "id": "eu-172",
@@ -3805,7 +3976,8 @@
    "src": [
     "https://www.starlingbank.com/news/starling-launches-pioneering-ai-banking-tool/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "языковые модели Google"
   },
   {
    "id": "eu-173",
@@ -3827,7 +3999,8 @@
    "src": [
     "https://thefintechtimes.com/revolut-bundles-chatgpt-go-into-paid-plans-via-openai-deal/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "недорогой платный тариф чат-бота"
   },
   {
    "id": "eu-174",
@@ -3849,7 +4022,8 @@
    "src": [
     "https://openai.com/index/klarna"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "модели GPT и корпоративный ChatGPT"
   },
   {
    "id": "eu-175",
@@ -3859,7 +4033,7 @@
    "k": "fraud",
    "st": null,
    "b": "DNB",
-   "p": "NICE Actimize X-Sight (интегратор Infosys)",
+   "p": "NICE Actimize X-Sight, интегратор Infosys",
    "w": "SaaS: мониторинг подозрительных операций, антифрод, санкции, проверка клиентов",
    "v": "не раскрыто",
    "e": null,
@@ -3871,7 +4045,8 @@
    "src": [
     "https://fintech.global/2026/06/16/nice-actimize-wins-dnb-mandate-for-ai-crime-detection/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "облачная платформа против отмывания и мошенничества"
   },
   {
    "id": "eu-176",
@@ -3893,7 +4068,8 @@
    "src": [
     "https://www.businesswire.com/news/home/20260205454922/en/Barclays-Harnesses-GenAI-to-Deliver-World-Class-Customer-Service"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-резюме звонков колл-центра"
   },
   {
    "id": "eu-177",
@@ -3913,7 +4089,8 @@
    "y": 2026.02,
    "q": "p",
    "src": [],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "корпоративный ИИ-ассистент для сотрудников"
   },
   {
    "id": "us-001",
@@ -3935,7 +4112,8 @@
    "src": [
     "https://fedscoop.com/gsa-openai-google-alphabet-anthropic-multiple-award-schedule-federal-government/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-модели в общем госкаталоге закупок"
   },
   {
    "id": "us-002",
@@ -3957,7 +4135,8 @@
    "src": [
     "https://www.gsa.gov/about-gsa/newsroom/news-releases/gsa-announces-new-partnership-with-openai-delivering-deep-discount-to-chatgpt-08062025"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "корпоративная версия ChatGPT"
   },
   {
    "id": "us-003",
@@ -3980,7 +4159,8 @@
     "https://www.gsa.gov/about-gsa/newsroom/news-releases/gsa-expands-onegov-ai-offerings-with-discounted-openais-chatgpt-09102026",
     "https://www.nextgov.com/acquisition/2026/09/gsa-unveils-new-token-based-onegov-discount-openai/415908/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "доступ к GPT по API"
   },
   {
    "id": "us-004",
@@ -4003,7 +4183,8 @@
     "https://www.gsa.gov/about-gsa/newsroom/news-releases/gsa-strikes-onegov-deal-with-anthropic-08122025",
     "https://www.gsa.gov/about-gsa/newsroom/news-releases/gsa-issues-statement-on-anthropic-preliminary-injunction-04032026"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "версии ИИ-ассистента для бизнеса и госсектора"
   },
   {
    "id": "us-005",
@@ -4025,7 +4206,8 @@
    "src": [
     "https://fedscoop.com/google-gemini-for-government-ai-platform-47-cents-federal-agencies-onegov-strategy/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "набор ИИ-инструментов для госорганов"
   },
   {
    "id": "us-006",
@@ -4047,7 +4229,8 @@
    "src": [
     "https://www.gsa.gov/about-gsa/newsroom/news-releases/multibillion-dollar-gsa-onegov-agreement-with-microsoft-brings-steep-discounts-09022025"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "офисный пакет, облако, CRM и ИИ-ассистент"
   },
   {
    "id": "us-007",
@@ -4069,7 +4252,8 @@
    "src": [
     "https://nextgov.com/acquisition/2025/09/meta-offers-agencies-access-its-open-source-ai-models-through-onegov-deal/408247"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "нейросети с открытыми весами"
   },
   {
    "id": "us-008",
@@ -4091,7 +4275,8 @@
    "src": [
     "https://www.gsa.gov/about-gsa/newsroom/news-releases/gsa-xai-partner-to-accelerate-federal-ai-adoption-09252025"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-модели компании Илона Маска"
   },
   {
    "id": "us-009",
@@ -4113,7 +4298,8 @@
    "src": [
     "https://www.gsa.gov/about-us/newsroom/news-releases/gsa-perplexity-sign-first-direct-to-gov-deal-11192025"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-поисковик с ответами и ссылками"
   },
   {
    "id": "us-010",
@@ -4135,7 +4321,8 @@
    "src": [
     "https://www.gsa.gov/about-gsa/newsroom/news-releases/gsa-secures-savings-through-onegov-deal-with-box-08132025"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "облачное хранилище файлов с ИИ-помощником"
   },
   {
    "id": "us-011",
@@ -4157,7 +4344,8 @@
    "src": [
     "https://www.gsa.gov/about-gsa/newsroom/news-releases/gsa-announces-onegov-agreement-with-aws-08072025"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "облачная платформа Amazon"
   },
   {
    "id": "us-012",
@@ -4179,7 +4367,8 @@
    "src": [
     "https://www.nextgov.com/digital-government/2025/05/gsa-salesforce-agree-major-slack-discounts-government/405417/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "корпоративный мессенджер с ИИ-резюме"
   },
   {
    "id": "us-013",
@@ -4201,7 +4390,8 @@
    "src": [
     "https://www.gsa.gov/about-gsa/newsroom/news-releases/gsa-launches-usai-to-advance-white-house-americas-ai-action-plan-08142025"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "госплатформа для работы с разными ИИ"
   },
   {
    "id": "us-014",
@@ -4223,7 +4413,8 @@
    "src": [
     "https://fedscoop.com/hhs-rolls-out-chatgpt-across-department/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "корпоративная версия ChatGPT"
   },
   {
    "id": "us-015",
@@ -4245,7 +4436,8 @@
    "src": [
     "https://fedscoop.com/hhs-rolls-out-claude-anthropic-ai-tool/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-ассистент для госорганов"
   },
   {
    "id": "us-016",
@@ -4267,7 +4459,8 @@
    "src": [
     "https://fedscoop.com/opm-makes-copilot-chatgpt-available-workforce-onegov/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "два корпоративных ИИ-чата"
   },
   {
    "id": "us-017",
@@ -4289,7 +4482,8 @@
    "src": [
     "https://letsdatascience.com/news/dot-migrates-workforce-to-google-workspace-with-gemini-0c7697f5"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "облачная почта и документы с ИИ-ассистентом"
   },
   {
    "id": "us-018",
@@ -4311,7 +4505,8 @@
    "src": [
     "https://meritalk.com/articles/tmf-makes-first-ever-genai-award-to-boost-state-department-diplomacy/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "внутренний ИИ-чат для дипломатов"
   },
   {
    "id": "us-019",
@@ -4333,7 +4528,8 @@
    "src": [
     "https://govcontractfinder.com/contracts/ambient-scribe-sole-source-abridge-36c10g25c0007"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "пишет медкарту по разговору с пациентом"
   },
   {
    "id": "us-020",
@@ -4355,7 +4551,8 @@
    "src": [
     "https://govcontractfinder.com/contracts/award-notice-ambient-scribe-sole-source-36c10g25c0013"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "пишет медкарту по разговору с пациентом"
   },
   {
    "id": "us-021",
@@ -4365,7 +4562,7 @@
    "k": "notes",
    "st": null,
    "b": "Министерство по делам ветеранов (VA)",
-   "p": "Abridge и Knowtex (несколько победителей)",
+   "p": "Abridge и Knowtex, несколько победителей",
    "w": "Корпоративный контракт на ИИ-скрайбы для всей системы здравоохранения VA",
    "v": "Общий потолок $775,72 млн; сколько потрачено — не раскрыто",
    "e": 713700000,
@@ -4377,7 +4574,8 @@
    "src": [
     "https://nextgov.com/artificial-intelligence/2026/09/va-selects-abridge-ambient-scribe-under-new-enterprise-contract/416140"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "пишут медкарту по разговору с пациентом"
   },
   {
    "id": "us-022",
@@ -4399,7 +4597,8 @@
    "src": [
     "https://www.executivebiz.com/articles/rise8-thoughtworks-va-ambient-scribe-ai-contract"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "доработка и внедрение медскрайбов в госпиталях"
   },
   {
    "id": "us-023",
@@ -4421,7 +4620,8 @@
    "src": [
     "https://investor.salesforce.com/news/news-details/2026/VA-Awards-Salesforce-1-6B-Contract-to-Transform-Veteran-Care-and-Services/default.aspx"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-агенты, мессенджер и аналитика данных"
   },
   {
    "id": "us-024",
@@ -4443,7 +4643,8 @@
    "src": [
     "https://www.axios.com/2025/11/21/irs-deploys-ai-agents"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "платформа ИИ-агентов для обращений и дел"
   },
   {
    "id": "us-025",
@@ -4465,7 +4666,8 @@
    "src": [
     "https://newsroom.accenture.com/news/2024/accenture-federal-services-wins-81-million-social-security-administration-contract"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-обработка документов по пособиям"
   },
   {
    "id": "us-026",
@@ -4487,7 +4689,8 @@
    "src": [
     "https://www.foley.com/insights/publications/2024/08/accenture-awarded-75-million-contract-from-uspto-for-ai-search-tools/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-модели для патентного поиска"
   },
   {
    "id": "us-027",
@@ -4509,7 +4712,8 @@
    "src": [
     "https://orangeslices.ai/?p=80901"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-поиск похожих промышленных образцов по картинке"
   },
   {
    "id": "us-028",
@@ -4531,7 +4735,8 @@
    "src": [
     "https://getcoai.com/news/fdas-rushed-ai-tool-rollout-faces-significant-challenges"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-помощник экспертов по лекарствам"
   },
   {
    "id": "us-029",
@@ -4553,7 +4758,8 @@
    "src": [
     "https://immpolicytracking.org/policies/reported-palantir-awarded-30-million-to-build-immigrationos-surveillance-platform-for-ice"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "платформа данных для поиска и депортации мигрантов"
   },
   {
    "id": "us-030",
@@ -4575,7 +4781,8 @@
    "src": [
     "https://orangeslices.ai/?p=108890"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "архитектура и управление ИИ-системами"
   },
   {
    "id": "us-031",
@@ -4597,7 +4804,8 @@
    "src": [
     "https://legaltechnology.com/thomson-reuters-signs-multi-year-contract-to-provide-us-federal-courts-with-access-to-cocounsel/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "юридическая база с ИИ-ассистентом"
   },
   {
    "id": "us-032",
@@ -4619,7 +4827,8 @@
    "src": [
     "https://www.sdsc.edu/news/2026/PR20260901-NAIRR-OC.html"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "управление общими вычислениями для ИИ-исследователей"
   },
   {
    "id": "us-033",
@@ -4641,7 +4850,8 @@
    "src": [
     "https://fedscoop.com/energy-department-genesis-mission-ai-partner/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "вычислительные мощности для научного ИИ"
   },
   {
    "id": "us-034",
@@ -4663,7 +4873,8 @@
    "src": [
     "https://www.highergov.com/contract/HQ08832590012/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "модели GPT для военных агентов"
   },
   {
    "id": "us-035",
@@ -4685,7 +4896,8 @@
    "src": [
     "https://defensescoop.com/?p=115969"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-ассистент для нацбезопасности США"
   },
   {
    "id": "us-036",
@@ -4707,7 +4919,8 @@
    "src": [
     "https://defensescoop.com/?p=115969"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "облако, ускорители TPU и ИИ-агенты"
   },
   {
    "id": "us-037",
@@ -4729,7 +4942,8 @@
    "src": [
     "https://defensescoop.com/?p=115969"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-модели Илона Маска для госорганов"
   },
   {
    "id": "us-038",
@@ -4751,7 +4965,8 @@
    "src": [
     "https://meritalk.com/articles/pentagon-launches-new-genai-mil-platform/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-инструменты для госслужащих"
   },
   {
    "id": "us-039",
@@ -4773,7 +4988,8 @@
    "src": [
     "https://news.clearancejobs.com/2026/09/02/pentagon-expands-ai-arsenal-with-grok-and-chatgpt-for-military-use/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "версия ChatGPT для военных"
   },
   {
    "id": "us-040",
@@ -4795,7 +5011,8 @@
    "src": [
     "https://news.clearancejobs.com/2026/09/02/pentagon-expands-ai-arsenal-with-grok-and-chatgpt-for-military-use/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-модели Илона Маска для госорганов"
   },
   {
    "id": "us-041",
@@ -4817,7 +5034,8 @@
    "src": [
     "https://defensescoop.com/2026/05/01/dod-expands-classified-ai-work-with-8-companies-excluding-anthropic/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "передовые ИИ-модели для секретных сетей"
   },
   {
    "id": "us-042",
@@ -4840,7 +5058,8 @@
     "https://defensescoop.com/2025/07/31/army-palantir-software-enterprise-agreement-10-billion/",
     "https://www.highergov.com/idv/W519TC25D0039"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "единый договор на платформы анализа данных"
   },
   {
    "id": "us-043",
@@ -4862,7 +5081,8 @@
    "src": [
     "https://voidly.ai/atlas/federal/surveillance-spending/CONT_AWD_W9128Z26FA001_9700_W519TC25D0039_9700"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-платформа разведки и целеуказания"
   },
   {
    "id": "us-044",
@@ -4884,7 +5104,8 @@
    "src": [
     "https://www.highergov.com/idv/W519TC25D0039"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "платформы данных для армии и флота"
   },
   {
    "id": "us-045",
@@ -4907,7 +5128,8 @@
     "https://defensescoop.com/2024/05/30/combatant-commands-palantir-maven-scale-targeting-capabilities/",
     "https://defensescoop.com/2025/05/23/dod-palantir-maven-smart-system-contract-increase/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-платформа разведки и целеуказания"
   },
   {
    "id": "us-046",
@@ -4929,7 +5151,8 @@
    "src": [
     "https://www.marines.mil/News/Press-Releases/Press-Release-Display/Article/4305728/marine-corps-partners-with-chief-digital-and-artificial-intelligence-office-and/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-платформа разведки и целеуказания"
   },
   {
    "id": "us-047",
@@ -4951,7 +5174,8 @@
    "src": [
     "https://defensescoop.com/2024/03/06/palantir-army-titan-ground-station-award-178-million/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "мобильный узел разведки и наведения с ИИ"
   },
   {
    "id": "us-048",
@@ -4973,7 +5197,8 @@
    "src": [
     "https://www.defensenews.com/land/2024/12/18/us-army-extends-palantirs-contract-for-its-data-harnessing-platform/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "единая платформа данных армии"
   },
   {
    "id": "us-049",
@@ -4983,7 +5208,7 @@
    "k": "data",
    "st": null,
    "b": "ВМС США (NAVSEA)",
-   "p": "Palantir — ShipOS (Foundry + AIP)",
+   "p": "Palantir — ShipOS, Foundry + AIP",
    "w": "ИИ для судостроения: 2 корпорации, 3 верфи, 100 поставщиков",
    "v": "до $448 млн",
    "e": 412000000,
@@ -4995,7 +5220,8 @@
    "src": [
     "https://breakingdefense.com/2025/12/navy-palantir-unveil-shipos-in-a-bid-to-boost-nuclear-sub-production/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-управление производством кораблей и поставками"
   },
   {
    "id": "us-050",
@@ -5005,7 +5231,7 @@
    "k": "data",
    "st": null,
    "b": "Армия США",
-   "p": "Anduril — корпоративное соглашение (Lattice, оборудование, данные, поддержка)",
+   "p": "Anduril — корпоративное соглашение, Lattice, оборудование, данные, поддержка",
    "w": "≈120 контрактов объединены в один",
    "v": "до $20 млрд",
    "e": 18400000000,
@@ -5017,7 +5243,8 @@
    "src": [
     "https://www.washingtontechnology.com/contracts/2026/03/army-anduril-enter-new-20b-enterprise-agreement/412143/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "единый договор на автономные системы и ПО"
   },
   {
    "id": "us-051",
@@ -5039,7 +5266,8 @@
    "src": [
     "https://www.washingtontechnology.com/contracts/2025/03/anduril-wins-642m-marines-counter-drone-tech-contract/403613"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "системы обнаружения и перехвата дронов"
   },
   {
    "id": "us-052",
@@ -5049,7 +5277,7 @@
    "k": "data",
    "st": null,
    "b": "Командование спецопераций (SOCOM)",
-   "p": "Anduril (Lattice)",
+   "p": "Anduril — Lattice",
    "w": "Интегратор систем противодействия дронам",
    "v": "≈$968 млн (потолок)",
    "e": 890600000,
@@ -5061,7 +5289,8 @@
    "src": [
     "https://www.defensenews.com/unmanned/2022/01/24/us-special-operations-command-picks-anduril-to-lead-counter-drone-integration-work-in-1b-deal/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-платформа управления дронами и сенсорами"
   },
   {
    "id": "us-053",
@@ -5071,7 +5300,7 @@
    "k": "data",
    "st": null,
    "b": "Командование спецопераций (SOCOM)",
-   "p": "Anduril (Lattice)",
+   "p": "Anduril — Lattice",
    "w": "Интегратор автономности для миссий",
    "v": "≈$86 млн",
    "e": 79000000,
@@ -5083,7 +5312,8 @@
    "src": [
     "https://defensescoop.com/2025/03/26/anduril-socom-contract-award-autonomy-software-86m"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-платформа управления автономными системами"
   },
   {
    "id": "us-054",
@@ -5105,7 +5335,8 @@
    "src": [
     "https://soldiersystems.net/2025/07/18/anduril-awarded-99-6m-for-u-s-army-next-generation-command-and-control-prototype/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "система управления войсками нового поколения"
   },
   {
    "id": "us-055",
@@ -5115,7 +5346,7 @@
    "k": "build",
    "st": null,
    "b": "Подразделение оборонных инноваций (DIU)",
-   "p": "Scale AI — Thunderforge (с Anduril и Microsoft)",
+   "p": "Scale AI — Thunderforge, с Anduril и Microsoft",
    "w": "ИИ-агенты для оперативного планирования; первые пользователи — INDOPACOM и EUCOM",
    "v": "не раскрыто",
    "e": null,
@@ -5127,7 +5358,8 @@
    "src": [
     "https://www.diu.mil/latest/dius-thunderforge-project-to-integrate-commercial-ai-powered-decision-making"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-агенты для военного планирования"
   },
   {
    "id": "us-056",
@@ -5149,7 +5381,8 @@
    "src": [
     "https://www.govconwire.com/?p=337823"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "разметка данных и тестирование моделей"
   },
   {
    "id": "us-057",
@@ -5171,7 +5404,8 @@
    "src": [
     "https://washingtontechnology.com/contracts/2026/05/dod-grows-scale-ai-agreement-500m/413396/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "рамочный договор на данные и ИИ-услуги"
   },
   {
    "id": "us-058",
@@ -5193,7 +5427,8 @@
    "src": [
     "https://breakingdefense.com/2025/06/pentagon-ai-office-army-award-ask-sage-10m-for-genai-expansion/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "защищённый доступ к разным LLM"
   },
   {
    "id": "us-059",
@@ -5215,7 +5450,8 @@
    "src": [
     "https://breakingdefense.com/2025/11/startup-enabled-intelligence-nabs-ngas-708-million-ai-training-contract/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "разметка геоданных для обучения ИИ"
   },
   {
    "id": "us-060",
@@ -5237,7 +5473,8 @@
    "src": [
     "https://c3.ai/news/c3-ai-us-air-force-rapid-sustainment-office-contract-award-increased"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "предсказывает отказы техники ВВС"
   },
   {
    "id": "us-061",
@@ -5259,7 +5496,8 @@
    "src": [
     "https://washingtontechnology.com/contracts/2022/12/amazon-google-microsoft-oracle-awarded-9b-pentagon-cloud-contract/380598/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "общее облако Пентагона"
   },
   {
    "id": "us-062",
@@ -5281,7 +5519,8 @@
    "src": [
     "https://www.ai.mil/Portals/137/Documents/Resources%20Page/2024-12-CDAO-Artificial-Intelligence-Rapid-Capabilities-Cell.pdf"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "фонд на пилоты и вычисления ИИ"
   },
   {
    "id": "us-063",
@@ -5303,7 +5542,8 @@
    "src": [
     "https://insideunmannedsystems.com/defense-innovation-unit-announces-software-vendors-to-support-replicator/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ПО для координации роя беспилотников"
   },
   {
    "id": "us-064",
@@ -5325,7 +5565,8 @@
    "src": [
     "https://www.aflcmc.af.mil/NEWS/Article/4521029/air-force-advances-future-of-air-superiority-with-cca-contracts/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "автопилот для беспилотных ведомых истребителей"
   },
   {
    "id": "us-065",
@@ -5345,7 +5586,8 @@
    "y": 2025.04,
    "q": "p",
    "src": [],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-аналитика оборонных цепочек поставок"
   },
   {
    "id": "us-066",
@@ -5367,7 +5609,8 @@
    "src": [
     "https://defensescoop.com/2025/12/18/air-force-sunsetting-niprgpt-generative-ai-platform/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "экспериментальный ИИ-чат для военных"
   },
   {
    "id": "us-067",
@@ -5389,7 +5632,8 @@
    "src": [
     "https://www.publicsource.org/pennsylvania-government-expand-artificial-intelligence-ai/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "корпоративная версия ChatGPT"
   },
   {
    "id": "us-068",
@@ -5411,7 +5655,8 @@
    "src": [
     "https://www.inquirer.com/politics/pennsylvania/pennsylvania-state-government-employees-ai-tools-protections-20260810.html"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "корпоративная версия ChatGPT"
   },
   {
    "id": "us-069",
@@ -5433,7 +5678,8 @@
    "src": [
     "https://www.genai.ca.gov/2024/05/09/california-signs-partnerships-to-utilize-genai/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "пилоты генИИ для госуслуг штата"
   },
   {
    "id": "us-070",
@@ -5455,7 +5701,8 @@
    "src": [
     "https://www.gov.ca.gov/2026/06/29/governor-newsom-announces-a-first-of-its-kind-partnership-/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-ассистент для текстов и анализа"
   },
   {
    "id": "us-071",
@@ -5477,7 +5724,8 @@
    "src": [
     "https://www.wbur.org/news/2026/02/17/massachusetts-healey-ai-chatgpt-contract"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-ассистент через госпоставщика ПО"
   },
   {
    "id": "us-072",
@@ -5499,7 +5747,8 @@
    "src": [
     "https://governor.maryland.gov/news/press/pages/Maryland-Governor-Wes-Moore-Announces-Landmark-AI-Partnership-to-Transform-State-Service-Delivery.aspx"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-ассистент и инженеры внедрения"
   },
   {
    "id": "us-073",
@@ -5521,7 +5770,8 @@
    "src": [
     "https://ncnewsline.com/2026/04/13/the-nc-treasurers-office-expands-use-of-ai-throughout-the-agency/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-ассистенты для офиса и кода"
   },
   {
    "id": "us-074",
@@ -5543,7 +5793,8 @@
    "src": [
     "https://innovate-us.org/blog/utahs-journey-implementing-gemini-across-state-government"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-ассистент в почте и документах"
   },
   {
    "id": "us-075",
@@ -5565,7 +5816,8 @@
    "src": [
     "https://innovate-us.org/blog/implementing-responsible-ai-in-government-colorados-pilot-program"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "расширенный платный тариф ИИ-ассистента"
   },
   {
    "id": "us-076",
@@ -5588,7 +5840,8 @@
     "https://www.akleg.gov/basis/get_documents.asp?docid=2128",
     "https://its.idaho.gov/?p=13466"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-ассистент в Word, Excel, Outlook и Teams"
   },
   {
    "id": "us-077",
@@ -5598,7 +5851,7 @@
    "k": "build",
    "st": null,
    "b": "Нью-Джерси",
-   "p": "NJ AI Assistant (поставщик не раскрыт)",
+   "p": "NJ AI Assistant, поставщик не раскрыт",
    "w": "Ассистент для всех сотрудников + обучение InnovateUS",
    "v": "не раскрыто",
    "e": null,
@@ -5610,7 +5863,8 @@
    "src": [
     "https://nj.gov/governor/news/news/562024/approved/20240703a.shtml"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "собственный ИИ-ассистент для госслужащих"
   },
   {
    "id": "us-078",
@@ -5632,7 +5886,8 @@
    "src": [
     "https://themarkup.org/artificial-intelligence/2026/01/30/mamdani-to-kill-the-nyc-ai-chatbot-we-caught-telling-businesses-to-break-the-law"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "городской бот о правилах для бизнеса"
   },
   {
    "id": "us-079",
@@ -5654,7 +5909,8 @@
    "src": [
     "https://www.gulfshorebusiness.com/gb_daily/fort-myers-expanding-use-of-chatgpt"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "корпоративная версия ChatGPT"
   },
   {
    "id": "us-080",
@@ -5676,7 +5932,8 @@
    "src": [
     "https://www.govtech.com/artificial-intelligence/plano-texas-oks-spending-390k-for-citywide-ai-initiative"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "корпоративный ИИ-чат, ИИ-платформа и видеосвязь"
   },
   {
    "id": "us-081",
@@ -5698,7 +5955,8 @@
    "src": [
     "https://www.fortune.com/2025/07/17/san-jose-mayor-matt-mahan-uses-chatgpt-ai-to-do-job"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-ассистент для текстов и вопросов"
   },
   {
    "id": "us-082",
@@ -5720,7 +5978,8 @@
    "src": [
     "https://www.nbcdfw.com/news/business/money-report/san-francisco-rolls-out-microsofts-copilot-ai-for-30000-city-workers/3885055/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "веб-чат с ИИ при офисной лицензии"
   },
   {
    "id": "us-083",
@@ -5742,7 +6001,8 @@
    "src": [
     "https://www.cloquetmn.gov/home/showpublisheddocument/7402/639082366642730000"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "пишет рапорт по записи нательной камеры"
   },
   {
    "id": "us-084",
@@ -5764,7 +6024,8 @@
    "src": [
     "https://www.kqed.org/news/12007520/how-artificial-intelligence-is-changing-the-reports-police-write"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "пишет рапорт по записи нательной камеры"
   },
   {
    "id": "us-085",
@@ -5786,7 +6047,8 @@
    "src": [
     "https://www.govtech.com/artificial-intelligence/amid-concern-police-in-maine-test-ai-to-write-reports"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "пишет рапорт по записи нательной камеры"
   },
   {
    "id": "us-086",
@@ -5808,7 +6070,8 @@
    "src": [
     "https://www.govtech.com/artificial-intelligence/amid-concern-police-in-maine-test-ai-to-write-reports"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "нательные камеры и ИИ-рапорты по записям"
   },
   {
    "id": "us-087",
@@ -5830,7 +6093,8 @@
    "src": [
     "https://shawlocal.com/the-herald-news/2024/12/23/joliet-police-will-use-ai-for-police-reports-in-2025"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-инструменты для полицейских рапортов и видео"
   },
   {
    "id": "us-088",
@@ -5852,7 +6116,8 @@
    "src": [
     "https://kstp.com/kstp-news/top-news/ai-is-helping-some-minnesota-police-officers-write-reports/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-рапорты и перевод речи на месте"
   },
   {
    "id": "us-089",
@@ -5874,7 +6139,8 @@
    "src": [
     "https://cowboystatedaily.com/2026/10/07/casper-city-council-oks-police-ai-software-purchase-after-60-day-summer-trial/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-анализ видео с нательных камер"
   },
   {
    "id": "us-090",
@@ -5896,7 +6162,8 @@
    "src": [
     "https://cityclerk.lacity.org/onlinecontracts/2024/C-145843_c_07-26-24.pdf"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "объединяет полицейские базы для расследований"
   },
   {
    "id": "us-091",
@@ -5918,7 +6185,8 @@
    "src": [
     "https://9thstreetjournal.org/2026/01/29/residents-slam-police-department-software-contract-citing-data-privacy-concerns/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "платформа объединения полицейских данных"
   },
   {
    "id": "us-092",
@@ -5940,7 +6208,8 @@
    "src": [
     "https://denverite.com/2025/10/29/denver-city-council-opposes-flock-contract-extension/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "сеть ИИ-камер для поиска машин"
   },
   {
    "id": "us-093",
@@ -5962,7 +6231,8 @@
    "src": [
     "https://docs.meetings.tampamonitor.com/2025-10-09/meeting-2608/16864/summary-sheet-cover-sheet.pdf"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "поиск человека по фото лица"
   },
   {
    "id": "us-094",
@@ -5984,7 +6254,8 @@
    "src": [
     "https://www.kgou.org/criminal-justice/2025-07-22/oklahoma-city-council-approves-ai-facial-comparison-software-for-police-department"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "поиск человека по фото лица"
   },
   {
    "id": "us-095",
@@ -6006,7 +6277,8 @@
    "src": [
     "https://eastcobbnews.com/cobb-approves-facial-recognition-contract-for-public-safety/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "поиск человека по фото лица"
   },
   {
    "id": "us-096",
@@ -6028,7 +6300,8 @@
    "src": [
     "https://dochub.clackamas.us/documents/drupal/396c3517-ed26-44dc-85c5-f9bc17cf6fbd"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "пишет заметки по сеансу терапии"
   },
   {
    "id": "us-097",
@@ -6050,7 +6323,8 @@
    "src": [
     "https://www.bakersfield.com/ap/news/calmhsa-selects-eleos-as-statewide-ai-technology-partner-for-behavioral-health/article_6bfea9f1-4eb6-51cf-9bad-a20c71af01fa.html"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "пишет заметки по сеансу терапии"
   },
   {
    "id": "us-098",
@@ -6060,7 +6334,7 @@
    "k": "notes",
    "st": "pilot",
    "b": "Округ Фэрфакс, Вирджиния (служба семей)",
-   "p": "Beam (Magic Notes)",
+   "p": "Beam — Magic Notes",
    "w": "6-недельный пилот, затем постоянное использование",
    "v": "не раскрыто",
    "e": null,
@@ -6072,7 +6346,8 @@
    "src": [
     "https://www.fairfaxcounty.gov/news/node/1194"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-ноутейкер для соцработников"
   },
   {
    "id": "us-099",
@@ -6094,7 +6369,8 @@
    "src": [
     "https://resolutions.ingham.org/storage/Portals/BC/2025%20Resolutions/25-198.doc"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "пишет медкарту по разговору с пациентом"
   },
   {
    "id": "us-100",
@@ -6116,7 +6392,8 @@
    "src": [
     "https://www.fiercehealthcare.com/ai-and-machine-learning/abridge-university-texas-system-enter-enterprise-wide-agreement-expanded-ai"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "пишет медкарту по разговору с пациентом"
   },
   {
    "id": "us-101",
@@ -6126,7 +6403,7 @@
    "k": "build",
    "st": "pilot",
    "b": "Высший суд округа Лос-Анджелес (и Риверсайд)",
-   "p": "Learned Hand (позже куплен Clio)",
+   "p": "Learned Hand, позже куплен Clio",
    "w": "ИИ готовит проекты судебных меморандумов и решений",
    "v": "≈$314 тыс. (Лос-Анджелес); $10 тыс. (Риверсайд)",
    "e": 298000,
@@ -6138,7 +6415,8 @@
    "src": [
     "https://www.governing.com/artificial-intelligence/los-angeles-courts-pilot-ai-tool-to-help-judges-draft-rulings"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-помощник судей для черновиков решений"
   },
   {
    "id": "us-102",
@@ -6160,7 +6438,8 @@
    "src": [
     "https://www.wptv.com/news/palm-beach-county/heres-how-ai-is-changing-the-way-pbcsd-students-learn-educators-teach-in"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-тьютор, ведущий ученика к ответу"
   },
   {
    "id": "us-103",
@@ -6182,7 +6461,8 @@
    "src": [
     "https://education.nh.gov/news-and-media/new-hampshire-department-education-enables-free-access-khanmigo-ai-pilot-all-new-hampshire-educators"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-тьютор и помощник учителя"
   },
   {
    "id": "us-104",
@@ -6204,7 +6484,8 @@
    "src": [
     "https://www.yahoo.com/news/bay-district-school-makes-moves-012500670.html"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-инструменты для планов уроков"
   },
   {
    "id": "us-105",
@@ -6226,7 +6507,8 @@
    "src": [
     "https://blog.google/products-and-platforms/products/education/miami-dade-county-public-schools-uses-gemini-for-education-for-100000-high-school-students-and-teachers/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-ассистент для школ и вузов"
   },
   {
    "id": "us-106",
@@ -6248,7 +6530,8 @@
    "src": [
     "https://www.carahsoft.com/buy/slg-contracts/txdir/texas-dir-cpo-5131"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "кооперативный каталог ИИ-продуктов и услуг"
   },
   {
    "id": "us-107",
@@ -6270,7 +6553,8 @@
    "src": [
     "https://www.nbcnews.com/business/business-news/jpmorgan-chase-giving-employees-ai-assistant-powered-chatgpt-maker-ope-rcna166045"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "внутренний ИИ-портал банка на GPT и Claude"
   },
   {
    "id": "us-108",
@@ -6292,7 +6576,8 @@
    "src": [
     "https://www.aol.com/news/jpmorgan-says-ai-helped-boost-170825172.html"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-поиск ответов для частных банкиров"
   },
   {
    "id": "us-109",
@@ -6314,7 +6599,8 @@
    "src": [
     "https://openai.com/index/morgan-stanley/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "поиск ответов по внутренней базе знаний"
   },
   {
    "id": "us-110",
@@ -6336,7 +6622,8 @@
    "src": [
     "https://www.morganstanley.com/press-releases/ai-at-morgan-stanley-debrief-launch"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "конспектирует встречи и пишет письма"
   },
   {
    "id": "us-111",
@@ -6358,7 +6645,8 @@
    "src": [
     "https://www.businessinsider.nl/a-team-of-engineers-saved-morgan-stanley-more-than-280000-hours-this-year-the-bank-says-their-tool-wont-take-jobs/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "переводит старый код в описания"
   },
   {
    "id": "us-112",
@@ -6380,7 +6668,8 @@
    "src": [
     "https://www.sec.gov/Archives/edgar/data/70858/000007085826000209/bofaannualreport2025.pdf"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "виртуальный ассистент в банковском приложении"
   },
   {
    "id": "us-113",
@@ -6402,7 +6691,8 @@
    "src": [
     "https://newsroom.bankofamerica.com/content/newsroom/press-releases/2026/07/bank-of-america-enhances-ericaassist-with-generative-ai-to-help-.html"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "подсказки операторам во время звонков"
   },
   {
    "id": "us-114",
@@ -6424,7 +6714,8 @@
    "src": [
     "https://newsroom.bankofamerica.com/content/newsroom/press-releases/2026/03/merrill-and-bank-of-america-private-bank-launch-ai-powered-meeti.html"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "CRM для консультантов и видеосвязь"
   },
   {
    "id": "us-115",
@@ -6446,7 +6737,8 @@
    "src": [
     "https://foxbusiness.com/technology/goldman-sachs-announces-firmwide-launch-ai-assistant"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "внутренний ИИ-чат банка"
   },
   {
    "id": "us-116",
@@ -6456,7 +6748,7 @@
    "k": "code",
    "st": null,
    "b": "Goldman Sachs",
-   "p": "Cognition — Devin (автономный ИИ-программист)",
+   "p": "Cognition — Devin",
    "w": "Сотни экземпляров Devin, позже возможно тысячи",
    "v": "не раскрыто",
    "e": null,
@@ -6468,7 +6760,8 @@
    "src": [
     "https://qz.com/goldman-sachs-ai-coder-devin-cognition"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "автономный ИИ-программист"
   },
   {
    "id": "us-117",
@@ -6490,7 +6783,8 @@
    "src": [
     "https://www.artificialintelligence-news.com/news/goldman-sachs-tests-autonomous-ai-agents-for-process-heavy-work/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-агенты для бэк-офиса банка"
   },
   {
    "id": "us-118",
@@ -6512,7 +6806,8 @@
    "src": [
     "https://americanbanker.com/news/why-citi-is-rolling-out-generative-ai-to-all-its-developers"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-подсказки кода в редакторе"
   },
   {
    "id": "us-119",
@@ -6534,7 +6829,8 @@
    "src": [
     "https://www.notebookcheck.net/Citigroup-announces-new-AI-tools-for-employees-in-eight-countries.928286.0.html"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "внутренние ИИ-помощники по правилам и документам"
   },
   {
    "id": "us-120",
@@ -6556,7 +6852,8 @@
    "src": [
     "https://www.bankingdive.com/news/citi-pilots-ai-assisted-workspace-employees/811339/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-агенты внутри банковской платформы"
   },
   {
    "id": "us-121",
@@ -6578,7 +6875,8 @@
    "src": [
     "https://www.citigroup.com/global/news/press-release/2024/citi-and-google-cloud-announce-strategic-agreement"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "облако с ИИ-платформой Vertex"
   },
   {
    "id": "us-122",
@@ -6600,7 +6898,8 @@
    "src": [
     "https://www.bankingdive.com/news/wells-fargo-google-cloud-agentic-AI/757057/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "корпоративный ИИ-поиск и агенты"
   },
   {
    "id": "us-123",
@@ -6622,7 +6921,8 @@
    "src": [
     "https://www.venturebeat.com/ai/wells-fargos-ai-assistant-just-crossed-245-million-interactions-with-zero-humans-in-the-loop-and-zero-pii-to-the-llm"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "голосовой ассистент в банковском приложении"
   },
   {
    "id": "us-124",
@@ -6644,7 +6944,8 @@
    "src": [
     "https://www.biocatch.com/press-release/biocatch-finishes-2025-with-best-quarter-in-company-history"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "распознаёт мошенников по поведению пользователя"
   },
   {
    "id": "us-125",
@@ -6666,7 +6967,8 @@
    "src": [
     "https://capitalone.com/tech/ai/future-of-ai-car-dealerships-shopping"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-агенты для покупки автомобиля"
   },
   {
    "id": "us-126",
@@ -6676,7 +6978,7 @@
    "k": "mna",
    "st": null,
    "b": "Capital One",
-   "p": "Brex (управление расходами с ИИ)",
+   "p": "Brex",
    "w": "Покупка компании",
    "v": "$5,15 млрд (деньгами и акциями)",
    "e": 4740000000,
@@ -6688,7 +6990,8 @@
    "src": [
     "https://www.financierworldwide.com/fw-news/2026/1/27/capital-one-acquires-brex-in-515bn-deal"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "управление расходами с ИИ"
   },
   {
    "id": "us-127",
@@ -6710,7 +7013,8 @@
    "src": [
     "https://press.aboutamazon.com/aws/2026/5/u-s-bank-expands-collaboration-with-aws-to-accelerate-progressive-technology-transformation-and-ai-driven-customer-experience-innovation"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "облачные модели и голосовой ИИ"
   },
   {
    "id": "us-128",
@@ -6732,7 +7036,8 @@
    "src": [
     "https://www.sec.gov/Archives/edgar/data/713676/000119312526102189/d62941ddef14a.htm"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-ассистент в офисных программах"
   },
   {
    "id": "us-129",
@@ -6754,7 +7059,8 @@
    "src": [
     "https://openai.com/index/bny/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "модели GPT и корпоративный ИИ-чат"
   },
   {
    "id": "us-130",
@@ -6776,7 +7082,8 @@
    "src": [
     "https://www.googlecloudpresscorner.com/2025-12-08-BNY-Collaborates-with-Google-Cloud-to-Advance-its-Eliza-AI-Platform-with-Gemini-Enterprise"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "корпоративная платформа ИИ-агентов"
   },
   {
    "id": "us-131",
@@ -6786,7 +7093,7 @@
    "k": "build",
    "st": null,
    "b": "Charles Schwab",
-   "p": "Charley — свой ассистент (модель не раскрыта)",
+   "p": "Charley — свой ассистент, модель не раскрыта",
    "w": "ИИ-ассистент для розничных клиентов",
    "v": "не раскрыто",
    "e": null,
@@ -6798,7 +7105,8 @@
    "src": [
     "https://pressroom.aboutschwab.com/press-releases/press-release/2026/Meet-Charley-Schwabs-New-AI-Powered-Assistant-Designed-to-Help-Clients-Get-Answers-and-Take-Action/default.aspx"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-ассистент в приложении брокера"
   },
   {
    "id": "us-132",
@@ -6820,7 +7128,8 @@
    "src": [
     "https://americanexpress.io/how-gen-ai-is-elevating-the-human-connection-at-american-express/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "подсказки консультантам по поездкам"
   },
   {
    "id": "us-133",
@@ -6830,7 +7139,7 @@
    "k": "mna",
    "st": null,
    "b": "American Express",
-   "p": "Hyper (агентный ИИ для расходов)",
+   "p": "Hyper",
    "w": "Покупка компании",
    "v": "не раскрыто",
    "e": null,
@@ -6842,7 +7151,8 @@
    "src": [
     "https://www.businesswire.com/news/home/20260415433431/en/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "агентный ИИ для расходов"
   },
   {
    "id": "us-134",
@@ -6852,7 +7162,7 @@
    "k": "mna",
    "st": null,
    "b": "Visa",
-   "p": "Featurespace (ИИ против мошенничества и отмывания)",
+   "p": "Featurespace",
    "w": "Покупка компании",
    "v": "≈£700 млн (по сообщениям)",
    "e": 819000000,
@@ -6864,7 +7174,8 @@
    "src": [
     "https://paymentexpert.com/2024/12/20/visa-700m-acquisition-of-featurespace/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ против мошенничества и отмывания"
   },
   {
    "id": "us-135",
@@ -6874,7 +7185,7 @@
    "k": "mna",
    "st": null,
    "b": "Mastercard",
-   "p": "Recorded Future (ИИ для анализа киберугроз)",
+   "p": "Recorded Future",
    "w": "Покупка компании",
    "v": "$2,65 млрд",
    "e": 2440000000,
@@ -6886,7 +7197,8 @@
    "src": [
     "https://www.techtarget.com/cybersecurity/news/366610228/Mastercard-to-acquire-Recorded-Future-for-265B"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ для анализа киберугроз"
   },
   {
    "id": "us-136",
@@ -6908,7 +7220,8 @@
    "src": [
     "https://www.fisglobal.com/about-us/media-room/press-release/2026/fis-brings-agentic-ai-to-banking-with-anthropic-starting-with-financial-crimes"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-агент для проверки подозрительных операций"
   },
   {
    "id": "us-137",
@@ -6931,7 +7244,8 @@
     "https://www.wealthmanagement.com/artificial-intelligence/commonwealth-makes-ai-notetaking-platform-zocks-available-to-its-advisors",
     "https://investmentnews.com/fintech/zocks-jump-expand-advisor-reach-with-new-enterprise-integrations/266805"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "конспектируют встречи и заполняют CRM"
   },
   {
    "id": "us-138",
@@ -6953,7 +7267,8 @@
    "src": [
     "https://www.anthropic.com/solutions/financial-services"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-ассистент для финансовых аналитиков"
   },
   {
    "id": "anz-001",
@@ -6976,7 +7291,8 @@
     "https://www.digital.gov.au/initiatives/copilot-trial",
     "https://www.techpartner.news/news/dta-goes-for-copilot-access-in-next-microsoft-agreement-610803"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-ассистент в Word, Excel, Outlook и Teams"
   },
   {
    "id": "anz-002",
@@ -6999,7 +7315,8 @@
     "https://www.finance.gov.au/about-us/news/2025/introducing-aps-ai-plan",
     "https://aapnews.aap.com.au/news/purpose-built-public-servant-chatbot-in-federal-ai-push"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "собственный чат-бот для госслужащих"
   },
   {
    "id": "anz-003",
@@ -7009,7 +7326,7 @@
    "k": "frame",
    "st": null,
    "b": "Правительство Австралии (DTA, для всех федеральных ведомств)",
-   "p": "Microsoft — Volume Sourcing Arrangement 6 (M365, Azure, Dynamics 365, Microsoft 365 Copilot)",
+   "p": "Microsoft — Volume Sourcing Arrangement 6, M365, Azure, Dynamics 365, Microsoft 365 Copilot",
    "w": "Новое общегосударственное соглашение со скидками на продукты Microsoft, включая Microsoft 365 Copilot (покупка необязательна)",
    "v": "не раскрыто (отдельно: фонд обучения от Microsoft A$1,55 млн)",
    "e": null,
@@ -7023,7 +7340,8 @@
     "https://dta.gov.au/news/microsoft-volume-sourcing-arrangement-renewed",
     "https://www.itnews.com.au/news/dtas-latest-microsoft-support-deal-tops-100m-627042"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "рамочный договор на ПО со скидками"
   },
   {
    "id": "anz-004",
@@ -7045,7 +7363,8 @@
    "src": [
     "https://medicalrepublic.com.au/nsw-health-commits-38-7m-to-ai-scribes-for-up-to-6000-clinicians/126906"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "пишет медкарту по разговору с пациентом"
   },
   {
    "id": "anz-005",
@@ -7067,7 +7386,8 @@
    "src": [
     "https://www.clinicalexcellence.qld.gov.au/improvement-exchange/AI-scribe-a-health-service-rollout"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "пишет медкарту по разговору с пациентом"
   },
   {
    "id": "anz-006",
@@ -7090,7 +7410,8 @@
     "https://www.premier.sa.gov.au/media-releases/news-items/ai-tool-to-roll-out-to-all-public-high-schools",
     "https://au.insight.com/en_AU/content-and-resources/case-studies/insight-partners-with-the-south-australian-department-for-education-to-deliver-edchat.html"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "безопасный ИИ-чат для школьников"
   },
   {
    "id": "anz-007",
@@ -7100,7 +7421,7 @@
    "k": "frame",
    "st": null,
    "b": "Правительство Новой Зеландии (Департамент внутренних дел, для всех ведомств)",
-   "p": "Microsoft Cloud, Software and Services Agreement (M365 E3/E5/F3, Azure, Microsoft 365 Copilot)",
+   "p": "Microsoft Cloud, Software and Services Agreement, M365 E3/E5/F3, Azure, Microsoft 365 Copilot",
    "w": "Общегосударственное лицензионное соглашение с Microsoft; Copilot для M365 — в перечне доступных продуктов",
    "v": "не раскрыто; M365 Copilot — NZ$567,60 за сотрудника в год (ответ OIA Министерства регулирования)",
    "e": null,
@@ -7113,7 +7434,8 @@
     "https://dns.govt.nz/services/show/Microsoft-Cloud-Software-and-Services-Agreement-",
     "https://windowsnews.ai/article/microsoft-copilot-is-spreading-through-nz-governmentheres-the-lesson-for-every-business.440719"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "единое лицензионное соглашение для ведомств"
   },
   {
    "id": "anz-008",
@@ -7137,7 +7459,8 @@
     "https://www.hinz.org.nz/news/721241/1250-ED-clinicians-nationwide-using-AI-powered-scribe.htm",
     "https://www.heidihealth.com/blog/nz-ed-roll-out"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "пишет медкарту по разговору с пациентом"
   },
   {
    "id": "anz-009",
@@ -7160,7 +7483,8 @@
     "https://www.interest.co.nz/technology/129681/callaghan-innovation-and-wh%C4%81riki-maori-business-network-develop-govgpt-ai-chatbot",
     "https://www.interest.co.nz/technology/131980/launched-september-last-year-governments-ai-chatbot-business-govgpt-did-not-last"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "чат-бот о господдержке для бизнеса"
   },
   {
    "id": "anz-010",
@@ -7184,7 +7508,8 @@
     "https://www.infoway-inforoute.ca/en/news-events/announcements/news/2026-announcements/canada-health-infoway-releases-results-of-national-ai-scribe-program-demonstrating-meaningful-benefits-for-primary-care-clinicians",
     "https://physicians.nshealth.ca/topics/nova-scotia-provider-digital-health-toolkit/ai-scribe-pilot"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "оплачиваемые государством медскрайбы для врачей"
   },
   {
    "id": "anz-011",
@@ -7194,7 +7519,7 @@
    "k": "notes",
    "st": "pilot",
    "b": "Правительство Онтарио (Минздрав; оператор — OntarioMD)",
-   "p": "ИИ-скрайбы (поставщики не раскрыты)",
+   "p": "ИИ-скрайбы, поставщики не раскрыты",
    "w": "Пилот для 150+ семейных врачей и медсестёр-практиков",
    "v": "не раскрыто",
    "e": null,
@@ -7207,7 +7532,8 @@
     "https://toronto.ctvnews.ca/ontario-launching-ai-program-to-help-reduce-doctor-paperwork-1.6859999",
     "https://www.ontariomd.ca/pages/ai-scribes-promising-results.aspx"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "пишут медкарту по разговору с пациентом"
   },
   {
    "id": "anz-012",
@@ -7231,7 +7557,8 @@
     "https://www.canhealth.com/2025/06/04/ai-scribe-vor-program-created-for-ontario-doctors/",
     "https://www.supplyontario.ca/news/supply-ontario-invites-new-vendors-to-participate-in-the-refreshed-ai-scribe-vendor-of-record-arrangement/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "реестр одобренных поставщиков медскрайбов"
   },
   {
    "id": "anz-013",
@@ -7241,7 +7568,7 @@
    "k": "gpt",
    "st": null,
    "b": "Правительство Канады (Секретариат Казначейского совета; лицензия — Shared Services Canada)",
-   "p": "Microsoft Copilot for Work (веб-чат Copilot Chat)",
+   "p": "Microsoft Copilot for Work, веб-чат Copilot Chat",
    "w": "Разрешение всем федеральным ведомствам включать Copilot Chat в рамках имеющейся лицензии Microsoft Tools",
    "v": "не раскрыто (входит в лицензию Microsoft Tools, купленную SSC)",
    "e": null,
@@ -7254,7 +7581,8 @@
     "https://www.canada.ca/en/government/system/digital-government/policies-standards/microsoft-copilot-for-work-policy-implementation-notice.html",
     "https://openparliament.ca/committees/government-operations/45-1/40/marie-helene-gaudreau-3/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-чат в браузере для сотрудников"
   },
   {
    "id": "anz-014",
@@ -7277,7 +7605,8 @@
     "https://www.canada.ca/en/innovation-science-economic-development/news/2025/08/canada-partners-with-cohere-to-accelerate-world-leading-artificial-intelligence.html",
     "https://betakit.com/feds-sign-new-agreement-with-cohere-to-explore-ai-uses-within-government-services/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "канадские языковые модели для бизнеса"
   },
   {
    "id": "anz-015",
@@ -7299,7 +7628,8 @@
    "src": [
     "https://idtechwire.com/halton-police-board-awards-1-18m-facial-recognition-contract-to-idemia"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "сравнение лиц с базой задержанных"
   },
   {
    "id": "anz-016",
@@ -7321,7 +7651,8 @@
    "src": [
     "https://www.biometricupdate.com/202607/ottawa-police-take-first-steps-towards-using-idemia-facial-recognition"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "сравнение лиц с базой задержанных"
   },
   {
    "id": "anz-017",
@@ -7344,7 +7675,8 @@
     "https://www.canhealth.com/2024/11/20/alberta-creates-its-own-ai-powered-scribe/",
     "https://www.cbc.ca/1.7456726"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "свой медскрайб с данными внутри системы"
   },
   {
    "id": "anz-018",
@@ -7366,7 +7698,8 @@
    "src": [
     "https://openai.com/index/commonwealth-bank-of-australia"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "корпоративная версия ChatGPT"
   },
   {
    "id": "anz-019",
@@ -7388,7 +7721,8 @@
    "src": [
     "https://www.microsoft.com/en/customers/story/24299-commonwealth-bank-of-australia-microsoft-365-copilot"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-ассистенты для офиса и программистов"
   },
   {
    "id": "anz-020",
@@ -7411,7 +7745,8 @@
     "https://www.westpac.com.au/about-westpac/media/media-releases/2026/5-february/",
     "https://news.microsoft.com/source/asia/features/westpac-equips-workforce-with-microsoft-ai/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-ассистент в Office и конструктор агентов"
   },
   {
    "id": "anz-021",
@@ -7434,7 +7769,8 @@
     "https://www.googlecloudpresscorner.com/2025-10-09-Macquarie-Bank-Democratizes-Agentic-AI,-Scaling-Customer-Innovation-with-Gemini-Enterprise",
     "https://itnews.com.au/news/macquarie-bank-saves-130000-hours-in-seven-months-of-gemini-enterprise-use-625385"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "корпоративная платформа ИИ-агентов"
   },
   {
    "id": "anz-022",
@@ -7457,7 +7793,8 @@
     "https://media.anz.com/posts/2024/august/anz-launches-first-of-its-kind-ai-immersion-centre-in-partnershi",
     "https://arxiv.org/abs/2402.05636v1"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-ассистенты для офиса и программистов"
   },
   {
    "id": "anz-023",
@@ -7467,7 +7804,7 @@
    "k": "build",
    "st": null,
    "b": "Royal Bank of Canada (RBC)",
-   "p": "Cohere — North for Banking (банковская версия платформы North)",
+   "p": "Cohere — North for Banking, банковская версия платформы North",
    "w": "Совместная разработка и защищённое развёртывание корпоративной платформы генИИ для банка",
    "v": "не раскрыто",
    "e": null,
@@ -7480,7 +7817,8 @@
     "https://www.nasdaq.com/press-release/rbc-and-cohere-partner-develop-next-generation-highly-secure-generative-ai-solutions",
     "https://www.lexpert.ca/news/finance-law/rbc-and-cohere-to-develop-genai-solution-for-financial-services-together/390694"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "защищённая платформа ИИ-агентов для банка"
   },
   {
    "id": "anz-024",
@@ -7503,7 +7841,8 @@
     "https://cibc.mediaroom.com/2024-08-15-CIBC-Launches-Custom-Built-CIBC-AI-Platform-and-Rolls-Out-GitHub-CoPilot",
     "https://www.cibc.com/en/about-cibc/future-banking/ai/enterprise-generative-ai.html"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "внутренний доступ к нескольким LLM"
   },
   {
    "id": "gulf-001",
@@ -7526,7 +7865,8 @@
     "https://gulfnews.com/business/markets/biq7ln8-abu-dhabi-government-accelerates-digital-strategy-1.500064505",
     "https://economymiddleeast.com/news/abu-dhabi-government-partners-with-microsoft-core42-to-implement-sovereign-cloud-system"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "программа перевода госуслуг на ИИ"
   },
   {
    "id": "gulf-002",
@@ -7550,7 +7890,8 @@
     "https://technologymagazine.com/articles/abu-dhabi-microsoft-g42-forge-sovereign-cloud-deal",
     "https://economymiddleeast.com/news/abu-dhabi-government-partners-with-microsoft-core42-to-implement-sovereign-cloud-system"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "облако для госуслуг с данными внутри ОАЭ"
   },
   {
    "id": "gulf-003",
@@ -7560,7 +7901,7 @@
    "k": "gpt",
    "st": null,
    "b": "Правительство Абу-Даби (27 госорганов)",
-   "p": "Microsoft 365 Copilot (программа Frontier Employee)",
+   "p": "Microsoft 365 Copilot, программа Frontier Employee",
    "w": "+26 000 лицензий M365 Copilot к 9 000 имеющимся — итого 35 000 госслужащих; «ИИ-фабрика» на 1 000+ агентов",
    "v": "не раскрыто",
    "e": null,
@@ -7573,7 +7914,8 @@
     "https://www.mediaoffice.abudhabi/en/technology/abu-dhabi-government-partners-with-microsoft-for-frontier-employee-programme-in-one-of-public-sectors-largest-ai-productivity-rollouts/",
     "https://www.mitsloanme.com/article/abu-dhabi-expands-ai-drive-deploys-copilot-to-35000-civil-servants/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-ассистент в Word, Excel, Outlook и Teams"
   },
   {
    "id": "gulf-004",
@@ -7596,7 +7938,8 @@
     "https://www.wam.ae/en/article/bmkxlor-digital-dubai-drive-ai-powered-productivity",
     "https://www.wam.ae/en/article/b5p217u-digital-dubai-signs-mou-with-microsoft-uae-domain"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-ассистент в Word, Excel, Outlook и Teams"
   },
   {
    "id": "gulf-005",
@@ -7619,7 +7962,8 @@
     "https://www.wam.ae/en/article/13qkdzi-dewa-among-first-utilities-world-adopt-microsoft%E2%80%99s",
     "https://gulftoday.ae/Business/2024/01/28/Dewa-among-first-utilities-in-world-to-adopt-Microsofts-Copilot"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-ассистенты для офиса и киберзащиты"
   },
   {
    "id": "gulf-006",
@@ -7643,7 +7987,8 @@
     "https://www.intelligentcio.com/me/2025/05/23/g42-openai-oracle-nvidia-softbank-cisco-launch-stargate-uae-from-uae-us-ai-campus-in-abu-dhabi/",
     "https://www.mitsloanme.com/article/from-oil-to-ai-uaes-stargate-campus-targets-200-mw-online-by-2026"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "кластер дата-центров для ИИ в ОАЭ"
   },
   {
    "id": "gulf-007",
@@ -7666,7 +8011,8 @@
     "https://protocol.dubai.ae/en/media-listing/news-events/mohammed-bin-rashid-launches-aed2-billion-dubai-police-projects-to-boost-security-community-wellbeing/",
     "https://gulfbusiness.com/en/2024/dubai/dhs2bn-dubai-police-projects-launched"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-прогнозирование преступлений и происшествий"
   },
   {
    "id": "gulf-008",
@@ -7676,7 +8022,7 @@
    "k": "notes",
    "st": null,
    "b": "Федеральная прокуратура ОАЭ",
-   "p": "Bayan — центр умного перевода (поставщик не раскрыт)",
+   "p": "Bayan — центр умного перевода, поставщик не раскрыт",
    "w": "«Виртуальный секретарь допроса»: расшифровка в реальном времени, идентификация говорящих по голосу, синхронный перевод, двуязычные протоколы",
    "v": "не раскрыто",
    "e": null,
@@ -7690,7 +8036,8 @@
     "https://www.arabnews.pk/node/2619203/business-economy",
     "https://www.wam.ae/en/article/bm6n7kp-uae-public-prosecution-launches-bayan-smart"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "расшифровка и перевод допросов в реальном времени"
   },
   {
    "id": "gulf-009",
@@ -7713,7 +8060,8 @@
     "https://investor.nvidia.com/news/press-release-details/2025/Saudi-Arabia-and-NVIDIA-to-Build-AI-Factories-to-Power-Next-Wave-of-Intelligence-for-the-Age-of-Reasoning/default.aspx",
     "https://www.middleeastainews.com/p/humain-to-deploy-600000-nvidia-gpus"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "новейшие серверные чипы для обучения ИИ"
   },
   {
    "id": "gulf-010",
@@ -7736,7 +8084,8 @@
     "https://www.futuriom.com/articles/news/nvidia-amd-score-deals-for-the-saudi-ai-hub/2025/05",
     "https://sharikatmubasher.com/news/article/21518539/humain-partners-with-amd-cisco-to-power-kingdoms-ai-future?lang=en"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ускорители для ИИ-дата-центров"
   },
   {
    "id": "gulf-011",
@@ -7746,7 +8095,7 @@
    "k": "infra",
    "st": null,
    "b": "HUMAIN (ИИ-компания, 100% PIF — госфонд)",
-   "p": "AWS — «AI Zone» в Эр-Рияде (SageMaker, Bedrock, Amazon Q, Trainium)",
+   "p": "AWS — «AI Zone» в Эр-Рияде, SageMaker, Bedrock, Amazon Q, Trainium",
    "w": "Выделенная ИИ-инфраструктура AWS; единый маркетплейс ИИ-агентов для госорганов; центр GenAI; обучение 100 000 саудовцев. В ноя 2025 — до 150 000 ускорителей (GB300, Trainium)",
    "v": "более $5 млрд (совместные инвестиции AWS и HUMAIN)",
    "e": 4600000000,
@@ -7759,7 +8108,8 @@
     "https://seekingalpha.com/pr/20102338-aws-and-humain-announce-groundbreaking-ai-zone-to-accelerate-ai-adoption-in-saudi-arabia-and",
     "https://w.media/aws-and-humain-to-invest-us-5-billion-in-ai-zone-in-saudi-arabia/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "выделенная облачная ИИ-инфраструктура с маркетплейсом агентов"
   },
   {
    "id": "gulf-012",
@@ -7782,7 +8132,8 @@
     "https://www.qualcomm.com/news/releases/2025/10/humain-and-qualcomm-to-deploy-ai-infrastructure-in-saudi-arabia-",
     "https://www.datacenterdynamics.com/en/news/qualcomm-launches-ai200-and-ai250-chip-offering-targeting-inferencing-workloads-at-rack-scale/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "серверное оборудование для запуска готовых моделей"
   },
   {
    "id": "gulf-013",
@@ -7805,7 +8156,8 @@
     "https://investor.nvidia.com/news/press-release-details/2025/Saudi-Arabia-and-NVIDIA-to-Build-AI-Factories-to-Power-Next-Wave-of-Intelligence-for-the-Age-of-Reasoning/default.aspx",
     "https://broadcastprome.com/news/sdaia-partners-with-nvidia-to-propel-saudi-arabias-ai-innovation"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "GPU-кластер для национальных ИИ-моделей"
   },
   {
    "id": "gulf-014",
@@ -7815,7 +8167,7 @@
    "k": "gpt",
    "st": null,
    "b": "Правительство Саудовской Аравии (госорганы)",
-   "p": "HUMAIN One — «ИИ-операционная система» с агентами (на базе ALLaM)",
+   "p": "HUMAIN One — «ИИ-операционная система» с агентами, на базе ALLaM",
    "w": "Развёрнута во всём правительстве КСА; пилоты в 3 компаниях PIF",
    "v": "не раскрыто",
    "e": null,
@@ -7827,7 +8179,8 @@
    "src": [
     "https://finance.yahoo.com/news/saudi-ai-firm-humain-partners-112427263.html"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "саудовская платформа ИИ-помощников на арабской модели"
   },
   {
    "id": "gulf-015",
@@ -7850,7 +8203,8 @@
     "https://qna.org.qa/en/News-Area/News/2025-2/23/mcit-announces-long-term-partnership-with-scale-ai-at-web-summit-qatar-2025",
     "https://www.mcit.gov.qa/en/news/mcit-announces-long-term-partnership-with-scale-ai-at-web-summit-qatar-2025-to-develop-innovative-ai-projects"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "разработка ИИ-приложений под задачи госорганов"
   },
   {
    "id": "gulf-016",
@@ -7860,7 +8214,7 @@
    "k": "gpt",
    "st": null,
    "b": "Министерство связи и ИТ Катара (MCIT) — 17 гос- и полугосорганов",
-   "p": "Microsoft 365 Copilot (программа Adopt Microsoft Copilot)",
+   "p": "Microsoft 365 Copilot, программа Adopt Microsoft Copilot",
    "w": "12 260 лицензий M365 Copilot, 8 000+ активных пользователей; 96 сценариев ИИ-агентов",
    "v": "не раскрыто",
    "e": null,
@@ -7874,7 +8228,8 @@
     "https://www.qatar-tribune.com/article/258590/latest-news/over-8000-users-adopt-microsoft-365-copilot-across-government-entities",
     "https://www.mcit.gov.qa/en/news/mcit-launches-initiative-to-train-government-employees-on-microsoft-copilot"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-ассистент в Word, Excel, Outlook и Teams"
   },
   {
    "id": "gulf-017",
@@ -7896,7 +8251,8 @@
    "src": [
     "https://news.microsoft.com/en-xm/2025/03/06/microsoft-strengthens-partnership-with-kuwait-government-announces-intent-to-establish-ai-powered-azure-region-to-accelerate-ai-transformation-and-drive-economic-growth/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-ассистент в Office и облачный ИИ-регион"
   },
   {
    "id": "gulf-018",
@@ -7918,7 +8274,8 @@
    "src": [
     "https://www.iga.gov.bh/en/article/aws-bahrain-launches-amazon-bedrock-in-partnership-with-information-and-egovernment-authority"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "каталог готовых ИИ-моделей в облаке"
   },
   {
    "id": "gulf-019",
@@ -7940,7 +8297,8 @@
    "src": [
     "https://www.omanobserver.om/article/1189887/business/economy/omans-ai-race-moves-from-appsto-infrastructure"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "общий сервис языковых моделей для чиновников"
   },
   {
    "id": "gulf-020",
@@ -7963,7 +8321,8 @@
     "https://www.mediaoffice.ae/en/news/2023/july/09-07/emirates-nbd-to-transform-business-operations",
     "https://www.intelligentcio.com/me/?p=88445"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-ассистенты для офиса, общения и кода"
   },
   {
    "id": "gulf-021",
@@ -7986,7 +8345,8 @@
     "https://www.bankfab.com/en-ae/about-fab/group/in-the-media/fab-and-microsoft-announce-landmark-strategic-partnership",
     "https://www.wam.ae/en/article/b2gd2jp-fab-microsoft-announce-strategic-partnership"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "облачные ИИ-сервисы и перенос дата-центров"
   },
   {
    "id": "gulf-022",
@@ -8009,7 +8369,8 @@
     "https://www.zawya.com/en/press-release/companies-news/nbk-launches-microsoft-copilot-across-all-divisions-pioneering-ai-integration-and-empowering-employees-wttz3kxx/",
     "https://www.middleeastainews.com/p/nbk-deploys-microsoft-copilot"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-ассистент в Word, Excel, Outlook и Teams"
   },
   {
    "id": "gulf-023",
@@ -8019,7 +8380,7 @@
    "k": "fraud",
    "st": null,
    "b": "Al Rajhi Bank",
-   "p": "Mozn — платформа FOCAL (ИИ против финансовых преступлений)",
+   "p": "Mozn — платформа FOCAL",
    "w": "ИИ-антифрод и предотвращение финансовых преступлений",
    "v": "не раскрыто",
    "e": null,
@@ -8032,7 +8393,8 @@
     "https://www.mozn.sa/blog/alrajhi-bank-partners-with-mozn-to-harness-ai-in-the-fight-against-fraud",
     "https://www.intelligentcio.com/me/2025/10/20/alrajhi-bank-partners-with-mozn-to-harness-ai-in-the-fight-against-fraud/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ против финансовых преступлений"
   },
   {
    "id": "gulf-024",
@@ -8054,7 +8416,8 @@
    "src": [
     "https://www.intelligentcio.com/me/2025/11/10/al-rajhi-bank-selects-servicenow-and-ejada-systems-to-enhance-its-digital-operations-in-ksa/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-автоматизация процессов HR, ИТ и финансов"
   },
   {
    "id": "gulf-025",
@@ -8076,7 +8439,8 @@
    "src": [
     "https://www.bpcbt.com/en/press/bpc-strengthens-fraud-prevention-capabilities-for-qnb-saudi-arabia-with-smartvista-enterprise-fraud-management"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "выявление мошеннических операций по картам и счетам"
   },
   {
    "id": "asia-001",
@@ -8099,7 +8463,8 @@
     "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2097709",
     "https://inc42.com/buzz/govt-assigns-ai-workloads-to-yotta-nxtgen-e2e-report"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "общий госпул GPU для стартапов и вузов"
   },
   {
    "id": "asia-002",
@@ -8109,7 +8474,7 @@
    "k": "infra",
    "st": null,
    "b": "MeitY, миссия IndiaAI",
-   "p": "Уже эмпанелированные и новые облачные провайдеры (2-й раунд)",
+   "p": "Уже эмпанелированные и новые облачные провайдеры — 2-й раунд",
    "w": "2-й раунд: +15 916 GPU к 18 417 эмпанелированным — итого 34 333 GPU в общем пуле",
    "v": "не раскрыто (цены 2-го раунда ниже 1-го: снижение от ₹4 до ₹1 234/час по сопоставимым GPU — по данным прессы)",
    "e": null,
@@ -8122,7 +8487,8 @@
     "https://negd.gov.in/wp-content/uploads/2025/06/PIB2132817.pdf",
     "https://psa.gov.in/CMS/web/sites/default/files/publication/India%E2%80%99s%20Common%20Compute%20Capacity%20Crosses%2034%2C000%20GPUs.pdf"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "пополнение государственного пула GPU"
   },
   {
    "id": "asia-003",
@@ -8145,7 +8511,8 @@
     "https://inc42.com/buzz/indiaai-to-add-over-3800-gpus-via-third-tender-report",
     "https://ai.icai.org/articles_details.php?id=258"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ускорители в государственный вычислительный пул"
   },
   {
    "id": "asia-004",
@@ -8168,7 +8535,8 @@
     "https://www.pib.gov.in/PressReleseDetailm.aspx?PRID=2229171&reg=3&lang=2",
     "https://communicationstoday.co.in/indiaai-mission-faces-gap-between-capacity-and-deployed-gpus"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "льготная аренда GPU через госпортал"
   },
   {
    "id": "asia-005",
@@ -8178,7 +8546,7 @@
    "k": "build",
    "st": null,
    "b": "MeitY, миссия IndiaAI",
-   "p": "Sarvam AI — суверенная LLM (70 млрд параметров, позже — 120B open-source)",
+   "p": "Sarvam AI — суверенная LLM, 70 млрд параметров, позже — 120B open-source",
    "w": "Первая отобранная компания для национальной базовой модели: доступ к ≈4 000 GPU (4 096 H100) через Yotta, Tata Communications, E2E",
    "v": "не раскрыто (по ответу MeitY в Лок Сабхе — вторая по величине сумма, в 4+ раза меньше ₹1 058,52 крор BharatGen)",
    "e": null,
@@ -8192,7 +8560,8 @@
     "https://india.entrepreneur.com/en-in/news-and-trends/sarvam-ai-to-build-indias-first-homegrown-genai-platform/490709",
     "https://www.medianama.com/2026/04/223-centre-funds-12-ai-projects-sovereign-models-bharatgen-4x-next-highest-allocation-rs-1000-crore/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "национальная индийская языковая модель"
   },
   {
    "id": "asia-006",
@@ -8202,7 +8571,7 @@
    "k": "build",
    "st": null,
    "b": "MeitY, миссия IndiaAI",
-   "p": "BharatGen (консорциум во главе с IIT Bombay)",
+   "p": "BharatGen, консорциум во главе с IIT Bombay",
    "w": "Многоязычные мультимодальные суверенные модели 2B–1T параметров для финансов, права, медицины",
    "v": "₹1 058,52 крор (вычисления + прочие расходы)",
    "e": 111144600,
@@ -8214,7 +8583,8 @@
    "src": [
     "https://www.medianama.com/2026/04/223-centre-funds-12-ai-projects-sovereign-models-bharatgen-4x-next-highest-allocation-rs-1000-crore/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "многоязычные индийские модели для отраслей"
   },
   {
    "id": "asia-007",
@@ -8224,7 +8594,7 @@
    "k": "build",
    "st": null,
    "b": "MeitY, миссия IndiaAI",
-   "p": "Soket AI (120B open-source), Gnani.ai (14B голосовая модель), Gan.AI (70B синтез речи)",
+   "p": "Soket AI — 120B open-source, Gnani.ai — 14B голосовая модель, Gan.AI — 70B синтез речи",
    "w": "2-я волна отбора разработчиков суверенных базовых моделей; позже список расширен до 12 организаций (Avataar, GenLoop, Zenteiq, Fractal, Tech Mahindra и др.)",
    "v": "не раскрыто",
    "e": null,
@@ -8237,7 +8607,8 @@
     "https://swarajyamag.com/amp/story/news-brief/with-over-34000-gpus-and-three-new-llm-startups-india-doubles-down-on-self-reliant-ai-mission",
     "https://www.medianama.com/2026/04/223-centre-funds-12-ai-projects-sovereign-models-bharatgen-4x-next-highest-allocation-rs-1000-crore/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "национальные базовые модели текста и речи"
   },
   {
    "id": "asia-008",
@@ -8247,7 +8618,7 @@
    "k": "data",
    "st": null,
    "b": "Правительство штата Махараштра (полиция)",
-   "p": "Microsoft — MahaCrimeOS AI (расследование киберпреступлений на Azure)",
+   "p": "Microsoft — MahaCrimeOS AI",
    "w": "ИИ-платформа для расследования киберпреступлений: масштабирование с 23 до ≈1 100 полицейских участков",
    "v": "не раскрыто",
    "e": null,
@@ -8260,7 +8631,8 @@
     "https://news.microsoft.com/source/asia/2025/12/12/maharashtra-leads-indias-ai-powered-cybercrime-fight-microsoft-unveils-mahacrimeos-ai-to-combat-cybercrime-at-scale/",
     "https://www.theweek.in/wire-updates/national/2025/04/01/bes23-mh-microsoft-ai.html"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "расследование киберпреступлений на Azure"
   },
   {
    "id": "asia-009",
@@ -8270,7 +8642,7 @@
    "k": "infra",
    "st": null,
    "b": "Министерство науки и ИКТ (MSIT)",
-   "p": "NHN Cloud (7 656 B200), Naver Cloud (3 056 H200), Kakao (2 424 B200)",
+   "p": "NHN Cloud — 7 656 B200, Naver Cloud — 3 056 H200, Kakao — 2 424 B200",
    "w": "Закупка ≈13 000 GPU (10 080 B200 + 3 056 H200), из них ≈10 456 — в госсобственности; NHN ведёт общий портал GPU",
    "v": "≈₩1,46 трлн (1-й доп. бюджет 2025)",
    "e": 963600000,
@@ -8284,7 +8656,8 @@
     "https://newsseoul.co.kr/news/view/1065607221471261",
     "https://www.newsis.com/view/NISX20250728_0003269632"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "государственная закупка GPU для ИИ-разработчиков"
   },
   {
    "id": "asia-010",
@@ -8308,7 +8681,8 @@
     "https://inews24.com/view/1995816",
     "https://www.invenglobal.com/articles/20098/lg-ai-tops-koreas-sovereign-ai-project-as-naver-cloud-fails-to-advance-msit-confirms"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "конкурс на национальную корейскую ИИ-модель"
   },
   {
    "id": "asia-011",
@@ -8331,7 +8705,8 @@
     "https://www.ddaily.co.kr/page/view/2025111215142078532",
     "https://byline.network/2025/07/702313/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "защищённый генеративный ИИ для госслужащих"
   },
   {
    "id": "asia-012",
@@ -8341,7 +8716,7 @@
    "k": "infra",
    "st": "free",
    "b": "Министерство экономики, торговли и промышленности (METI)",
-   "p": "Sakura Internet (≈¥50,1 млрд), KDDI (≈¥10,24 млрд), Highreso (≈¥7,70 млрд), RUTILEA + AI Fukushima (≈¥2,56 млрд), GMO Internet (≈¥1,93 млрд)",
+   "p": "Sakura Internet ≈¥50,1 млрд, KDDI ≈¥10,24 млрд, Highreso ≈¥7,70 млрд, RUTILEA + AI Fukushima ≈¥2,56 млрд, GMO Internet ≈¥1,93 млрд",
    "w": "Субсидии на строительство отечественных GPU-облаков для разработчиков генеративного ИИ (5 проектов)",
    "v": "до ≈¥72,5 млрд (потолок субсидий)",
    "e": 435000000,
@@ -8354,7 +8729,8 @@
     "https://www.meti.go.jp/english/press/2024/0419_001.html",
     "https://oecd.ai/en/dashboards/policy-initiatives/meti-subsidies-for-ai-computational-resources-under-the-economic-security-promotion-act"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "японские GPU-облака для разработчиков ИИ"
   },
   {
    "id": "asia-013",
@@ -8377,7 +8753,8 @@
     "https://www.meti.go.jp/english/speeches/press_conferences/2024/0510001.html",
     "https://www.arabnews.jp/en/business/article_121547"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "мощности для обучения генеративного ИИ"
   },
   {
    "id": "asia-014",
@@ -8399,7 +8776,8 @@
    "src": [
     "https://www.meti.go.jp/english/speeches/press_conferences/2023/0616001.html"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "аренда GPU-серверов для разработки моделей"
   },
   {
    "id": "asia-015",
@@ -8422,7 +8800,8 @@
     "https://www.nextplatform.com/2025/04/14/abci-evolves-to-meet-japans-changing-ai-needs",
     "https://www.theregister.com/2024/07/12/hpe_to_build_supercomputer_to/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "государственное облако для обучения ИИ"
   },
   {
    "id": "asia-016",
@@ -8446,7 +8825,8 @@
     "https://www.digital.go.jp/en/news/907c8e5d-2f4f-4bd7-9400-37c9f4221d7d",
     "https://www.digital.go.jp/assets/contents/node/information/field_ref_resources/2d69c287-2897-46d8-a28f-ea5a1fc9bce9/86f43a74/20260306_policies_ai_gennai_mass_deployment.pdf"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-чат, перевод и правовой поиск для чиновников"
   },
   {
    "id": "asia-017",
@@ -8469,7 +8849,8 @@
     "https://nippon.com/en/japan-data/h01773",
     "https://english.adnkronos.com/2026/03/09/tokyo-report-tokyo-govt-builds-infrastructure-to-expand-use-of-generative-ai/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "чат-бот для резюме и черновиков документов"
   },
   {
    "id": "asia-018",
@@ -8494,7 +8875,8 @@
     "https://isomer-user-content.by.gov.sg/85/996437ab-3b1b-48a9-bb63-7e34ebf5d6b0/GovTech%20Annual%20Report%20FY%202024-2025.pdf",
     "https://www.malaymail.com/amp/news/singapore/2026/06/02/singapore-rolls-out-ai-agent-registry-as-govt-expands-use-of-artificial-intelligence-in-public-service/222229"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-чат, конструктор ботов и расшифровка для госслужащих"
   },
   {
    "id": "asia-019",
@@ -8516,7 +8898,8 @@
    "src": [
     "https://www.ocbc.com/group/media/release/2023/ocbc-is-first-singapore-bank-to-roll-out-generative-ai-chatbot-to-all-employees-globally.page"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "внутренний чат-бот для сотрудников банка"
   },
   {
    "id": "asia-020",
@@ -8538,7 +8921,8 @@
    "src": [
     "https://www.dbs.com/newsroom/DBS_empowers_its_Customer_Service_Officers_with_Gen_AI_powered_virtual_assistant_to_reduce_toil_and_enhance_customer_experience"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "подсказки операторам колл-центра во время звонка"
   },
   {
    "id": "asia-021",
@@ -8560,7 +8944,8 @@
    "src": [
     "https://fintechnews.sg/78597/innovation/uob-first-singapore-bank-to-trial-microsoft-365-copilot-generative-ai-tool/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-ассистент в Word, Excel, Outlook и Teams"
   },
   {
    "id": "asia-022",
@@ -8582,7 +8967,8 @@
    "src": [
     "https://openai.com/index/mufg"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "корпоративная версия ChatGPT"
   },
   {
    "id": "asia-023",
@@ -8605,7 +8991,8 @@
     "https://finextra.com/newsarticle/42561/mizuho-to-roll-out-generative-ai-to-employees",
     "https://www.taipeitimes.com/News/biz/archives/2023/06/28/2003802280"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "доступ к моделям GPT через облако"
   },
   {
    "id": "asia-024",
@@ -8629,7 +9016,8 @@
     "https://www.smfg.co.jp/news/pdf/j20230411_01.pdf",
     "https://www.smfg.co.jp/english/gr2026/pdf/2608_ird_e26.pdf"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "прямой доступ к моделям GPT"
   },
   {
    "id": "asia-025",
@@ -8651,7 +9039,8 @@
    "src": [
     "https://www.nippon.com/en/news/yjj2026061100456/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "языковые модели для финансов и киберзащиты"
   },
   {
    "id": "asia-026",
@@ -8661,7 +9050,7 @@
    "k": "data",
    "st": "blocked",
    "b": "Министерство образования Южной Кореи (государственные школы)",
-   "p": "ИИ-цифровые учебники (AIDT) от издательств (Cheonjae и др.)",
+   "p": "ИИ-цифровые учебники (AIDT) от издательств — Cheonjae и др.",
    "w": "Адаптивные ИИ-учебники для школ; в 1-м семестре 2025 подключились ≈4 146 школ, во 2-м — 2 095",
    "v": "₩1,41 трлн бюджетных расходов на подготовку 2023–2025 (по данным Счётной палаты)",
    "e": 930600000,
@@ -8675,7 +9064,8 @@
     "https://asianews.network/south-korea-pulls-plug-on-ai-textbooks/",
     "https://privacyinternational.org/examples/5708/ai-powered-textbooks-fail-make-grade-south-korea"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "учебники, подстраивающиеся под каждого ученика"
   },
   {
    "id": "us-139",
@@ -8699,7 +9089,8 @@
     "https://thepolypost.com/news/2026/09/08/csu-system-renews-39-million-openai-contract/",
     "https://www.csusb.edu/faculty-center-for-excellence/instructional-design-and-academic-technologies-idat/chatgpt"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "версия ChatGPT для вузов"
   },
   {
    "id": "us-140",
@@ -8723,7 +9114,8 @@
     "https://www.govtech.com/education/higher-ed/critics-defenders-weigh-in-on-cal-state-universitys-ai-plans",
     "https://edsource.org/2026/cal-state-renews-controversial-system-wide-contract-with-openai/758919"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "версия ChatGPT для вузов"
   },
   {
    "id": "eu-178",
@@ -8746,7 +9138,8 @@
     "https://www.find-tender.service.gov.uk/Notice/081466-2026",
     "https://www.stotles.com/explore/notices/26822cf6-35bc-4e26-a2f8-21c2553508de/openai-sector-ai-evaluation-pilot"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "вузовский ChatGPT, ИИ-программист и доступ к моделям"
   },
   {
    "id": "us-141",
@@ -8770,7 +9163,8 @@
     "https://www.postandcourier.com/education-lab/clemson-enters-3m-deal-openai-students-push-back/article_aa2f0798-9dbf-43f3-ac9f-a0e243d94867.html",
     "https://thetigercu.com/28916/news/academics/clemson-finalizes-partnership-with-openai-securing-chatgpt-edu/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "версия ChatGPT для вузов"
   },
   {
    "id": "us-142",
@@ -8794,7 +9188,8 @@
     "https://www.axios.com/local/boulder/2026/02/12/cu-signs-openai-deal-chatgpt-access",
     "https://boulderreportinglab.org/2026/03/29/cu-delays-student-access-to-chatgpt-after-backlash-over-2m-openai-deal"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "версия ChatGPT для вузов"
   },
   {
    "id": "us-143",
@@ -8816,7 +9211,8 @@
    "src": [
     "https://scdailygazette.com/2025/10/07/clemson-becomes-second-sc-university-eyeing-open-ai-contract-heres-how-schools-are-using-the-tech/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "версия ChatGPT для вузов"
   },
   {
    "id": "eu-179",
@@ -8840,7 +9236,8 @@
     "https://www.land.nrw/pressemitteilung/studieren-und-forschen-mit-kuenstlicher-intelligenz-hochschulen-nordrhein",
     "https://www.fernuni-hagen.de/zli/produkte/weitere-tools/ki-connect-nrw.shtml"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "анонимный доступ к языковым моделям для вузов"
   },
   {
    "id": "eu-180",
@@ -8864,7 +9261,8 @@
     "https://it.polito.it/en/communications/activation-of-the-chatgpt-edu-service-for-faculty-and-staff",
     "https://www.unifg.it/sites/default/files/2025-10/08-allegato-n-04-CA24set2025-contratto-chatGPTedu.pdf"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "рамочный договор на ChatGPT для вузов"
   },
   {
    "id": "us-144",
@@ -8887,7 +9285,8 @@
     "https://iet.ucdavis.edu/technews/new-chatgpt-edu-agreement-offers-expanded-features-lower-cost-new-terms",
     "https://bacsich.org/wp-content/uploads/2026/05/global_chatgpt_edu_universities_report_260505.pdf"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "версия ChatGPT для вузов"
   },
   {
    "id": "anz-025",
@@ -8910,7 +9309,8 @@
     "https://library.utoronto.ca/use/tool/chatgpt-edu",
     "https://bacsich.org/wp-content/uploads/2026/05/global_chatgpt_edu_universities_report_260505.pdf"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "версия ChatGPT для вузов"
   },
   {
    "id": "eu-181",
@@ -8920,7 +9320,7 @@
    "k": "gpt",
    "st": null,
    "b": "Оксфордский университет",
-   "p": "OpenAI — ChatGPT Edu (GPT-5)",
+   "p": "OpenAI — ChatGPT Edu, GPT-5",
    "w": "ChatGPT Edu для всех сотрудников и студентов университета и колледжей",
    "v": "не раскрыто",
    "e": null,
@@ -8933,7 +9333,8 @@
     "https://www.ox.ac.uk/news/2025-09-19-oxford-becomes-first-uk-university-offer-chatgpt-edu-all-staff-and-students",
     "https://www.ox.ac.uk/students/life/it/genai-tools/genai-faqs-for-students"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "версия ChatGPT для вузов"
   },
   {
    "id": "eu-182",
@@ -8955,7 +9356,8 @@
    "src": [
     "https://www.manchester.ac.uk/about/news/world-first-ai-partnership-between-the-university-of-manchester-and-microsoft-announced/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-ассистент в Word, Excel, Outlook и Teams"
   },
   {
    "id": "eu-183",
@@ -8978,7 +9380,8 @@
     "https://www.lse.ac.uk/news/latest-news-from-lse/d-april/lse-partners-with-anthropic-to-shape-the-future-of-ai-in-education",
     "https://info.lse.ac.uk/current-students/digital-skills-lab/claude"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "версия Claude для университетов"
   },
   {
    "id": "us-145",
@@ -9000,7 +9403,8 @@
    "src": [
     "https://www.anthropic.com/news/introducing-claude-for-education"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "версия Claude для университетов"
   },
   {
    "id": "us-146",
@@ -9022,7 +9426,8 @@
    "src": [
     "https://news.syr.edu/2025/09/22/syracuse-university-among-first-universities-to-provide-campuswide-ai-access-to-anthropics-claude-for-education/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "версия Claude для университетов"
   },
   {
    "id": "us-147",
@@ -9045,7 +9450,8 @@
     "https://today.duke.edu/2025/05/duke-expands-suite-secure-duke-managed-ai-services-openai",
     "https://oit.duke.edu/news/chatgpt-edu-now-available-no-cost-duke-university-community/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "вузовский ChatGPT плюс университетский чат-бот"
   },
   {
    "id": "us-148",
@@ -9068,7 +9474,8 @@
     "https://www.cccco.edu/About-Us/News-and-Media/Press-Releases/2025-ai-partnership-with-google",
     "https://campustechnology.com/articles/2025/09/19/california-community-colleges-google-partner-to-provide-students-with-ai-skills.aspx"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-ассистент, учебные ИИ-инструменты и курсы"
   },
   {
    "id": "us-149",
@@ -9091,7 +9498,8 @@
     "https://learningtech.virginia.edu/articles/otter-ai-pro-licensing-ceasing-central-funding",
     "https://cto.berkeley.edu/blog/2024-06-13-status-videoconference-ai-bots-berkeley"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-расшифровка и конспект лекций и встреч"
   },
   {
    "id": "eu-184",
@@ -9115,7 +9523,8 @@
     "https://www.uu.nl/organisatie/ai-beleid/docenten/edugenai",
     "https://www.erasmusmagazine.nl/en/2025/01/08/experts-raise-privacy-concerns-about-microsoft-365s-ai-assistant/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "защищённый доступ к разным моделям для вузов"
   },
   {
    "id": "anz-026",
@@ -9138,7 +9547,8 @@
     "https://www.nsw.gov.au/media-releases/expansion-of-ai-education-tool-trial-delivers-more-time-for-teachers-our-classrooms",
     "https://education.nsw.gov.au/teach-nsw/connect-with-us/news/unlock-the-capabilities-of-nsweduchat"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-ассистент для учителей и школьников"
   },
   {
    "id": "anz-027",
@@ -9161,7 +9571,8 @@
     "https://www.education.sa.gov.au/department/media-centre/our-news/ai-tool-to-roll-out-to-all-public-high-schools",
     "https://au.insight.com/en_AU/content-and-resources/case-studies/insight-partners-with-the-south-australian-department-for-education-to-deliver-edchat.html"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-помощник для учеников средних школ"
   },
   {
    "id": "anz-028",
@@ -9184,7 +9595,8 @@
     "https://www.unsw.edu.au/newsroom/news/2025/09/unsw-sydney-inks-australias-biggest-chatgpt-edu-deal-with-openai",
     "https://ia.acs.org.au/article/2025/university-buys-chatgpt-for-10-000-staff.html"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "версия ChatGPT для вузов"
   },
   {
    "id": "asia-027",
@@ -9194,7 +9606,7 @@
    "k": "gpt",
    "st": "free",
    "b": "Министерство образования Индии, AICTE, ARISE, IIT Madras",
-   "p": "OpenAI — ChatGPT (программа Learning Accelerator)",
+   "p": "OpenAI — ChatGPT, программа Learning Accelerator",
    "w": "≈500 000 бесплатных лицензий ChatGPT для учителей государственных школ (1–12 классы), технических вузов и студентов",
    "v": "бесплатно; плюс исследовательский грант IIT Madras $500 000",
    "e": null,
@@ -9207,7 +9619,8 @@
     "https://yourstory.com/ai-story/openai-india-learning-accelerator-iit-madras",
     "https://www.opensourceforu.com/2025/08/openai-debuts-learning-accelerator-iit-madras-tie-up-at-education-summit/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "бесплатный ChatGPT для учителей и студентов"
   },
   {
    "id": "asia-028",
@@ -9230,7 +9643,8 @@
     "https://en.yna.co.kr/view/AEN20260427007300320",
     "https://www.techinasia.com/news/samsung-sds-secures-rights-to-sell-openais-chatgpt-edu"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "версия ChatGPT для вузов"
   },
   {
    "id": "asia-029",
@@ -9252,7 +9666,8 @@
    "src": [
     "https://www.malaymail.com/news/singapore/2026/08/11/national-university-of-singapore-mandates-ai-courses-for-all-students-gives-free-access-to-chatgpt-for-learners-and-staff/230931"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "версия ChatGPT для вузов"
   },
   {
    "id": "asia-030",
@@ -9275,7 +9690,8 @@
     "https://www3.ntu.edu.sg/CorpComms2/Documents/2026/04_Apr/STonline_260412_AI.pdf",
     "https://www.scmp.com/week-asia/economics/article/3364419/singapores-universities-race-embrace-ai-job-demands-transform"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-ассистент Google и учебные ИИ-сервисы"
   },
   {
    "id": "asia-031",
@@ -9298,7 +9714,8 @@
     "https://kindaipicks.com/article/003221",
     "https://bacsich.org/wp-content/uploads/2026/05/global_chatgpt_edu_universities_report_260505.pdf"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "версия ChatGPT для вузов"
   },
   {
    "id": "gulf-026",
@@ -9320,7 +9737,8 @@
    "src": [
     "https://news.kfupm.edu.sa/news/kfupm-becomes-first-saudi-university-to-launch-chatgpt-edu/75/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "версия ChatGPT для вузов"
   },
   {
    "id": "gulf-027",
@@ -9330,7 +9748,7 @@
    "k": "gpt",
    "st": null,
    "b": "Министерство образования ОАЭ",
-   "p": "OpenAI — ChatGPT Edu (программа Education for Countries)",
+   "p": "OpenAI — ChatGPT Edu, программа Education for Countries",
    "w": "Национальная программа: ChatGPT Edu, GPT-5, Study Mode и Canvas для сотрудников и учащихся",
    "v": "не раскрыто",
    "e": null,
@@ -9343,7 +9761,8 @@
     "https://openai.com/index/edu-for-countries/",
     "https://gulfnews.com/business/markets/is-openai-giving-chatgpt-for-free-to-all-uae-residents-know-whats-true-1.500141497"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "национальный ChatGPT для школ и вузов"
   },
   {
    "id": "eu-185",
@@ -9366,7 +9785,8 @@
     "https://techcrunch.com/2026/01/09/anthropic-adds-allianz-to-growing-list-of-enterprise-wins",
     "https://www.itij.com/latest/news/allianz-partners-anthropic-roll-out-responsible-ai-across-insurance-operations"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-ассистент, ИИ-программист и разработка агентов"
   },
   {
    "id": "eu-186",
@@ -9389,7 +9809,8 @@
     "https://www.axa.com/en/press/press-releases/axa-offers-securegenerative-ai-to-employees",
     "https://www.microsoft.com/en/customers/story/1760377839901581759-axa-gie-azure-insurance-en-france"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "внутренний закрытый чат-ассистент для сотрудников"
   },
   {
    "id": "eu-187",
@@ -9412,7 +9833,8 @@
     "https://www.insurancebusinessmag.com/uk/news/technology/axa-rolls-out-microsoft-365-copilot-to-employees-worldwide-583011.aspx",
     "https://www.reinsurancene.ws/axa-accelerates-microsoft-365-copilot-rollout-to-employees-worldwide-as-part-of-ai-strategy/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-ассистент в Word, Excel, Outlook и Teams"
   },
   {
    "id": "us-150",
@@ -9436,7 +9858,8 @@
     "https://coverager.com/aig-ai-from-digital-twins-to-underwriting-agents/",
     "https://www.reinsurancene.ws/ai-advancing-faster-than-expected-as-aig-builds-multi-agentic-solution-ceo-zaffino/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-помощник андеррайтера в коммерческом страховании"
   },
   {
    "id": "us-151",
@@ -9460,7 +9883,8 @@
     "https://hartfordbusiness.com/article/travelers-partners-with-anthropic-to-expand-ai-assistants-companywide/",
     "https://hartfordbusiness.com/article/travelers-says-it-invested-1-5b-in-ai-tech-initiatives-in-2025/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-ассистент и помощник для написания кода"
   },
   {
    "id": "eu-188",
@@ -9482,7 +9906,8 @@
    "src": [
     "https://news.microsoft.com/source/emea/2024/09/microsoft-and-swiss-re-drive-innovation-with-generative-ai-rollout/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-ассистент в Word, Excel, Outlook и Teams"
   },
   {
    "id": "eu-189",
@@ -9505,7 +9930,8 @@
     "https://group.legalandgeneral.com/newsroom/press-releases/2026/6/lg-expands-microsoft-collaboration-to-accelerate-ai-enablement-and-transform-customer-experience/",
     "https://ukstories.microsoft.com/features/lg-expands-microsoft-collaboration-to-accelerate-ai-enablement-and-transform-customer-experience/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-ассистент в Office плюс облачные сервисы"
   },
   {
    "id": "anz-029",
@@ -9515,7 +9941,7 @@
    "k": "build",
    "st": null,
    "b": "Manulife",
-   "p": "ChatMFC — собственный ГенИИ-ассистент (запущен в 2024)",
+   "p": "ChatMFC — собственный ГенИИ-ассистент, запущен в 2024",
    "w": "ГенИИ-ассистент для 100% сотрудников и штатных подрядчиков по миру; 35+ внедрённых сценариев ГенИИ",
    "v": "не раскрыто",
    "e": null,
@@ -9528,7 +9954,8 @@
     "https://advisor.ca/practice/technology/three-quarters-of-this-insurers-employees-use-ai/",
     "https://qorusglobal.com/index.php/content/29689-manulife-expands-genai-capabilities-to-entire-workforce-achieves-75-engagement"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "внутренний чат-бот для всех сотрудников"
   },
   {
    "id": "us-152",
@@ -9551,7 +9978,8 @@
     "https://dc.fortune.com/2025/01/08/how-allstates-cio-is-leaning-on-gen-ai-to-make-insurance-policy-coverage-and-claims-requests-more-effective-and-empathetic",
     "https://www.theregister.com/2025/02/13/allstate_insurance_ai_rep/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-генерация писем по страховым убыткам"
   },
   {
    "id": "us-153",
@@ -9561,7 +9989,7 @@
    "k": "gpt",
    "st": null,
    "b": "Liberty Mutual",
-   "p": "LibertyGPT — закрытая внутренняя версия ChatGPT (OpenAI)",
+   "p": "LibertyGPT — закрытая внутренняя версия ChatGPT, OpenAI",
    "w": "Доступ для ≈45 000 сотрудников с обучением и правилами использования",
    "v": "не раскрыто",
    "e": null,
@@ -9574,7 +10002,8 @@
     "https://www.ciodive.com/news/Liberty-Mutual-generative-AI-employee-engagement-strategy/735972/",
     "https://runtime.news/how-liberty-mutual-was-able-to-jump-into-generative-ai-thanks-to-a-clear-data-strategy-and-finops"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-ассистент для сотрудников страховщика"
   },
   {
    "id": "asia-032",
@@ -9584,7 +10013,7 @@
    "k": "gpt",
    "st": null,
    "b": "Tokio Marine (Tokio Marine & Nichido Fire)",
-   "p": "OpenAI — ChatGPT (функция deep research)",
+   "p": "OpenAI — ChatGPT, функция deep research",
    "w": "Стратегическое сотрудничество: ChatGPT в отделах продаж, далее — управление договорами, обращения клиентов, обработка документов",
    "v": "не раскрыто",
    "e": null,
@@ -9597,7 +10026,8 @@
     "https://fintech.global/2025/09/26/tokio-marine-partners-with-openai-to-boost-ai-adoption/",
     "https://www.lifeinsuranceinternational.com/news/tokio-marine-collaborates-with-openai/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-ассистент для продаж, договоров и обращений"
   },
   {
    "id": "asia-033",
@@ -9619,7 +10049,8 @@
    "src": [
     "https://www.shift-technology.com/resources/news/shift-provides-tokio-marine-nichido-fire-insurance-with-new-generative-ai-capabilities-for-fraud-detection-and-claims-processing-optimization-initiatives"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-выявление мошенничества в страховых претензиях"
   },
   {
    "id": "asia-034",
@@ -9629,7 +10060,7 @@
    "k": "build",
    "st": null,
    "b": "Sompo Holdings",
-   "p": "SOMPO AI Agent — собственная разработка (поставщик модели не назван)",
+   "p": "SOMPO AI Agent — собственная разработка, поставщик модели не назван",
    "w": "ИИ-агенты для ≈30 000 сотрудников японских компаний группы",
    "v": "не раскрыто",
    "e": null,
@@ -9641,7 +10072,8 @@
    "src": [
     "https://coverager.com/sompo-to-deploy-ai-agents-across-30000-employees/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-агенты, выполняющие рабочие задачи сотрудников"
   },
   {
    "id": "asia-035",
@@ -9651,7 +10083,7 @@
    "k": "data",
    "st": "pilot",
    "b": "Prudential plc (штаб-квартиры Гонконг/Лондон)",
-   "p": "Google Cloud — MedLM (медицинские модели)",
+   "p": "Google Cloud — MedLM, медицинские модели",
    "w": "Пилот: ИИ-проверка документов к медицинским претензиям (выписки, рецепты, счета) в Сингапуре и Малайзии",
    "v": "не раскрыто",
    "e": null,
@@ -9664,7 +10096,8 @@
     "https://www.prudentialplc.com/news-and-insights/all-news/news-releases/2024/24-10-2024",
     "https://www.frontier-enterprise.com/prudential-pioneers-use-of-googles-generative-ai-for-medical-claims/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-проверка медицинских документов к претензиям"
   },
   {
    "id": "anz-030",
@@ -9687,7 +10120,8 @@
     "https://www.suncorpgroup.com.au/news/news/suncorp-microsoft-partnership",
     "https://news.microsoft.com/en-au/features/suncorp-announces-5-year-partnership-with-microsoft-to-accelerate-the-use-of-ai-and-cloud-to-transform-insurance/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "облачная платформа и модели GPT"
   },
   {
    "id": "anz-031",
@@ -9710,7 +10144,8 @@
     "https://fintech.global/2026/07/27/iag-teams-up-with-openai-to-boost-insurance-claims/",
     "https://www.reinsurancene.ws/iag-partners-with-openai-to-explore-agent-based-voice-solutions/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "голосовые ИИ-агенты для урегулирования убытков"
   },
   {
    "id": "eu-190",
@@ -9733,7 +10168,8 @@
     "https://fintech.global/2026/05/18/zurich-expands-agentic-ai-rollout-with-cytora-partnership/",
     "https://cytora.com/risk-flow-center/blog/zurich-scales-agentic-ai-to-5-countries-in-90-days-proving-the-target-model-for-itsglobal-rollout"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-разбор заявок для андеррайтеров"
   },
   {
    "id": "us-154",
@@ -9756,7 +10192,8 @@
     "https://www.businesswire.com/news/home/20250624877897/en",
     "https://seekingalpha.com/pr/20147086-metlife-partners-with-sprout-ai-to-accelerate-claims-automation-across-global-markets"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-обработка страховых претензий"
   },
   {
    "id": "eu-191",
@@ -9779,7 +10216,8 @@
     "https://www.shift-technology.com/en-gb/resources/press/shift-technology-unveils-agentic-ai-powered-shift-claims",
     "https://fintech.global/2025/09/17/shift-technology-unveils-agentic-ai-powered-shift-claims/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-агенты для урегулирования страховых убытков"
   },
   {
    "id": "eu-192",
@@ -9802,7 +10240,8 @@
     "https://www.streetinsider.com/Press%2BReleases/Genki%2BAcquires%2BAI%2BInsurtech%2BStartup%2BWave%2BClaims%2Band%2BClaim%2BOS/26785764.html",
     "https://fintech.global/2026/07/21/genki-acquires-insurtech-wave-claims-and-claim-os/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "покупка ИИ-сервиса обработки страховых претензий"
   },
   {
    "id": "eu-193",
@@ -9824,7 +10263,8 @@
    "src": [
     "https://ukstories.microsoft.com/features/markerstudy-group-embraces-ai-to-drive-innovation-and-excellence/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "резюме звонков, офисный ИИ и помощник программиста"
   },
   {
    "id": "anz-032",
@@ -9834,7 +10274,7 @@
    "k": "notes",
    "st": null,
    "b": "Tower Insurance",
-   "p": "AWS — Amazon Connect (расшифровка звонков в реальном времени, ИИ-контроль качества)",
+   "p": "AWS — Amazon Connect, расшифровка звонков в реальном времени, ИИ-контроль качества",
    "w": "Расшифровка всех звонков продаж, сервиса и урегулирования в реальном времени",
    "v": "не раскрыто",
    "e": null,
@@ -9847,7 +10287,8 @@
     "https://www.insurancenews.com.au/daily/tower-s-ai-driven-call-centre-delivering-for-customers",
     "https://aws.amazon.com/solutions/case-studies/tower-insurance-deloitte/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "облачный колл-центр с ИИ-расшифровкой"
   },
   {
    "id": "anz-033",
@@ -9869,7 +10310,8 @@
    "src": [
     "https://pr.taosnews.com/article/DEFINITY-CHAMPIONS-AI-FOR-ALL-EMPLOYEES-WITH-GEMINI-ENTERPRISE/69c520a03971457808b0d004"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "корпоративный ИИ-ассистент Google"
   },
   {
    "id": "anz-034",
@@ -9879,7 +10321,7 @@
    "k": "gpt",
    "st": null,
    "b": "Sun Life Financial",
-   "p": "AWS — Amazon Bedrock с моделью Anthropic Claude (чат-бот Sun Life Asks)",
+   "p": "AWS — Amazon Bedrock с моделью Anthropic Claude, чат-бот Sun Life Asks",
    "w": "Внутренний чат-бот по базе знаний для всех сотрудников по миру",
    "v": "не раскрыто",
    "e": null,
@@ -9892,7 +10334,8 @@
     "https://aws.amazon.com/solutions/case-studies/sun-life-case-study/",
     "https://coverager.com/sun-life-expands-ai-tools-for-advisors/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "внутренний чат-бот по базе знаний"
   },
   {
    "id": "asia-036",
@@ -9915,7 +10358,8 @@
     "https://group.pingan.com/about_us/our_businesses/technology.html",
     "https://www.asiainsurancereview.com/News/View-NewsLetter-Article/id/95348/Type/eCin"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-операторы поддержки и помощники продаж"
   },
   {
    "id": "asia-037",
@@ -9937,7 +10381,8 @@
    "src": [
     "https://en.fnnews.com/news/202609070840148209"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-тренажёр продаж с виртуальным клиентом"
   },
   {
    "id": "gulf-028",
@@ -9947,7 +10392,7 @@
    "k": "data",
    "st": "mou",
    "b": "Tawuniya (кооперативная страховая)",
-   "p": "Innovaccer — платформа популяционного здоровья (объединение данных, стратификация рисков, предиктивная аналитика, ИИ-процессы)",
+   "p": "Innovaccer — платформа популяционного здоровья, объединение данных, стратификация рисков, предиктивная аналитика, ИИ-процессы",
    "w": "Меморандум о партнёрстве по ценностно-ориентированной медицине и управлению здоровьем застрахованных",
    "v": "не раскрыто",
    "e": null,
@@ -9960,7 +10405,8 @@
     "https://www.businesswire.com/news/home/20251102397793/en/Innovaccer-and-Tawuniya-Partner-to-Advance-Value-Based-Care-and-Population-Health-Management-Across-Saudi-Arabia",
     "https://innovaccer.com/news/innovaccer-and-tawuniya-partner-to-advance-value-based-care-and-population-health-management-across-saudi-arabia"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "объединение медданных и прогноз рисков пациентов"
   },
   {
    "id": "us-155",
@@ -9970,7 +10416,7 @@
    "k": "gpt",
    "st": null,
    "b": "PwC (фирмы США и Великобритании)",
-   "p": "OpenAI ChatGPT Enterprise (GPT-4o)",
+   "p": "OpenAI ChatGPT Enterprise — GPT-4o",
    "w": "ChatGPT Enterprise для 100 000+ сотрудников: ≈75 000 в США и ≈26 000 в Великобритании; PwC — первый реселлер ChatGPT Enterprise",
    "v": "не раскрыто",
    "e": null,
@@ -9983,7 +10429,8 @@
     "https://www.techrepublic.com/article/openai-pwc-chatgpt-enterprise-deal/",
     "https://ciodive.com/news/pwc-chatgpt-enterprise-openai-partnership/717432"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "корпоративная версия ChatGPT"
   },
   {
    "id": "eu-194",
@@ -9993,7 +10440,7 @@
    "k": "gpt",
    "st": null,
    "b": "PwC (глобальная сеть, юридическая практика)",
-   "p": "Harvey (на моделях OpenAI)",
+   "p": "Harvey, на моделях OpenAI",
    "w": "Доступ к Harvey для 4 000+ юристов PwC в 100+ странах; эксклюзив среди «большой четвёрки»",
    "v": "не раскрыто",
    "e": null,
@@ -10006,7 +10453,8 @@
     "https://www.pwc.com/gx/en/news-room/press-releases/2023/pwc-announces-strategic-alliance-with-harvey-positioning-pwcs-legal-business-solutions-at-the-forefront-of-legal-generative-ai.html",
     "https://www.kitco.com/news/off-the-wire/2023-03-15/pwcaposs-4000-legal-staffers-get-ai-assistant-law-chatbots-gain-steam"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-ассистент для юристов"
   },
   {
    "id": "gulf-029",
@@ -10029,7 +10477,8 @@
     "https://www.pwc.com/m1/en/media-centre/2024/pwc-middle-east-partners-with-openai-to-bring-latest-ai-innovation-to-the-region.html",
     "https://meatechwatch.com/2024/10/30/pwc-middle-east-partners-with-openai-to-enhance-ai-capabilities"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "корпоративная версия ChatGPT"
   },
   {
    "id": "eu-195",
@@ -10052,7 +10501,8 @@
     "https://www.anthropic.com/news/deloitte-anthropic-partnership",
     "https://www.outlookbusiness.com/deeptech/artificial-intelligence/deloitte-still-bets-on-ai-with-anthropic-deal-after-inaccurate-report-refund-saga"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-ассистент для работы с текстом и кодом"
   },
   {
    "id": "eu-196",
@@ -10076,7 +10526,8 @@
     "https://siliconangle.com/2023/07/11/kpmg-invest-2b-ai-cloud-expands-partnership-microsoft/",
     "https://aibusiness.com/ml/kpmg-expands-alliance-with-microsoft-in-ai-cloud"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "рамочное соглашение на облако и ИИ-сервисы"
   },
   {
    "id": "eu-197",
@@ -10086,7 +10537,7 @@
    "k": "gpt",
    "st": null,
    "b": "EY (глобальная сеть)",
-   "p": "Microsoft 365 Copilot → Microsoft 365 E7 (Frontier Suite)",
+   "p": "Microsoft 365 Copilot → Microsoft 365 E7 — Frontier Suite",
    "w": "Copilot сначала для 150 000 пользователей, затем расширение на 400 000+ сотрудников через Microsoft 365 E7; совместная программа с инженерами Microsoft (Forward Deployed Engineers) для отраслевых ИИ-решений",
    "v": "Совместные инвестиции EY и Microsoft >$1 млрд за 5 лет (не цена лицензий)",
    "e": null,
@@ -10099,7 +10550,8 @@
     "https://itbrief.co.uk/story/ey-microsoft-launch-ai-push-with-usd-1-billion-plan",
     "https://www.ciodive.com/news/EY-microsoft-copilot-deploy-plans-CRM-upgrade/719223/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-ассистент в Word, Excel, Outlook и Teams"
   },
   {
    "id": "eu-198",
@@ -10122,7 +10574,8 @@
     "https://www.businesswire.com/news/home/20251209640751/en/Accenture-and-Anthropic-Launch-Multi-Year-Partnership-to-Drive-Enterprise-AI-Innovation-and-Value-Across-Industries",
     "https://www.anthropic.com/news/anthropic-accenture-partnership"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-ассистент и ИИ-программист"
   },
   {
    "id": "eu-199",
@@ -10145,7 +10598,8 @@
     "https://newsroom.accenture.com/news/2025/openai-and-accenture-accelerate-enterprise-reinvention-with-advanced-ai",
     "https://openai.com/index/accenture-partnership/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "корпоративная версия ChatGPT"
   },
   {
    "id": "us-156",
@@ -10168,7 +10622,8 @@
     "https://news.cognizant.com/2025-11-04-Cognizant-Adopts-Anthropics-Claude-to-Accelerate-Enterprise-AI-Adoption-at-Scale-and-Deploys-Claude-to-Drive-Internal-AI-Transformation",
     "https://www.anthropic.com/news/cognizant-partnership"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-ассистент и помощник для написания кода"
   },
   {
    "id": "asia-038",
@@ -10191,7 +10646,8 @@
     "https://news.microsoft.com/source/asia/2026/06/03/infosys-tcs-and-wipro-scale-microsoft-365-copilot-to-over-300000-employees",
     "https://www.peoplematters.in/news/ai-and-emerging-tech/infosys-tcs-and-wipro-each-deploy-microsoft-365-copilot-to-over-100000-employees-50701"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-ассистент в Word, Excel, Outlook и Teams"
   },
   {
    "id": "asia-039",
@@ -10214,7 +10670,8 @@
     "https://news.microsoft.com/source/asia/2026/06/03/infosys-tcs-and-wipro-scale-microsoft-365-copilot-to-over-300000-employees",
     "https://www.dtnext.in/news/business/tcs-infosys-wipro-cross-3-lakh-microsofts-copilot-users-in-major-ai-push"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-ассистент в Word, Excel, Outlook и Teams"
   },
   {
    "id": "asia-040",
@@ -10237,7 +10694,8 @@
     "https://news.microsoft.com/source/asia/2026/06/03/infosys-tcs-and-wipro-scale-microsoft-365-copilot-to-over-300000-employees",
     "https://www.peoplematters.in/news/ai-and-emerging-tech/infosys-tcs-and-wipro-now-have-300000-employees-using-copilot-as-ai-moves-into-daily-work-50090"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-ассистент в Word, Excel, Outlook и Teams"
   },
   {
    "id": "us-157",
@@ -10260,7 +10718,8 @@
     "https://officechai.com/ai/mckinsey-has-built-an-internet-ai-chatbot-named-lilli-which-is-used-by-70-of-employees/",
     "https://www.marketbeat.com/articles/mckinsey-is-using-ai-to-create-powerpoints-and-take-over-junior-employee-tasks-technology-could-do-that-2025-06-02"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-поиск по знаниям и опыту фирмы"
   },
   {
    "id": "us-158",
@@ -10283,7 +10742,8 @@
     "https://www.techradar.com/pro/openai-signs-up-the-worlds-biggest-consultancy-firms-to-help-roll-out-chatgpt-to-enterprises",
     "https://dataconomy.com/2026/02/24/openai-taps-consulting-giants-to-bridge-the-enterprise-ai-adoption-gap/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "платформа корпоративных ИИ-агентов и ChatGPT"
   },
   {
    "id": "eu-200",
@@ -10293,7 +10753,7 @@
    "k": "gpt",
    "st": null,
    "b": "Allen & Overy (ныне A&O Shearman)",
-   "p": "Harvey (на GPT-4)",
+   "p": "Harvey, на GPT-4",
    "w": "Harvey для 3 500+ юристов в 43 офисах; эксклюзивный партнёр запуска Harvey",
    "v": "не раскрыто",
    "e": null,
@@ -10306,7 +10766,8 @@
     "https://www.aoshearman.com/en/news/ao-announces-exclusive-launch-partnership-with-harvey",
     "https://lawsociety.ie/gazette/top-stories/2023/february/our-ai-platform-is-a-game-changer--allen--overy"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-ассистент для юристов"
   },
   {
    "id": "eu-201",
@@ -10329,7 +10790,8 @@
     "https://www.cliffordchance.com/news/news/2024/02/clifford-chance-generative-ai-microsoft.html",
     "https://legaltechnology.com/breaking-news-clifford-chance-deploys-copilot-and-viva-suite-for-employees-globally/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "офисный ИИ-ассистент и внутренний чат-бот фирмы"
   },
   {
    "id": "eu-202",
@@ -10352,7 +10814,8 @@
     "https://www.freshfields.com/en/our-thinking/news/news-search/2026/04/freshfields-reports-google-cloud-collaboration-delivering-transformation-at-scale",
     "https://www.artificiallawyer.com/2025/04/09/freshfields-google-partner-for-major-genai-roll-out/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ в офисных сервисах и платформа агентов"
   },
   {
    "id": "eu-203",
@@ -10375,7 +10838,8 @@
     "https://www.ashurst.com/en/who-we-are/our-news-work-market-recognition/ashurst-launches-global-harvey-partnership-following-extensive-firmwide-trial",
     "https://legaltechnology.com/ashurst-launches-global-harvey-partnership-following-firmwide-trial/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-ассистент для юристов"
   },
   {
    "id": "eu-204",
@@ -10398,7 +10862,8 @@
     "https://cms.law/en/int/news-information/cms-announces-roll-out-of-harvey-across-50-countries",
     "https://legaltechnology.com/cms-announces-enterprise-roll-out-of-harvey-across-50-countries/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-ассистент для юристов"
   },
   {
    "id": "eu-205",
@@ -10421,7 +10886,8 @@
     "https://www.gleisslutz.com/de/mandate-kanzlei-news/kuenstliche-intelligenz-gleiss-lutz-begruendet-strategische-partnerschaft-mit-harvey-ai",
     "https://www.harvey.ai/customers/gleiss-lutz"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-ассистент для юристов"
   },
   {
    "id": "us-159",
@@ -10431,7 +10897,7 @@
    "k": "gpt",
    "st": null,
    "b": "Latham & Watkins",
-   "p": "Harvey (вся платформа)",
+   "p": "Harvey, вся платформа",
    "w": "Корпоративная лицензия Harvey на всю фирму: 3 600+ юристов и сопутствующий персонал",
    "v": "не раскрыто",
    "e": null,
@@ -10444,7 +10910,8 @@
     "https://www.lw.com/en/news/2025/08/latham-announces-firmwide-deployment-of-harvey",
     "https://legaltechnology.com/latham-watkins-to-roll-out-harvey-globally/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-ассистент для юристов"
   },
   {
    "id": "eu-206",
@@ -10467,7 +10934,8 @@
     "https://www.harvey.ai/en-US/blog/dla-piper-scales-harvey-with-global-adoption",
     "https://www.law360.co.uk/articles/2453273"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-ассистент для юристов"
   },
   {
    "id": "eu-207",
@@ -10490,7 +10958,8 @@
     "https://www.harvey.ai/blog/slaughter-and-may-adopts-harvey-firmwide",
     "https://legaltechnology.com/slaughter-and-may-goes-firmwide-with-harvey/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-ассистент для юристов"
   },
   {
    "id": "eu-208",
@@ -10513,7 +10982,8 @@
     "https://www.linklaters.com/about-us/news-and-deals/news/2025/september/linklaters-announces-firmwide-roll-out-of-legora",
     "https://www.artificiallawyer.com/2025/09/22/linklaters-rolls-out-legora-in-key-customer-win/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "шведский ИИ-ассистент для юристов"
   },
   {
    "id": "us-160",
@@ -10536,7 +11006,8 @@
     "https://legora.com/newsroom/white-case-announces-global-rollout-of-legora-across-43-offices",
     "https://www.lawyersweekly.com.au/biglaw/43561-white-case-to-roll-out-legora-globally"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "шведский ИИ-ассистент для юристов"
   },
   {
    "id": "eu-209",
@@ -10546,7 +11017,7 @@
    "k": "gpt",
    "st": null,
    "b": "Herbert Smith Freehills Kramer",
-   "p": "Legora (ИИ-платформа + клиентский портал)",
+   "p": "Legora, ИИ-платформа + клиентский портал",
    "w": "Legora как общефирменная ИИ-платформа, поэтапное внедрение по фирме (≈2 700 юристов, 26 офисов); клиентский портал Legora для обмена файлами",
    "v": "не раскрыто",
    "e": null,
@@ -10558,7 +11029,8 @@
    "src": [
     "https://itbrief.co.uk/story/herbert-smith-freehills-kramer-adopts-legora-ai-firmwide"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ для юристов и портал для клиентов"
   },
   {
    "id": "anz-035",
@@ -10581,7 +11053,8 @@
     "https://www.mallesons.com/au/en/about-us/media-center/king-and-wood-mallesons-australia-partners-with-harvey-ai.html",
     "https://www.lawyersweekly.com.au/biglaw/42108-harvey-ai-rolled-out-across-kwm"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-ассистент для юристов"
   },
   {
    "id": "gulf-030",
@@ -10604,7 +11077,8 @@
     "https://tamimi.com/news/al-tamimi-company-and-harvey-announce-strategic-partnership-to-enhance-legal-services-with-artificial-intelligence-2",
     "https://www.legaltechmonitor.com/2023/11/al-tamimi-adopts-legal-ai-harvey/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-ассистент для юристов"
   },
   {
    "id": "asia-041",
@@ -10627,7 +11101,8 @@
     "https://www.cyrilshroff.com/wp-content/uploads/2020/09/CAM-AI-First-Future-Announcement.pdf",
     "https://www.scconline.com/blog/post/2025/01/30/cyril-amarchand-mangaldas-takes-a-bold-leap-towards-an-ai-first-future-with-strategic-ai-adoption/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-ассистенты для юристов и офиса"
   },
   {
    "id": "us-161",
@@ -10649,7 +11124,8 @@
    "src": [
     "https://legaltechnology.com/am-law-100-firm-polsinelli-rolls-out-thomson-reuters-cocounsel/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-ассистент юриста для анализа и составления документов"
   },
   {
    "id": "us-162",
@@ -10659,7 +11135,7 @@
    "k": "notes",
    "st": null,
    "b": "Kaiser Permanente (некоммерческая интегрированная система)",
-   "p": "Abridge — ИИ-скрайб (амбиентная запись приёма)",
+   "p": "Abridge — ИИ-скрайб, амбиентная запись приёма",
    "w": "Доступ для 24 000+ врачей: 40 больниц и 600+ медофисов в 8 штатах и округе Колумбия; старт с семейной и общей терапии и ряда специальностей",
    "v": "не раскрыто (условия конфиденциальны)",
    "e": null,
@@ -10672,7 +11148,8 @@
     "https://www.fiercehealthcare.com/health-tech/kaiser-permanente-rolls-out-abridges-gen-ai-clinical-tech-across-40-hospitals-60",
     "https://www.beckershospitalreview.com/?p=246725"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "пишет медкарту по разговору с пациентом"
   },
   {
    "id": "us-163",
@@ -10695,7 +11172,8 @@
     "https://abridge.com/press-release/mayo-clinic-announcement",
     "https://www.healthcaredive.com/news/abridge-mayo-clinic-ai-documentation-partnership/737339/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "пишет медкарту по разговору с пациентом"
   },
   {
    "id": "us-164",
@@ -10719,7 +11197,8 @@
     "https://www.fiercehealthcare.com/ai-and-machine-learning/sutter-health-taps-abridge-roll-out-generative-ai-tech-physicians-and",
     "https://www.abridge.com/blog/sutter-health-partnership-timeline"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "пишет медкарту по разговору с пациентом"
   },
   {
    "id": "us-165",
@@ -10742,7 +11221,8 @@
     "https://www.businesswire.com/news/home/20251016487286/en/UPMC-Goes-All-In-on-Abridge-Scaling-AI-Platform-Enterprise-Wide",
     "https://www.abridge.com/press-release/upmc-scales-abridge"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "пишет медкарту по разговору с пациентом"
   },
   {
    "id": "us-166",
@@ -10766,7 +11246,8 @@
     "https://www.fiercehealthcare.com/ai-and-machine-learning/cleveland-clinic-chooses-ambience-ai-scribe",
     "https://www.beckershospitalreview.com/?p=297603"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "пишет медкарту по разговору с пациентом"
   },
   {
    "id": "us-167",
@@ -10789,7 +11270,8 @@
     "https://www.fiercehealthcare.com/ai-and-machine-learning/hca-healthcare-bolster-ongoing-google-cloud-generative-ai-partnership",
     "https://www.beckershospitalreview.com/digital-health/hca-google-roll-out-generative-ai-project.html"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "пишет медкарту по разговору с пациентом"
   },
   {
    "id": "us-168",
@@ -10799,7 +11281,7 @@
    "k": "gpt",
    "st": null,
    "b": "HCA Healthcare",
-   "p": "OpenAI — ChatGPT for Healthcare (модели GPT-5, соглашение BAA по HIPAA)",
+   "p": "OpenAI — ChatGPT for Healthcare, модели GPT-5, соглашение BAA по HIPAA",
    "w": "Корпоративный ИИ-ассистент для клиницистов, исследователей и администрации; число мест не раскрыто",
    "v": "не раскрыто",
    "e": null,
@@ -10812,7 +11294,8 @@
     "https://openai.com/index/openai-for-healthcare/",
     "https://www.fiercehealthcare.com/health-tech/openai-rolls-out-chatgpt-healthcare-genai-workspace-enterprises"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "медицинская версия корпоративного ChatGPT"
   },
   {
    "id": "us-169",
@@ -10835,7 +11318,8 @@
     "https://openai.com/index/openai-for-healthcare/",
     "https://shellypalmer.com/2026/05/openai-helping-healthcare/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "медицинская версия корпоративного ChatGPT"
   },
   {
    "id": "us-170",
@@ -10858,7 +11342,8 @@
     "https://claude.com/customers/banner-health",
     "https://www.beckershospitalreview.com/healthcare-information-technology/ai/why-anthropic-is-targeting-health-systems-with-claude/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "закрытый внутренний чат-бот для сотрудников"
   },
   {
    "id": "anz-036",
@@ -10868,7 +11353,7 @@
    "k": "notes",
    "st": "pilot",
    "b": "Ramsay Health Care (частные больницы Австралии)",
-   "p": "Ramsay Scribe — собственный ИИ-инструмент (партнёр по данным — Google Cloud; поставщик модели не раскрыт)",
+   "p": "Ramsay Scribe — собственный ИИ-инструмент, партнёр по данным — Google Cloud; поставщик модели не раскрыт",
    "w": "Пилот ИИ-расшифровки и записи клинической документации: 2 врача приёмного отделения St Andrew's Ipswich Private Hospital (Квинсленд); далее — тест в стационаре и амбулаторной психиатрии",
    "v": "не раскрыто",
    "e": null,
@@ -10881,7 +11366,8 @@
     "https://www.ramsayhealth.com.au/-/media/Documents/RHC/TRW/2025/TRW_Q1_FEB-2025-Edition_FINAL.pdf",
     "https://www.healthcareitnews.com/news/anz/advancing-clinical-note-taking-ramsay-health-care"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "пишет медкарту по разговору с пациентом"
   },
   {
    "id": "asia-042",
@@ -10904,7 +11390,8 @@
     "https://www.microsoft.com/en-in/aifirstmovers/Apollo-Hospitals",
     "https://www.digitalhealthnews.com/apollo-hospitals-partners-with-microsoft-to-advance-ai-in-healthcare"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-аудит медкарт и помощники медперсоналу"
   },
   {
    "id": "eu-210",
@@ -10927,7 +11414,8 @@
     "https://www.healthcare.digital/single-post/tandem-health-s-100m-series-b-europe-finally-has-a-healthcare-ai-champion-and-the-avt-market-is-ab",
     "https://hlth.com/insights/news/tandem-health-raises-100m-to-expand-clinical-ai-across-europe"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "пишет медкарту по разговору с пациентом"
   },
   {
    "id": "anz-037",
@@ -10949,7 +11437,8 @@
    "src": [
     "https://www.lyrebirdhealth.com/us/blogs/lyrebird-partners-with-ochre-health"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "пишет медкарту по разговору с пациентом"
   },
   {
    "id": "anz-038",
@@ -10971,7 +11460,8 @@
    "src": [
     "https://lyrebirdhealth.com/au/blogs/new-partnership-healthia-limited-australia"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "пишет медкарту по разговору с пациентом"
   },
   {
    "id": "gulf-031",
@@ -10994,7 +11484,8 @@
     "https://www.businessnewsaustralia.com/articles/ai-backed-medical-scribe-lyrebird-health-raises--12m-as-fast-growing-startup-eyes-uk-and-middle-east.html",
     "https://www.medicalrepublic.com.au/ai-scribe-wars-heating-up/111273"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "пишет медкарту по разговору с пациентом"
   },
   {
    "id": "eu-211",
@@ -11017,7 +11508,8 @@
     "https://www.rcrwireless.com/20240917/featured/vodafone-roll-out-microsoft-ai-software-68000-employees",
     "https://channelweb.co.uk/news/2024/vodafone-extends-microsoft-agreement-by-introducing-copilot-to-employees-worldwide"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "облако и генеративный ИИ для телеком-сервисов"
   },
   {
    "id": "eu-212",
@@ -11040,7 +11532,8 @@
     "https://news.microsoft.com/source/emea/features/vodafone-to-roll-out-microsoft-365-copilot-to-68000-employees-to-boost-productivity-innovation-and-quality/",
     "https://www.rcrwireless.com/20240917/featured/vodafone-roll-out-microsoft-ai-software-68000-employees"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-ассистент в Word, Excel, Outlook и Teams"
   },
   {
    "id": "eu-213",
@@ -11063,7 +11556,8 @@
     "https://www.vodafone.com/news/technology/vodafone-and-google-deepen-strategic-partnership-with-10-yr-deal",
     "https://www.googlecloudpresscorner.com/2024-10-08-Vodafone-and-Google-Deepen-Strategic-Partnership-with-Ten-Year,-Billion-Dollar-Deal-including-Cloud,-Cybersecurity-and-Devices-Across-Europe-and-Africa"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "облачный ИИ, смартфоны и подписки с ИИ"
   },
   {
    "id": "eu-214",
@@ -11085,7 +11579,8 @@
    "src": [
     "https://www.aol.com/news/orange-signs-deal-openai-access-172635368.html"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ранний доступ к новым языковым моделям"
   },
   {
    "id": "eu-215",
@@ -11109,7 +11604,8 @@
     "https://iphonesoft.fr/2025/02/12/orange-mistral-ai-partenariat-different-celui-free-mobile",
     "https://stlpartners.com/?p=567128"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "французские языковые модели и чат-ассистент"
   },
   {
    "id": "eu-216",
@@ -11119,7 +11615,7 @@
    "k": "gpt",
    "st": null,
    "b": "Deutsche Telekom",
-   "p": "Perplexity — Perplexity Pro и Perplexity Assistant (плюс Picsart)",
+   "p": "Perplexity — Perplexity Pro и Perplexity Assistant, плюс Picsart",
    "w": "Янв 2025: Perplexity Pro бесплатно на год для частных клиентов (активация до 31.03.2025); авг 2025: «AI-Phone» T Phone 3 и T Tablet 2 с кнопкой Magenta для вызова Perplexity Assistant и 18 мес Perplexity Pro в комплекте; Magenta AI в приложении MeinMagenta для всех клиентов",
    "v": "не раскрыто",
    "e": null,
@@ -11132,7 +11628,8 @@
     "https://www.telekom.com/en/newsroom/latest-updates/media-information/2025/1/telekom-brings-perplexity-to-the-streets",
     "https://www.telekom.com/en/newsroom/latest-updates/media-information/2025/8/_our_-ai-phone-brings-ai-for-everyone"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-поисковик с ответами и источниками"
   },
   {
    "id": "eu-217",
@@ -11155,7 +11652,8 @@
     "https://aibusiness.com/data-centers/nvidia-and-deutsche-telekom-launch-ai-cloud",
     "https://www.datacenterdynamics.com/en/news/nvidia-and-deutsche-telecom-officially-announce-data-center-project-in-munich-germany/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "облачные GPU-мощности для промышленного ИИ"
   },
   {
    "id": "asia-043",
@@ -11178,7 +11676,8 @@
     "https://datacenterdynamics.com/en/news/sk-telecom-invests-100m-in-generative-ai-startup-anthropic-will-create-llm-for-telcos",
     "https://futuriom.com/articles/news/sk-telecom-invests-100-million-in-anthropic/2023/08"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "отраслевая языковая модель для телеком-оператора"
   },
   {
    "id": "asia-044",
@@ -11202,7 +11701,8 @@
     "https://www.kedglobal.com/newsView/ked202410100016",
     "https://www.koreaherald.com/article/10443254"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "корейская языковая модель и облако внутри страны"
   },
   {
    "id": "asia-045",
@@ -11212,7 +11712,7 @@
    "k": "gpt",
    "st": null,
    "b": "SoftBank Group (включая оператора SoftBank Corp.)",
-   "p": "OpenAI — «Cristal intelligence» (корпоративный ИИ на моделях OpenAI)",
+   "p": "OpenAI — «Cristal intelligence», корпоративный ИИ на моделях OpenAI",
    "w": "Внедрение решений OpenAI во всех компаниях группы — SoftBank первый масштабный клиент Cristal intelligence; СП SB OpenAI Japan (50/50) эксклюзивно продаёт продукт крупным японским компаниям",
    "v": "$3 млрд в год (обязательство SoftBank Group)",
    "e": 2760000000,
@@ -11225,7 +11725,8 @@
     "https://group.softbank/en/news/press/20250203_0",
     "https://www.theregister.com/2025/02/07/softbank_invests_40b_openai/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "корпоративная система ИИ-агентов для автоматизации"
   },
   {
    "id": "us-171",
@@ -11248,7 +11749,8 @@
     "https://www.googlecloudpresscorner.com/2025-04-09-Google-Cloud-and-Verizon-Drive-Customer-Experience-Improvements-for-Verizon-Customers-with-Gemini-Integration",
     "https://www.cxtoday.com/contact-center/verizon-teams-up-with-google-to-give-28000-customer-support-reps-a-personal-research-assistant/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-помощник операторов колл-центров и магазинов"
   },
   {
    "id": "us-172",
@@ -11271,7 +11773,8 @@
     "https://about.att.com/blogs/2023/generative-ai.html",
     "https://www.axios.com/2023/06/20/att-openai-streamline-internal-operations"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "корпоративный чат-бот для кода, перевода и HR"
   },
   {
    "id": "anz-039",
@@ -11294,7 +11797,8 @@
     "https://telecoms.com/ai/telstra-will-plough-aud700-million-into-an-ai-joint-venture-with-accenture",
     "https://www.consultancy.com.au/news/10841/telstra-signs-off-on-700-million-ai-joint-venture-with-accenture"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "модернизация платформ данных и ИИ"
   },
   {
    "id": "eu-218",
@@ -11304,7 +11808,7 @@
    "k": "gpt",
    "st": null,
    "b": "BT Group",
-   "p": "ServiceNow — Now Assist for Telecom Service Management (генИИ)",
+   "p": "ServiceNow — Now Assist for Telecom Service Management, генИИ",
    "w": "Многолетнее расширение ServiceNow на все подразделения BT; пилот генИИ Now Assist на 300 операторах контакт-центра",
    "v": "не раскрыто",
    "e": null,
@@ -11317,7 +11821,8 @@
     "https://www.cxtoday.com/contact-centre/bt-group-taps-servicenow-to-bring-genai-automation-into-its-contact-centers/",
     "https://itbrief.co.uk/story/bt-group-strengthens-partnership-with-servicenow-to-boost-ai-services"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "генИИ-подсказки операторам контакт-центра"
   },
   {
    "id": "gulf-032",
@@ -11340,7 +11845,8 @@
     "https://www.eand.com/en/news/19-jan-26-eand-and-ibm-unveil-enterprise-grade-agentic-ai.html",
     "https://newsroom.ibm.com/2026-01-19-e-and-ibm-unveil-enterprise-grade-agentic-AI-to-transform-governance-and-compliance"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "ИИ-агенты для рисков и комплаенса"
   },
   {
    "id": "gulf-033",
@@ -11363,7 +11869,8 @@
     "https://www.telecomtv.com/content/digital-platforms-services/stc-strikes-strategic-agreements-with-global-digital-giants-at-leap-2025-52351/",
     "https://economymiddleeast.com/news/leap-2025-stc-group-inks-75-agreements-with-global-digital-giants"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "облачный ИИ на специализированных чипах внутри страны"
   },
   {
    "id": "us-173",
@@ -11373,7 +11880,7 @@
    "k": "build",
    "st": null,
    "b": "Федеральные ведомства США (FBI, NASA, Береговая охрана, Минэнерго, Минветеранов, CBP, командования CENTCOM и SOUTHCOM)",
-   "p": "BigBear.ai — генИИ-решения (25+ контрактов)",
+   "p": "BigBear.ai — генИИ-решения, 25+ контрактов",
    "w": "Более 25 новых контрактов на генеративный ИИ для федеральных ведомств, включая переконкурсы (CBP) и закрытые контракты разведсообщества",
    "v": "более $225 млн совокупно с июля 2026 (потенциальная стоимость, по данным компании)",
    "e": 207,
@@ -11386,7 +11893,8 @@
     "https://finviz.com/news/401883/bigbearai-secures-more-than-225-million-in-contract-awards-across-homeland-security-defense-intelligence-and-federal-civilian-agencies",
     "https://247wallst.com/investing/2026/10/13/bigbear-ai-climbs-5-on-more-than-225m-in-federal-contract-awards-palantir-and-ambarella-ease/"
    ],
-   "added": "2026-10-16"
+   "added": "2026-10-16",
+   "pd": "генеративный ИИ для федеральных ведомств"
   }
  ]
 }

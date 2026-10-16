@@ -39,6 +39,9 @@ for (const [i, d] of (data.deals ?? []).entries()) {
   else if (!d.src.length && d.added > data.baseline) errors.push(`${at}: у новой сделки нет источника`);
   for (const u of d.src ?? []) if (!/^https?:\/\//.test(u)) errors.push(`${at}: ссылка ${u} не http(s)`);
   if (!DATE.test(d.added ?? "")) errors.push(`${at}: added — дата YYYY-MM-DD`);
+  if (d.pd !== undefined && (typeof d.pd !== "string" || !d.pd.trim())) errors.push(`${at}: pd пустое`);
+  if (d.pd === undefined && d.added > data.baseline) errors.push(`${at}: у новой сделки нет pd (пояснение к продукту)`);
+  if (typeof d.pd === "string" && d.pd.split(/\s+/).length > 9) warnings.push(`${at}: pd длиннее 9 слов`);
   const key = `${d.r}|${d.b}|${d.p}|${d.d}`.toLowerCase();
   if (keys.has(key)) warnings.push(`${at}: похоже на дубль ${keys.get(key)}`);
   keys.set(key, d.id);

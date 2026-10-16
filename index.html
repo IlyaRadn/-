@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="description" content="Сделки государств, институтов ЕС, НАТО и банков по закупке ИИ: сумма, срок, условия, источник.">
-<title>ИИ-закупки Европы и США</title>
+<meta name="description" content="Сделки государств, институтов ЕС, НАТО и банков Европы и США по закупке ИИ: сумма, срок, условия, источник.">
+<title>ИИ-закупки</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Unbounded:wght@600;700&display=swap">
 <style>
@@ -40,6 +40,8 @@ h1{font-family:var(--font-display);font-weight:700;font-size:clamp(28px,4.4vw,44
 .stat span{font-size:13px;color:var(--muted)}
 h2{font-size:18px;margin:0 0 14px;font-weight:700}
 .findings{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:22px}
+.findings h3{font-size:13px;font-family:var(--font-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:600;margin:18px 0 10px}
+.findings h2+h3{margin-top:0}
 .findings ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px 28px}
 @media (max-width:760px){.findings ul{grid-template-columns:1fr}}
 .findings li{min-width:0;padding-left:16px;position:relative}
@@ -84,13 +86,22 @@ dd.money .eur{display:block;font-family:var(--font-body);font-weight:400;font-si
 <div class="wrap">
   <header>
     <div class="eyebrow" id="updated">Сводка · 2022–2026</div>
-    <h1>ИИ-закупки Европы и США</h1>
-    <p class="lede">Что государства, институты ЕС, НАТО и банки покупали из ИИ: ассистенты и лицензии, ноутейкеры и расшифровка, свои модели, аналитика. По каждой сделке указаны сумма, срок, условия и источник. Список пополняется раз в день; новые сделки отмечены меткой «Новое».</p>
+    <h1>ИИ-закупки</h1>
+    <p class="lede">Что государства, институты ЕС, НАТО и банки Европы и США покупали из ИИ: ассистенты и лицензии, ноутейкеры и расшифровка, свои модели, аналитика, оборона. По каждой сделке указаны сумма, срок, условия и источник. Список пополняется раз в день; новые сделки отмечены меткой «Новое».</p>
     <div class="stats" id="stats"></div>
   </header>
 
   <section class="findings" aria-labelledby="f-h">
     <h2 id="f-h">Главное</h2>
+    <h3>США</h3>
+    <ul>
+      <li><strong>Федеральные ведомства получают ИИ почти даром</strong>: по сделкам GSA OneGov ChatGPT и Claude стоят $1 на ведомство в год, Gemini — $0,47, Grok — $0,42. С октября 2026 OpenAI перешёл на оплату по токенам со скидкой 50% до конца 2028 года.</li>
+      <li><strong>Штаты и города платят реальные деньги</strong>: ChatGPT — $13–25 за пользователя в месяц (Массачусетс, Пенсильвания), $345–400 за место в год в городах; Microsoft 365 Copilot — $30,53 в месяц (Аляска), $370 в год (Айдахо).</li>
+      <li><strong>Оборона — крупнейшие суммы</strong>: армейские соглашения с Anduril (до $20 млрд) и Palantir (до $10 млрд) на 10 лет без конкурса; по $200 млн на прототипы с OpenAI, Anthropic, Google и xAI.</li>
+      <li><strong>Ноутейкеры</strong>: Минветеранов прошло путь от пилотов ИИ-скрайбов по ≈$5 млн до рамки на $776 млн на 5 лет; полиция покупает ИИ-рапорты Axon Draft One за ≈$30–70 на офицера в месяц, обычно в пакете с камерами на 5–10 лет.</li>
+      <li><strong>Банки США строят свои платформы поверх нескольких моделей</strong> (JPMorgan LLM Suite, Goldman, Citi, BNY Eliza) и не раскрывают суммы. Публичны только покупки компаний: Capital One — Brex за $5,15 млрд, Mastercard — Recorded Future за $2,65 млрд.</li>
+    </ul>
+    <h3>Европа</h3>
     <ul>
       <li><strong>Цена Copilot для госсектора — около €295–306 за место в год</strong> (испанские MUFACE и Кастилия и Леон). На Мальте ≈€500 на человека за 2 года вместе с обучением. Barclays, по оценке прессы, платит около $30 за место в месяц.</li>
       <li><strong>ChatGPT Enterprise для государства</strong>: Минюст Великобритании купил 2 500 мест за £6,75 млн на 2 года, это ≈£1 350 за место в год. Данные хранятся в Великобритании.</li>
@@ -112,11 +123,11 @@ dd.money .eur{display:block;font-family:var(--font-body);font-weight:400;font-si
           <button type="button" data-s="e" aria-pressed="false">ЕС и НАТО</button>
           <button type="button" data-s="b" aria-pressed="false">Банки</button>
         </div>
-        <select id="f-region" aria-label="Регион">
-          <option value="all">Европа и США</option>
-          <option value="eu">Европа</option>
-          <option value="us">США</option>
-        </select>
+        <div class="seg" role="group" aria-label="Регион" id="seg-r">
+          <button type="button" data-r="all" aria-pressed="true">Все регионы</button>
+          <button type="button" data-r="eu" aria-pressed="false">Европа</button>
+          <button type="button" data-r="us" aria-pressed="false">США</button>
+        </div>
         <select id="f-cat" aria-label="Тип закупки"></select>
         <select id="f-country" aria-label="Страна"></select>
         <select id="f-year" aria-label="Год"></select>
@@ -153,7 +164,7 @@ dd.money .eur{display:block;font-family:var(--font-body);font-weight:400;font-si
 </div>
 
 <script>
-const CAT={gpt:"ИИ-ассистенты и лицензии",notes:"Ноутейкеры и распознавание речи",build:"Свои модели и разработки",data:"Аналитика, полиция, оборона",frame:"Рамочные договоры",infra:"Инфраструктура и облако",fraud:"Антифрод и AML",code:"ИИ для разработчиков"};
+const CAT={gpt:"ИИ-ассистенты и лицензии",notes:"Ноутейкеры и распознавание речи",build:"Свои модели и разработки",data:"Аналитика, полиция, оборона",frame:"Рамочные договоры",infra:"Инфраструктура и облако",fraud:"Антифрод и AML",code:"ИИ для разработчиков",mna:"Покупка ИИ-компаний"};
 const SEC={g:"Госсектор",e:"ЕС и НАТО",b:"Банк"};
 const ST={mou:"Меморандум, без денег",pilot:"Пилот",tender:"Идёт тендер",noaward:"Без победителя",blocked:"Заблокирована",free:"Бесплатно / грант",ctx:"Справочно, сделки нет"};
 const Q={d:"По документу закупки",p:"Пресса",w:"Не до конца подтверждено"};
@@ -187,8 +198,10 @@ function initControls(){
   $("f-year").innerHTML='<option value="all">Все годы</option>'+years.map(y=>`<option value="${y}">${y}${y===2022?" и раньше":""}</option>`).join("");
   if(state.year!=="all"&&!years.includes(+state.year))state.year="all";
   $("f-cat").value=state.cat;$("f-country").value=state.country;$("f-year").value=state.year;$("f-band").value=state.band;$("f-sort").value=state.sort;$("f-q").value=state.q;$("f-sum").checked=state.sum;
-  $("f-region").value=state.region;$("f-new").checked=state.fresh;
-  $("f-region").addEventListener("change",e=>{state.region=e.target.value;render();});
+  $("f-new").checked=state.fresh;
+  const rb=document.querySelectorAll("#seg-r button");
+  rb.forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.r===state.region)));
+  rb.forEach(b=>b.addEventListener("click",()=>{state.region=b.dataset.r;rb.forEach(x=>x.setAttribute("aria-pressed",String(x===b)));render();}));
   $("f-new").addEventListener("change",e=>{state.fresh=e.target.checked;render();});
   $("f-year").addEventListener("change",e=>{state.year=e.target.value;render();});
   $("f-band").addEventListener("change",e=>{state.band=e.target.value;render();});

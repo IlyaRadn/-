@@ -7,7 +7,7 @@ const data = JSON.parse(readFileSync(file, "utf8"));
 
 const REGION = ["eu", "us"];
 const SECTOR = ["g", "e", "b"];
-const CATEGORY = ["gpt", "notes", "build", "data", "frame", "infra", "fraud", "code"];
+const CATEGORY = ["gpt", "notes", "build", "data", "frame", "infra", "fraud", "code", "mna"];
 const STATUS = [null, "mou", "pilot", "tender", "noaward", "blocked", "free", "ctx"];
 const QUALITY = ["d", "p", "w"];
 const DATE = /^\d{4}-\d{2}-\d{2}$/;

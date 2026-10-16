@@ -3,163 +3,302 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="description" content="Сделки государств, институтов ЕС, НАТО и банков Европы и США по закупке ИИ: сумма, срок, условия, источник.">
+<meta name="description" content="Сделки государств, институтов ЕС, НАТО, банков и компаний по закупке ИИ: сумма, срок, условия, источник.">
+<meta name="theme-color" content="#F2F4F3" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0F1314" media="(prefers-color-scheme: dark)">
 <title>ИИ-закупки</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Unbounded:wght@600;700&display=swap">
 <style>
-/* Layout: register of deals — summary + findings on top, sticky filter bar, then a ledger of deal records (label/value rows) */
+/* Layout: register of deals — header with stats, collapsible findings, sticky search bar (filters inline on desktop, bottom sheet on phones), then a ledger of deal records with a facts row */
 :root{
   --bg:#F2F4F3; --surface:#FFFFFF; --ink:#14181A; --muted:#5B6467; --line:#DCE1E0;
-  --accent:#0E6B66; --accent-soft:#E2F0EE;
+  --accent:#0E6B66; --accent-ink:#FFFFFF; --accent-soft:#E2F0EE;
   --ok:#1D7A4A; --ok-soft:#E3F2EA; --warn:#9A6200; --warn-soft:#FBF0DA; --bad:#B0262E; --bad-soft:#F9E3E4; --neutral-soft:#EEF1F1;
+  --scrim:rgba(14,22,22,.42);
+  --shadow-sm:0 2px 3px -1px rgba(0,0,0,.08),0 1px 0 0 rgba(25,28,33,.02),0 0 0 1px rgba(25,28,33,.08);
+  --shadow-md:0 0 0 1px rgba(0,0,0,.06),0 1px 1px -.5px rgba(0,0,0,.06),0 3px 3px -1.5px rgba(0,0,0,.06),0 6px 6px -3px rgba(0,0,0,.06),0 12px 12px -6px rgba(0,0,0,.06),0 24px 24px -12px rgba(0,0,0,.06);
   --font-display:"Unbounded","Golos Text",system-ui,sans-serif;
   --font-body:"Golos Text",system-ui,-apple-system,"Segoe UI",sans-serif;
   --font-mono:"JetBrains Mono",ui-monospace,Consolas,monospace;
+  --ease-out:cubic-bezier(.16,1,.3,1);
 }
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
   --bg:#0F1314; --surface:#171D1E; --ink:#E7ECEB; --muted:#9AA5A6; --line:#2A3335;
-  --accent:#4FC3B6; --accent-soft:#16302E;
-  --ok:#5CCB8E; --ok-soft:#163024; --warn:#E3AE4F; --warn-soft:#33270F; --bad:#F07C82; --bad-soft:#3A1A1D; --neutral-soft:#20282A; color-scheme:dark}}
+  --accent:#4FC3B6; --accent-ink:#0B1414; --accent-soft:#16302E;
+  --ok:#5CCB8E; --ok-soft:#163024; --warn:#E3AE4F; --warn-soft:#33270F; --bad:#F07C82; --bad-soft:#3A1A1D; --neutral-soft:#20282A;
+  --scrim:rgba(0,0,0,.6);
+  --shadow-sm:0 2px 3px -1px rgba(0,0,0,.5),0 0 0 1px rgba(255,255,255,.07);
+  --shadow-md:0 0 0 1px rgba(255,255,255,.08),0 12px 24px -12px rgba(0,0,0,.7),0 24px 48px -24px rgba(0,0,0,.6);
+  color-scheme:dark}}
 :root[data-theme="dark"]{
   --bg:#0F1314; --surface:#171D1E; --ink:#E7ECEB; --muted:#9AA5A6; --line:#2A3335;
-  --accent:#4FC3B6; --accent-soft:#16302E;
-  --ok:#5CCB8E; --ok-soft:#163024; --warn:#E3AE4F; --warn-soft:#33270F; --bad:#F07C82; --bad-soft:#3A1A1D; --neutral-soft:#20282A; color-scheme:dark}
+  --accent:#4FC3B6; --accent-ink:#0B1414; --accent-soft:#16302E;
+  --ok:#5CCB8E; --ok-soft:#163024; --warn:#E3AE4F; --warn-soft:#33270F; --bad:#F07C82; --bad-soft:#3A1A1D; --neutral-soft:#20282A;
+  --scrim:rgba(0,0,0,.6);
+  --shadow-sm:0 2px 3px -1px rgba(0,0,0,.5),0 0 0 1px rgba(255,255,255,.07);
+  --shadow-md:0 0 0 1px rgba(255,255,255,.08),0 12px 24px -12px rgba(0,0,0,.7),0 24px 48px -24px rgba(0,0,0,.6);
+  color-scheme:dark}
+
+/* base + browser surfaces */
 *{box-sizing:border-box}
 [hidden]{display:none!important}
-.chip.new{background:var(--accent);color:var(--bg);font-weight:600}
-body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font-body);font-size:15px;line-height:1.5;padding-inline:16px;padding-block:28px 64px}
+html{scrollbar-color:var(--line) transparent;-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:transparent}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font-body);font-size:15px;line-height:1.5;padding-inline:16px;padding-block:28px 72px}
+body.lock{overflow:hidden}
+::selection{background:var(--accent);color:var(--accent-ink)}
+a{color:var(--accent);text-underline-offset:3px;text-decoration-thickness:1px}
+input,select{accent-color:var(--accent);caret-color:var(--accent)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+svg.i{width:18px;height:18px;flex:none;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
 .wrap{max-width:1120px;margin:0 auto;display:flex;flex-direction:column;gap:28px}
-a{color:var(--accent)}
-a:focus-visible,button:focus-visible,select:focus-visible,input:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
-.eyebrow{font-family:var(--font-mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
-h1{font-family:var(--font-display);font-weight:700;font-size:clamp(28px,4.4vw,44px);line-height:1.08;margin:8px 0 12px;letter-spacing:-.01em;text-wrap:balance}
-.lede{margin:0;color:var(--muted);max-width:70ch;font-size:16px}
-.stats{display:flex;flex-wrap:wrap;gap:12px 36px;margin-top:22px}
-.stat b{display:block;font-family:var(--font-mono);font-weight:600;font-size:26px;font-variant-numeric:tabular-nums;color:var(--ink)}
+@media (min-width:760px){body{padding-inline:24px;padding-block:40px 80px}}
+
+/* header */
+h1{font-family:var(--font-display);font-weight:700;font-size:clamp(30px,5vw,46px);line-height:1.05;margin:0 0 12px;letter-spacing:-.015em;text-wrap:balance}
+.lede{margin:0;color:var(--muted);max-width:66ch;font-size:16px;text-wrap:pretty}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(110px,1fr));gap:14px 24px;margin-top:22px;max-width:720px}
+.stat b{display:block;font-family:var(--font-mono);font-weight:600;font-size:26px;line-height:1.15;font-variant-numeric:tabular-nums}
 .stat span{font-size:13px;color:var(--muted)}
-h2{font-size:18px;margin:0 0 14px;font-weight:700}
-.findings{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:22px}
-.findings h3{font-size:13px;font-family:var(--font-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:600;margin:18px 0 10px}
-.findings h2+h3{margin-top:0}
-.findings ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px 28px}
-@media (max-width:760px){.findings ul{grid-template-columns:1fr}}
-.findings li{min-width:0;padding-left:16px;position:relative}
-.findings li::before{content:"";position:absolute;left:0;top:.62em;width:6px;height:6px;border-radius:50%;background:var(--accent)}
-.findings li strong{font-weight:600}
-.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);padding-block:10px;border-bottom:1px solid var(--line);display:flex;flex-direction:column;gap:10px}
-.row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
-.seg{display:inline-flex;border:1px solid var(--line);border-radius:999px;overflow:hidden;background:var(--surface)}
-.seg button{border:0;background:transparent;color:var(--ink);font:inherit;font-size:14px;padding:7px 14px;cursor:pointer}
-.seg button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
-select,input[type="search"]{font:inherit;font-size:14px;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:7px 10px;min-width:0}
-input[type="search"]{flex:1 1 220px}
-label.chk{display:inline-flex;gap:6px;align-items:center;font-size:14px;color:var(--ink);cursor:pointer}
-.count{font-size:13px;color:var(--muted)}
+.meta{margin:16px 0 0;font-size:13px;color:var(--muted)}
+.meta b{font-weight:600;color:var(--ink)}
+
+h2{font-size:19px;margin:0;font-weight:700;letter-spacing:-.005em}
+
+/* findings */
+.findings{background:var(--surface);box-shadow:var(--shadow-md);border-radius:16px;padding:20px 22px 8px}
+.findings h2{margin-bottom:6px}
+.fgroup{border-top:1px solid var(--line)}
+.fgroup:first-of-type{border-top:0}
+.fgroup summary{list-style:none;display:flex;align-items:center;gap:10px;padding:14px 0;cursor:pointer;min-height:44px}
+.fgroup summary::-webkit-details-marker{display:none}
+.fgroup summary h3{margin:0;font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.fgroup summary .n{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.fgroup summary svg{margin-left:auto;color:var(--muted);transition:transform .2s var(--ease-out)}
+.fgroup[open] summary svg{transform:rotate(180deg)}
+.fgroup summary:hover h3{color:var(--ink)}
+.fgroup ul{list-style:none;margin:0;padding:0 0 18px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px 32px}
+@media (max-width:759px){.fgroup ul{grid-template-columns:1fr}.findings{padding:18px 18px 4px}}
+.fgroup li{min-width:0;padding-left:16px;position:relative;text-wrap:pretty}
+.fgroup li::before{content:"";position:absolute;left:0;top:.62em;width:6px;height:6px;border-radius:50%;background:var(--accent)}
+.fgroup li strong{font-weight:600}
+
+/* deals header + bar */
+.deals{display:flex;flex-direction:column;gap:12px}
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--bg);padding-block:10px 12px;margin-inline:-16px;padding-inline:16px;border-bottom:1px solid var(--line);display:flex;flex-direction:column;gap:10px}
+@media (min-width:760px){.bar{margin-inline:0;padding-inline:0}}
+.bar-top{display:flex;gap:8px;align-items:center}
+.search{flex:1;min-width:0;position:relative;display:flex;align-items:center}
+.search svg{position:absolute;left:12px;color:var(--muted);pointer-events:none}
+select,input[type="search"]{font:inherit;font-size:14px;color:var(--ink);background:var(--surface);border:0;box-shadow:var(--shadow-sm);border-radius:10px;min-height:40px;padding:8px 12px;min-width:0;width:100%}
+input[type="search"]{padding-left:38px}
+input::placeholder{color:var(--muted);opacity:1}
+select{appearance:none;-webkit-appearance:none;padding-right:34px;cursor:pointer;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath d='M2.5 4.5 6 8l3.5-3.5' fill='none' stroke='%238A9495' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 12px center}
+select:hover,input[type="search"]:hover{box-shadow:0 2px 3px -1px rgba(0,0,0,.08),0 0 0 1px var(--muted)}
+.fbtn{display:inline-flex;align-items:center;gap:8px;font:inherit;font-size:15px;font-weight:600;color:var(--ink);background:var(--surface);border:0;box-shadow:var(--shadow-sm);border-radius:10px;min-height:44px;padding:0 14px;cursor:pointer;white-space:nowrap}
+.fbtn:active{transform:scale(.98)}
+.badge{min-width:20px;height:20px;padding:0 6px;border-radius:999px;background:var(--accent);color:var(--accent-ink);font-size:12px;font-weight:700;display:inline-grid;place-items:center;font-variant-numeric:tabular-nums}
+.bar-meta{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:24px}
+.count{font-size:14px;color:var(--muted);font-variant-numeric:tabular-nums}
+.count b{color:var(--ink);font-weight:700;font-size:16px}
+.count.flash b{animation:flash .5s var(--ease-out)}
+@keyframes flash{from{color:var(--accent)}to{color:var(--ink)}}
+.sheet-head .found{font-size:14px;color:var(--muted);font-weight:400;margin-left:8px}
+.sheet-head .found b{color:var(--ink)}
+.link-btn{font:inherit;font-size:13px;font-weight:600;color:var(--accent);background:none;border:0;padding:4px 0;cursor:pointer;text-decoration:underline;text-underline-offset:3px}
+.fld{display:flex;flex-direction:column;gap:6px;min-width:0}
+.lbl{font-size:13px;color:var(--muted)}
+.chk{display:flex;gap:10px;align-items:center;font-size:15px;cursor:pointer;min-height:44px}
+.chk input{width:20px;height:20px;margin:0;flex:none}
+.sheet-head{display:flex;align-items:center;justify-content:space-between}
+.sheet-head b{font-size:18px}
+.icon-btn{display:inline-grid;place-items:center;width:44px;height:44px;margin-right:-10px;border:0;background:none;color:var(--muted);border-radius:10px;cursor:pointer}
+.sheet-foot{display:grid;grid-template-columns:auto 1fr;gap:10px}
+.btn{font:inherit;font-size:15px;font-weight:600;min-height:48px;border-radius:12px;border:0;cursor:pointer;padding:0 18px}
+.btn-primary{background:var(--accent);color:var(--accent-ink)}
+.btn-ghost{background:var(--neutral-soft);color:var(--ink)}
+.btn:active{transform:scale(.98)}
+.scrim{position:fixed;inset:0;z-index:25;background:var(--scrim);opacity:0;transition:opacity .26s var(--ease-out)}
+.scrim.on{opacity:1}
+
+/* desktop: filters inline */
+@media (min-width:760px){
+  .fbtn,.sheet-head,.sheet-foot,.lbl{display:none}
+  .bar-top{order:2}
+  .filters{order:1;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+  .fgrid,.checks{display:contents}
+  .fld{width:auto}
+  .fld select{width:auto;max-width:260px}
+  .chk{font-size:14px;min-height:40px;padding:0 4px;gap:8px}
+  .chk input{width:16px;height:16px}
+  .bar-meta{order:3}
+  .search{max-width:560px}
+}
+
+/* phones: filters in a bottom sheet */
+@media (max-width:759px){
+  select,input[type="search"]{font-size:16px;min-height:44px}
+  .filters{position:fixed;left:0;right:0;bottom:0;z-index:30;background:var(--surface);border-radius:20px 20px 0 0;box-shadow:var(--shadow-md);max-height:88dvh;overflow-y:auto;overscroll-behavior:contain;padding:0 16px calc(16px + env(safe-area-inset-bottom,0px));display:flex;flex-direction:column;gap:16px;transform:translateY(105%);visibility:hidden;transition:transform .3s var(--ease-out),visibility 0s linear .3s}
+  .bar.open .filters{transform:none;visibility:visible;transition:transform .3s var(--ease-out)}
+  .sheet-head{position:sticky;top:0;z-index:1;background:var(--surface);padding-top:22px;padding-bottom:4px}
+  .sheet-head::before{content:"";position:absolute;top:8px;left:50%;width:40px;height:4px;margin-left:-20px;border-radius:2px;background:var(--line)}
+  .fgrid{display:grid;grid-template-columns:1fr 1fr;gap:14px 12px}
+  .fgrid .full{grid-column:1/-1}
+  .fld select{background-color:var(--bg);box-shadow:none;border:1px solid var(--line)}
+  .checks{display:flex;flex-direction:column;border-top:1px solid var(--line);padding-top:6px}
+  .sheet-foot{position:sticky;bottom:calc(-16px - env(safe-area-inset-bottom,0px));background:var(--surface);padding-block:12px calc(16px + env(safe-area-inset-bottom,0px));margin-bottom:calc(-16px - env(safe-area-inset-bottom,0px));border-top:1px solid var(--line)}
+}
+
+/* deal cards */
 .list{display:flex;flex-direction:column;gap:12px}
-.deal{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px 18px;display:flex;flex-direction:column;gap:10px;min-width:0}
+.deal{background:var(--surface);box-shadow:var(--shadow-sm);border-radius:14px;padding:16px 18px;display:flex;flex-direction:column;gap:12px;min-width:0}
 .tags{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
-.country{font-family:var(--font-mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink);font-weight:600;margin-right:4px}
-.chip{font-size:12px;padding:2px 9px;border-radius:999px;background:var(--neutral-soft);color:var(--muted);white-space:nowrap}
+.country{font-size:12px;letter-spacing:.07em;text-transform:uppercase;font-weight:700;margin-right:4px}
+.chip{font-size:12px;line-height:1.5;padding:2px 9px;border-radius:999px;background:var(--neutral-soft);color:var(--muted);white-space:nowrap}
 .chip.cat{background:var(--accent-soft);color:var(--accent)}
+.chip.new{background:var(--accent);color:var(--accent-ink);font-weight:600}
 .chip.s-mou,.chip.s-ctx,.chip.s-free{background:var(--neutral-soft);color:var(--ink)}
 .chip.s-pilot,.chip.s-tender{background:var(--warn-soft);color:var(--warn)}
 .chip.s-noaward,.chip.s-blocked{background:var(--bad-soft);color:var(--bad)}
 .chip.q-d{background:var(--ok-soft);color:var(--ok)}
 .chip.q-w{background:var(--warn-soft);color:var(--warn)}
 .who{display:flex;flex-direction:column;gap:2px}
-.who .buyer{font-weight:700;font-size:16px}
-.who .sup{color:var(--muted)}
-dl{display:grid;grid-template-columns:130px minmax(0,1fr);gap:6px 16px;margin:0}
-dt{color:var(--muted);font-size:13px;padding-top:2px}
-dd{margin:0;min-width:0;overflow-wrap:anywhere}
-dd.money{font-family:var(--font-mono);font-weight:600;font-variant-numeric:tabular-nums}
-dd.money .eur{display:block;font-family:var(--font-body);font-weight:400;font-size:13px;color:var(--muted)}
-@media (max-width:560px){dl{grid-template-columns:1fr;gap:0}dt{padding-top:8px}}
-.src a{margin-right:12px;font-size:13px}
-.empty{padding:28px;text-align:center;color:var(--muted);background:var(--surface);border:1px dashed var(--line);border-radius:12px}
-.note{font-size:13px;color:var(--muted);max-width:80ch}
+.buyer{margin:0;font-size:17px;line-height:1.3;font-weight:700;text-wrap:balance}
+.sup{margin:0;color:var(--muted)}
+.facts{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1.2fr) minmax(0,.8fr);gap:12px 20px;padding-block:12px;border-block:1px solid var(--line)}
+.k{display:block;font-size:12px;color:var(--muted);margin-bottom:2px}
+.v{overflow-wrap:anywhere}
+.money{font-family:var(--font-mono);font-weight:600;font-size:15px;font-variant-numeric:tabular-nums;line-height:1.4}
+.money.nil{font-family:var(--font-body);font-weight:400;color:var(--muted)}
+.eur{display:block;font-size:12px;color:var(--muted);margin-top:2px;font-variant-numeric:tabular-nums}
+.detail{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.3fr);gap:12px 24px}
+.detail p{margin:0;overflow-wrap:anywhere;text-wrap:pretty}
+.src{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 14px;font-size:13px}
+.src .k{display:inline;margin:0}
+@media (max-width:559px){
+  .deal{padding:14px 16px;gap:10px}
+  .facts{grid-template-columns:1fr 1fr}
+  .facts .fact-money{grid-column:1/-1}
+  .detail{grid-template-columns:1fr}
+}
+.more{align-self:center;margin-top:4px}
+.empty{padding:28px;text-align:center;color:var(--muted);background:var(--surface);border:1px dashed var(--line);border-radius:14px}
+.empty .link-btn{font-size:15px}
+.note{font-size:13px;color:var(--muted);max-width:80ch;margin:0}
+
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important}}
 </style>
 </head>
 <body>
 
 <div class="wrap">
   <header>
-    <div class="eyebrow" id="updated">Сводка · 2022–2026</div>
     <h1>ИИ-закупки</h1>
     <p class="lede">Что покупали из ИИ государства, институты ЕС и НАТО, банки, университеты, страховые, консалтинг, частная медицина и телеком: ассистенты и лицензии, ноутейкеры и расшифровка, свои модели, аналитика, оборона. По каждой сделке указаны сумма, срок, условия и источник. Список пополняется раз в день; новые сделки отмечены меткой «Новое».</p>
     <div class="stats" id="stats"></div>
+    <p class="meta" id="updated"></p>
   </header>
+
+  <section class="deals" aria-labelledby="l-h">
+    <h2 id="l-h">Сделки</h2>
+    <div class="bar" id="bar">
+      <div class="scrim" id="scrim" hidden></div>
+      <div class="bar-top">
+        <div class="search">
+          <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m20 20-4.2-4.2"/></svg>
+          <input type="search" id="f-q" placeholder="Поиск" aria-label="Поиск по сделкам" enterkeyhint="search" autocomplete="off">
+        </div>
+        <button type="button" class="fbtn" id="f-open" aria-controls="filters" aria-expanded="false">
+          <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h10M18 7h2M4 17h4M12 17h8"/><circle cx="16" cy="7" r="2"/><circle cx="10" cy="17" r="2"/></svg>
+          Фильтры<span class="badge" id="f-badge" hidden></span>
+        </button>
+      </div>
+      <div class="filters" id="filters" role="group" aria-label="Фильтры">
+        <div class="sheet-head">
+          <span><b>Фильтры</b><span class="found" id="f-found"></span></span>
+          <button type="button" class="icon-btn" id="f-close" aria-label="Закрыть фильтры"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+        </div>
+        <div class="fgrid">
+          <label class="fld full"><span class="lbl">Регион</span><select id="f-region"></select></label>
+          <label class="fld full"><span class="lbl">Сектор</span><select id="f-sector"></select></label>
+          <label class="fld full"><span class="lbl">Тип закупки</span><select id="f-cat"></select></label>
+          <label class="fld"><span class="lbl">Страна</span><select id="f-country"></select></label>
+          <label class="fld"><span class="lbl">Год</span><select id="f-year"></select></label>
+          <label class="fld"><span class="lbl">Сумма сделки</span><select id="f-band">
+            <option value="all">Любая сумма</option>
+            <option value="0">до €100 тыс.</option>
+            <option value="1">€100 тыс. – €1 млн</option>
+            <option value="2">€1 – 10 млн</option>
+            <option value="3">€10 – 100 млн</option>
+            <option value="4">больше €100 млн</option>
+          </select></label>
+          <label class="fld"><span class="lbl">Порядок</span><select id="f-sort">
+            <option value="date">Сначала новые</option>
+            <option value="date_old">Сначала старые</option>
+            <option value="sum_desc">Сначала дорогие</option>
+            <option value="sum_asc">Сначала дешёвые</option>
+            <option value="country">По стране</option>
+          </select></label>
+        </div>
+        <div class="checks">
+          <label class="chk"><input type="checkbox" id="f-sum"> Только с суммой</label>
+          <label class="chk"><input type="checkbox" id="f-new"> Только новые и обновлённые</label>
+        </div>
+        <div class="sheet-foot">
+          <button type="button" class="btn btn-ghost" id="f-reset2">Сбросить</button>
+          <button type="button" class="btn btn-primary" id="f-apply">Показать</button>
+        </div>
+      </div>
+      <div class="bar-meta">
+        <span class="count" id="count" aria-live="polite"></span>
+        <button type="button" class="link-btn" id="f-reset" hidden>Сбросить фильтры</button>
+      </div>
+    </div>
+    <div class="list" id="list"></div>
+    <button type="button" class="btn btn-ghost more" id="more" hidden></button>
+  </section>
 
   <section class="findings" aria-labelledby="f-h">
     <h2 id="f-h">Главное</h2>
-    <h3>США</h3>
-    <ul>
-      <li><strong>Федеральные ведомства получают ИИ почти даром</strong>: по сделкам GSA OneGov ChatGPT и Claude стоят $1 на ведомство в год, Gemini — $0,47, Grok — $0,42. С октября 2026 OpenAI перешёл на оплату по токенам со скидкой 50% до конца 2028 года.</li>
-      <li><strong>Штаты и города платят реальные деньги</strong>: ChatGPT — $13–25 за пользователя в месяц (Массачусетс, Пенсильвания), $345–400 за место в год в городах; Microsoft 365 Copilot — $30,53 в месяц (Аляска), $370 в год (Айдахо).</li>
-      <li><strong>Оборона — крупнейшие суммы</strong>: армейские соглашения с Anduril (до $20 млрд) и Palantir (до $10 млрд) на 10 лет без конкурса; по $200 млн на прототипы с OpenAI, Anthropic, Google и xAI.</li>
-      <li><strong>Ноутейкеры</strong>: Минветеранов прошло путь от пилотов ИИ-скрайбов по ≈$5 млн до рамки на $776 млн на 5 лет; полиция покупает ИИ-рапорты Axon Draft One за ≈$30–70 на офицера в месяц, обычно в пакете с камерами на 5–10 лет.</li>
-      <li><strong>Банки США строят свои платформы поверх нескольких моделей</strong> (JPMorgan LLM Suite, Goldman, Citi, BNY Eliza) и не раскрывают суммы. Публичны только покупки компаний: Capital One — Brex за $5,15 млрд, Mastercard — Recorded Future за $2,65 млрд.</li>
-    </ul>
-    <h3>Другие регионы</h3>
-    <ul>
-      <li><strong>Австралия строит своё</strong>: платформа GovAI для госслужащих — A$166,4 млн на 3 года; Новый Южный Уэльс заложил A$38,7 млн на ИИ-скрайбы для 6 000 врачей. Copilot в Новой Зеландии — NZ$567,60 за пользователя в год.</li>
-      <li><strong>Персидский залив и Азия покупают в основном мощности</strong>: саудовская HUMAIN с AMD — до $10 млрд на 5 лет, Корея — ₩1,46 трлн на ≈13 000 GPU, Япония субсидирует облачные GPU на ¥72,5 млрд. Лицензии считают тысячами (Абу-Даби — 35 000 Copilot, Катар — 12 260), но цены не раскрывают.</li>
-    </ul>
-    <h3>Другие сектора</h3>
-    <ul>
-      <li><strong>Университеты платят за ChatGPT меньше всех</strong>: Cal State — $16,9 млн за 18 мес на 460 000 человек (≈$1,8 в месяц), итальянские вузы — €103 в год, Торонто — CAD 345 в год. Microsoft 365 Copilot в Оксфорде — £26 в месяц.</li>
-      <li><strong>Консалтинг внедряет ИИ на сотни тысяч мест</strong>: Deloitte — Claude для 470 000 человек, PwC — ChatGPT Enterprise для 100 000+, Infosys, TCS и Wipro — по 100 000+ лицензий Copilot. KPMG и Microsoft — $2 млрд на 5 лет. Юрфирмы ставят Harvey и Legora на тысячи юристов.</li>
-      <li><strong>Страховщики, частная медицина и телеком суммы почти не раскрывают</strong>: Allianz и Travelers взяли Claude, Legal &amp; General — Copilot для всех 10 000 сотрудников на 3 года, Kaiser держит условия Abridge в тайне. В телекоме — крупные многолетние сделки: Vodafone и Microsoft — $1,5 млрд на 10 лет, SoftBank платит OpenAI $3 млрд в год.</li>
-    </ul>
-    <h3>Европа</h3>
-    <ul>
-      <li><strong>Цена Copilot для госсектора — около €295–306 за место в год</strong> (испанские MUFACE и Кастилия и Леон). На Мальте ≈€500 на человека за 2 года вместе с обучением. Barclays, по оценке прессы, платит около $30 за место в месяц.</li>
-      <li><strong>ChatGPT Enterprise для государства</strong>: Минюст Великобритании купил 2 500 мест за £6,75 млн на 2 года, это ≈£1 350 за место в год. Данные хранятся в Великобритании.</li>
-      <li><strong>Сроки</strong>: пилоты — 3–12 месяцев; лицензии — 1–3 года; рамочные договоры — 2–4 года с продлением на 1–2 года; партнёрства с Mistral — 3 года с продлением до 5.</li>
-      <li><strong>Ноутейкеры в соцсфере Великобритании</strong> покупают прямой закупкой без конкурса: от £18 тыс. за 3-месячный пилот до £175 тыс. за год на всё графство. Больницы заключают договоры на 3–4 года: £1,9 млн в Лестере, €1,7–2,1 млн на регион в Финляндии.</li>
-      <li><strong>Суверенность продаёт</strong>: Mistral выигрывает госзаказы с условием работы на серверах государства (Люксембург — €40 млн на 3 года, армия Франции, Австрия на открытых моделях). Свои национальные модели (Испания, Португалия, Польша, Литва) строят госцентры без конкурса за €5–12 млн.</li>
-      <li><strong>Банки суммы почти не раскрывают</strong>, зато раскрывают число мест: BBVA — 120 000 (ChatGPT), Barclays — 100 000 (Copilot), UBS — 50 000+, Lloyds — 30–40 тыс. Типичный формат — многолетнее партнёрство без эксклюзива.</li>
-      <li><strong>Институты ЕС</strong> прямых контрактов с OpenAI, Anthropic или Mistral не заключали. ИИ идёт через общие рамки: облако Cloud III (€550 млн) и ИТ-услуги DIGIT-TM III (потолок ≈€4 млрд).</li>
-      <li><strong>Крупнейшие суммы</strong> в оборонном и медицинском ИИ: Palantir для Минобороны Великобритании — £240,6 млн на 3 года без конкурса, итальянская рамка Consip для здравоохранения — €662 млн, дроны Helsing для бундесвера — €269 млн за первый заказ.</li>
-    </ul>
-  </section>
-
-  <section aria-labelledby="l-h">
-    <div class="bar">
-      <div class="row">
-        <select id="f-region" aria-label="Регион"></select>
-        <select id="f-sector" aria-label="Сектор"></select>
-        <select id="f-cat" aria-label="Тип закупки"></select>
-        <select id="f-country" aria-label="Страна"></select>
-        <select id="f-year" aria-label="Год"></select>
-      </div>
-      <div class="row">
-        <select id="f-sort" aria-label="Сортировка">
-          <option value="date">Сначала новые</option>
-          <option value="date_old">Сначала старые</option>
-          <option value="sum_desc">Сначала дорогие</option>
-          <option value="sum_asc">Сначала дешёвые</option>
-          <option value="country">По стране</option>
-        </select>
-        <select id="f-band" aria-label="Сумма сделки">
-          <option value="all">Любая сумма</option>
-          <option value="0">до €100 тыс.</option>
-          <option value="1">€100 тыс. – €1 млн</option>
-          <option value="2">€1 – 10 млн</option>
-          <option value="3">€10 – 100 млн</option>
-          <option value="4">больше €100 млн</option>
-        </select>
-      </div>
-      <div class="row">
-        <input type="search" id="f-q" placeholder="Поиск: Mistral, Copilot, Palantir, Magic Notes…" aria-label="Поиск">
-        <label class="chk"><input type="checkbox" id="f-sum"> Только с суммой</label>
-        <label class="chk"><input type="checkbox" id="f-new"> Только новые и обновлённые</label>
-        <span class="count" id="count"></span>
-      </div>
-    </div>
-    <h2 id="l-h" style="margin-top:16px">Сделки</h2>
-    <div class="list" id="list"></div>
+    <details class="fgroup" open>
+      <summary><h3>США</h3><span class="n">5</span><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
+      <ul>
+        <li><strong>Федеральные ведомства получают ИИ почти даром</strong>: по сделкам GSA OneGov ChatGPT и Claude стоят $1 на ведомство в год, Gemini — $0,47, Grok — $0,42. С октября 2026 OpenAI перешёл на оплату по токенам со скидкой 50% до конца 2028 года.</li>
+        <li><strong>Штаты и города платят реальные деньги</strong>: ChatGPT — $13–25 за пользователя в месяц (Массачусетс, Пенсильвания), $345–400 за место в год в городах; Microsoft 365 Copilot — $30,53 в месяц (Аляска), $370 в год (Айдахо).</li>
+        <li><strong>Оборона — крупнейшие суммы</strong>: армейские соглашения с Anduril (до $20 млрд) и Palantir (до $10 млрд) на 10 лет без конкурса; по $200 млн на прототипы с OpenAI, Anthropic, Google и xAI.</li>
+        <li><strong>Ноутейкеры</strong>: Минветеранов прошло путь от пилотов ИИ-скрайбов по ≈$5 млн до рамки на $776 млн на 5 лет; полиция покупает ИИ-рапорты Axon Draft One за ≈$30–70 на офицера в месяц, обычно в пакете с камерами на 5–10 лет.</li>
+        <li><strong>Банки США строят свои платформы поверх нескольких моделей</strong> (JPMorgan LLM Suite, Goldman, Citi, BNY Eliza) и не раскрывают суммы. Публичны только покупки компаний: Capital One — Brex за $5,15 млрд, Mastercard — Recorded Future за $2,65 млрд.</li>
+      </ul>
+    </details>
+    <details class="fgroup" open>
+      <summary><h3>Европа</h3><span class="n">8</span><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
+      <ul>
+        <li><strong>Цена Copilot для госсектора — около €295–306 за место в год</strong> (испанские MUFACE и Кастилия и Леон). На Мальте ≈€500 на человека за 2 года вместе с обучением. Barclays, по оценке прессы, платит около $30 за место в месяц.</li>
+        <li><strong>ChatGPT Enterprise для государства</strong>: Минюст Великобритании купил 2 500 мест за £6,75 млн на 2 года, это ≈£1 350 за место в год. Данные хранятся в Великобритании.</li>
+        <li><strong>Сроки</strong>: пилоты — 3–12 месяцев; лицензии — 1–3 года; рамочные договоры — 2–4 года с продлением на 1–2 года; партнёрства с Mistral — 3 года с продлением до 5.</li>
+        <li><strong>Ноутейкеры в соцсфере Великобритании</strong> покупают прямой закупкой без конкурса: от £18 тыс. за 3-месячный пилот до £175 тыс. за год на всё графство. Больницы заключают договоры на 3–4 года: £1,9 млн в Лестере, €1,7–2,1 млн на регион в Финляндии.</li>
+        <li><strong>Суверенность продаёт</strong>: Mistral выигрывает госзаказы с условием работы на серверах государства (Люксембург — €40 млн на 3 года, армия Франции, Австрия на открытых моделях). Свои национальные модели (Испания, Португалия, Польша, Литва) строят госцентры без конкурса за €5–12 млн.</li>
+        <li><strong>Банки суммы почти не раскрывают</strong>, зато раскрывают число мест: BBVA — 120 000 (ChatGPT), Barclays — 100 000 (Copilot), UBS — 50 000+, Lloyds — 30–40 тыс. Типичный формат — многолетнее партнёрство без эксклюзива.</li>
+        <li><strong>Институты ЕС</strong> прямых контрактов с OpenAI, Anthropic или Mistral не заключали. ИИ идёт через общие рамки: облако Cloud III (€550 млн) и ИТ-услуги DIGIT-TM III (потолок ≈€4 млрд).</li>
+        <li><strong>Крупнейшие суммы</strong> в оборонном и медицинском ИИ: Palantir для Минобороны Великобритании — £240,6 млн на 3 года без конкурса, итальянская рамка Consip для здравоохранения — €662 млн, дроны Helsing для бундесвера — €269 млн за первый заказ.</li>
+      </ul>
+    </details>
+    <details class="fgroup" open>
+      <summary><h3>Другие регионы</h3><span class="n">2</span><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
+      <ul>
+        <li><strong>Австралия строит своё</strong>: платформа GovAI для госслужащих — A$166,4 млн на 3 года; Новый Южный Уэльс заложил A$38,7 млн на ИИ-скрайбы для 6 000 врачей. Copilot в Новой Зеландии — NZ$567,60 за пользователя в год.</li>
+        <li><strong>Персидский залив и Азия покупают в основном мощности</strong>: саудовская HUMAIN с AMD — до $10 млрд на 5 лет, Корея — ₩1,46 трлн на ≈13 000 GPU, Япония субсидирует облачные GPU на ¥72,5 млрд. Лицензии считают тысячами (Абу-Даби — 35 000 Copilot, Катар — 12 260), но цены не раскрывают.</li>
+      </ul>
+    </details>
+    <details class="fgroup" open>
+      <summary><h3>Другие сектора</h3><span class="n">3</span><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
+      <ul>
+        <li><strong>Университеты платят за ChatGPT меньше всех</strong>: Cal State — $16,9 млн за 18 мес на 460 000 человек (≈$1,8 в месяц), итальянские вузы — €103 в год, Торонто — CAD 345 в год. Microsoft 365 Copilot в Оксфорде — £26 в месяц.</li>
+        <li><strong>Консалтинг внедряет ИИ на сотни тысяч мест</strong>: Deloitte — Claude для 470 000 человек, PwC — ChatGPT Enterprise для 100 000+, Infosys, TCS и Wipro — по 100 000+ лицензий Copilot. KPMG и Microsoft — $2 млрд на 5 лет. Юрфирмы ставят Harvey и Legora на тысячи юристов.</li>
+        <li><strong>Страховщики, частная медицина и телеком суммы почти не раскрывают</strong>: Allianz и Travelers взяли Claude, Legal &amp; General — Copilot для всех 10 000 сотрудников на 3 года, Kaiser держит условия Abridge в тайне. В телекоме — крупные многолетние сделки: Vodafone и Microsoft — $1,5 млрд на 10 лет, SoftBank платит OpenAI $3 млрд в год.</li>
+      </ul>
+    </details>
   </section>
 
   <p class="note">Суммы приведены как в источниках. Строка «для сравнения ≈ €…» — грубый пересчёт в евро для сортировки и фильтра по сумме (£1 ≈ €1,17); где в источнике диапазон или потолок, взят потолок или середина. Метка «по документу закупки» значит, что цифры сверены с официальным уведомлением (TED, Find a Tender, решение органа). «Пресса» — пресс-релиз или СМИ. «Не до конца подтверждено» — единственный вторичный источник или источники расходятся. Не найденное не значит, что сделки не было: часть порталов закупок поиск не покрыл.</p>
@@ -171,18 +310,21 @@ const SEC={g:"Госсектор",e:"ЕС и НАТО",b:"Банки и фина
 const REG={eu:"Европа",us:"США",anz:"Канада, Австралия, НЗ",gulf:"Персидский залив",asia:"Азия"};
 const ST={mou:"Меморандум, без денег",pilot:"Пилот",tender:"Идёт тендер",noaward:"Без победителя",blocked:"Заблокирована",free:"Бесплатно / грант",ctx:"Справочно, сделки нет"};
 const Q={d:"По документу закупки",p:"Пресса",w:"Не до конца подтверждено"};
-const N="не раскрыто";
+const PAGE=40;
 
-let D=[],META={};
+let D=[],META={},ROWS=[],shown=PAGE;
 
 const $=id=>document.getElementById(id);
-const state={s:"all",region:"all",cat:"all",country:"all",year:"all",band:"all",sort:"date",q:"",sum:false,fresh:false};
+const DEFAULTS={s:"all",region:"all",cat:"all",country:"all",year:"all",band:"all",sort:"date",q:"",sum:false,fresh:false};
+const state={...DEFAULTS};
 const NEW_DAYS=14;
+const mq=matchMedia("(max-width: 759px)");
 const recent=s=>!!s&&!!META.baseline&&s>META.baseline&&(Date.now()-new Date(s+"T00:00:00Z").getTime())/864e5<=NEW_DAYS;
 const isAdded=d=>recent(d.added);
 const isChanged=d=>!isAdded(d)&&recent(d.changed);
 const isNew=d=>isAdded(d)||isChanged(d);
 const ruDate=s=>{const [y,m,dd]=s.split("-");return `${dd}.${m}.${y}`;};
+const pl=(n,f)=>{const a=n%10,b=n%100;return f[a===1&&b!==11?0:a>=2&&a<=4&&(b<12||b>14)?1:2];};
 try{const saved=JSON.parse(localStorage.getItem("ai-eu-filters")||"null");if(saved)Object.assign(state,saved);}catch(e){}
 if(state.sort==="sum")state.sort="sum_desc";
 const BANDS=[[0,1e5],[1e5,1e6],[1e6,1e7],[1e7,1e8],[1e8,Infinity]];
@@ -191,6 +333,14 @@ function save(){try{localStorage.setItem("ai-eu-filters",JSON.stringify(state));
 const hasSum=d=>d.e!=null;
 const esc=s=>String(s).replace(/[&<>"]/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[ch]));
 const host=u=>{try{return new URL(u).hostname.replace(/^www\./,"");}catch(e){return "источник";}};
+const FILTER_KEYS=["s","region","cat","country","year","band","sum","fresh","q"];
+const activeCount=()=>FILTER_KEYS.filter(k=>k!=="q"&&state[k]!==DEFAULTS[k]).length;
+
+function syncControls(){
+  $("f-region").value=state.region;$("f-sector").value=state.s;$("f-cat").value=state.cat;$("f-country").value=state.country;
+  $("f-year").value=state.year;$("f-band").value=state.band;$("f-sort").value=state.sort;$("f-q").value=state.q;
+  $("f-sum").checked=state.sum;$("f-new").checked=state.fresh;
+}
 
 function initControls(){
   $("f-cat").innerHTML='<option value="all">Все типы</option>'+Object.entries(CAT).map(([k,v])=>`<option value="${k}">${v}</option>`).join("");
@@ -200,32 +350,50 @@ function initControls(){
   const years=[...new Set(D.map(d=>Math.max(2022,Math.floor(d.y))))].sort((a,b)=>b-a);
   $("f-year").innerHTML='<option value="all">Все годы</option>'+years.map(y=>`<option value="${y}">${y}${y===2022?" и раньше":""}</option>`).join("");
   if(state.year!=="all"&&!years.includes(+state.year))state.year="all";
-  $("f-cat").value=state.cat;$("f-country").value=state.country;$("f-year").value=state.year;$("f-band").value=state.band;$("f-sort").value=state.sort;$("f-q").value=state.q;$("f-sum").checked=state.sum;
-  $("f-new").checked=state.fresh;
   const regs=new Set(D.map(d=>d.r)),secs=new Set(D.map(d=>d.s));
   $("f-region").innerHTML='<option value="all">Все регионы</option>'+Object.entries(REG).filter(([k])=>regs.has(k)).map(([k,v])=>`<option value="${k}">${v} · ${D.filter(d=>d.r===k).length}</option>`).join("");
   $("f-sector").innerHTML='<option value="all">Все сектора</option>'+Object.entries(SEC).filter(([k])=>secs.has(k)).map(([k,v])=>`<option value="${k}">${v} · ${D.filter(d=>d.s===k).length}</option>`).join("");
   if(state.region!=="all"&&!regs.has(state.region))state.region="all";
   if(state.s!=="all"&&!secs.has(state.s))state.s="all";
-  $("f-region").value=state.region;$("f-sector").value=state.s;
-  $("f-region").addEventListener("change",e=>{state.region=e.target.value;render();});
-  $("f-sector").addEventListener("change",e=>{state.s=e.target.value;render();});
-  $("f-new").addEventListener("change",e=>{state.fresh=e.target.checked;render();});
-  $("f-year").addEventListener("change",e=>{state.year=e.target.value;render();});
-  $("f-band").addEventListener("change",e=>{state.band=e.target.value;render();});
-  $("f-cat").addEventListener("change",e=>{state.cat=e.target.value;render();});
-  $("f-country").addEventListener("change",e=>{state.country=e.target.value;render();});
-  $("f-sort").addEventListener("change",e=>{state.sort=e.target.value;render();});
-  $("f-q").addEventListener("input",e=>{state.q=e.target.value;render();});
-  $("f-sum").addEventListener("change",e=>{state.sum=e.target.checked;render();});
+  syncControls();
+  const bind=(id,key,prop="value",ev="change")=>$(id).addEventListener(ev,e=>{state[key]=e.target[prop];render();});
+  bind("f-region","region");bind("f-sector","s");bind("f-cat","cat");bind("f-country","country");bind("f-year","year");
+  bind("f-band","band");bind("f-sort","sort");bind("f-q","q","value","input");bind("f-sum","sum","checked");bind("f-new","fresh","checked");
+  $("f-open").addEventListener("click",openSheet);
+  $("f-close").addEventListener("click",()=>closeSheet(true));
+  $("scrim").addEventListener("click",()=>closeSheet(true));
+  $("f-apply").addEventListener("click",()=>{closeSheet(true);$("l-h").scrollIntoView({block:"start"});});
+  $("f-reset").addEventListener("click",resetFilters);
+  $("f-reset2").addEventListener("click",resetFilters);
+  $("more").addEventListener("click",()=>{shown+=PAGE;paint(true);});
+  document.addEventListener("keydown",e=>{if(e.key==="Escape"&&$("bar").classList.contains("open"))closeSheet(true);});
+  mq.addEventListener("change",()=>{if(!mq.matches)closeSheet(false);});
+}
+
+function openSheet(){
+  const bar=$("bar"),scrim=$("scrim");
+  bar.classList.add("open");$("f-open").setAttribute("aria-expanded","true");
+  scrim.hidden=false;requestAnimationFrame(()=>scrim.classList.add("on"));
+  document.body.classList.add("lock");
+  setTimeout(()=>$("f-region").focus({preventScroll:true}),60);
+}
+function closeSheet(returnFocus){
+  const bar=$("bar"),scrim=$("scrim");
+  if(!bar.classList.contains("open"))return;
+  bar.classList.remove("open");$("f-open").setAttribute("aria-expanded","false");
+  scrim.classList.remove("on");setTimeout(()=>{scrim.hidden=true;},260);
+  document.body.classList.remove("lock");
+  if(returnFocus)$("f-open").focus({preventScroll:true});
+}
+function resetFilters(){
+  const sort=state.sort;Object.assign(state,DEFAULTS,{sort});syncControls();render();
 }
 
 function stats(){
   const countries=new Set(D.filter(d=>!["ЕС","НАТО"].includes(d.c)).map(d=>d.c)).size;
-  const pl=(n,f)=>{const a=n%10,b=n%100;return f[a===1&&b!==11?0:a>=2&&a<=4&&(b<12||b>14)?1:2];};
   const nD=D.length,nS=D.filter(hasSum).length,nSec=new Set(D.map(d=>d.s)).size,nNew=D.filter(isNew).length;
   const items=[[nD,pl(nD,["сделка","сделки","сделок"])],[nS,"с раскрытой суммой"],[countries,pl(countries,["страна","страны","стран"])],[nSec,pl(nSec,["сектор","сектора","секторов"])],[nNew,pl(nNew,["новая","новые","новых"])+" за "+NEW_DAYS+" дней"]];
-  $("stats").innerHTML=items.filter(([n])=>n>0).map(([n,l])=>`<div class="stat"><b>${n}</b><span>${l}</span></div>`).join("");
+  $("stats").innerHTML=items.filter(([n])=>n>0).map(([n,l])=>`<div class="stat"><b>${n.toLocaleString("ru-RU")}</b><span>${l}</span></div>`).join("");
 }
 
 function card(d){
@@ -233,39 +401,61 @@ function card(d){
   if(d.st)chips.push(`<span class="chip s-${d.st}">${ST[d.st]}</span>`);
   chips.push(`<span class="chip q-${d.q}">${Q[d.q]}</span>`);
   const src=d.src.length?d.src.map(u=>`<a href="${esc(u)}" target="_blank" rel="noopener">${esc(host(u))}</a>`).join(""):"<span>ссылка не сохранена</span>";
+  const nil=/^не раскрыто/i.test(d.v)||d.v==="—";
   return `<article class="deal">
     <div class="tags">${chips.join("")}</div>
-    <div class="who"><span class="buyer">${esc(d.b)}</span><span class="sup">${esc(d.p)}</span></div>
-    <dl>
-      <dt>Что купили</dt><dd>${esc(d.w)}</dd>
-      <dt>Сумма</dt><dd class="money">${esc(d.v)}${hasSum(d)?`<span class="eur">для сравнения ≈ ${fmtEur(d.e)}</span>`:""}</dd>
-      <dt>Срок</dt><dd>${esc(d.t)}</dd>
-      <dt>Условия</dt><dd>${esc(d.u)}</dd>
-      <dt>Дата</dt><dd>${esc(d.d)}</dd>
-      <dt>Источник</dt><dd class="src">${src}</dd>
-    </dl>
+    <div class="who"><h3 class="buyer">${esc(d.b)}</h3><p class="sup">${esc(d.p)}</p></div>
+    <div class="facts">
+      <div class="fact fact-money"><span class="k">Сумма</span><span class="v money${nil?" nil":""}">${esc(d.v)}</span>${hasSum(d)?`<span class="eur">для сравнения ≈ ${fmtEur(d.e)}</span>`:""}</div>
+      <div class="fact"><span class="k">Срок</span><span class="v">${esc(d.t)}</span></div>
+      <div class="fact"><span class="k">Дата</span><span class="v">${esc(d.d)}</span></div>
+    </div>
+    <div class="detail">
+      <p><span class="k">Что купили</span>${esc(d.w)}</p>
+      <p><span class="k">Условия</span>${esc(d.u)}</p>
+    </div>
+    <div class="src"><span class="k">Источник</span>${src}</div>
   </article>`;
+}
+
+function paint(append){
+  const list=$("list");
+  if(!ROWS.length){list.innerHTML='<div class="empty">Под эти фильтры сделок нет. <button type="button" class="link-btn" id="empty-reset">Сбросить фильтры</button></div>';$("empty-reset").addEventListener("click",resetFilters);$("more").hidden=true;return;}
+  const from=append?list.children.length:0;
+  const html=ROWS.slice(from,shown).map(card).join("");
+  if(append)list.insertAdjacentHTML("beforeend",html);else list.innerHTML=html;
+  const left=ROWS.length-Math.min(shown,ROWS.length);
+  $("more").hidden=left<=0;
+  if(left>0)$("more").textContent=`Показать ещё ${Math.min(PAGE,left)} из ${left}`;
 }
 
 function render(){
   save();
   const q=state.q.trim().toLowerCase();
   const band=state.band==="all"?null:BANDS[+state.band];
-  let rows=D.filter(d=>(state.s==="all"||d.s===state.s)&&(state.region==="all"||d.r===state.region)&&(!state.fresh||isNew(d))&&(state.cat==="all"||d.k===state.cat)&&(state.country==="all"||d.c===state.country)&&(state.year==="all"||Math.max(2022,Math.floor(d.y))===+state.year)&&(!band||(hasSum(d)&&d.e>=band[0]&&d.e<band[1]))&&(!state.sum||hasSum(d))&&(!q||[d.c,d.b,d.p,d.w,d.u,d.v].join(" ").toLowerCase().includes(q)));
-  if(state.sort==="date")rows.sort((a,b)=>b.y-a.y);
-  else if(state.sort==="date_old")rows.sort((a,b)=>a.y-b.y);
-  else if(state.sort==="sum_desc")rows.sort((a,b)=>(b.e??-1)-(a.e??-1));
-  else if(state.sort==="sum_asc")rows.sort((a,b)=>(hasSum(a)?a.e:Infinity)-(hasSum(b)?b.e:Infinity));
-  else rows.sort((a,b)=>a.c.localeCompare(b.c,"ru")||b.y-a.y);
-  $("count").textContent=`Показано: ${rows.length} из ${D.length}`;
-  $("list").innerHTML=rows.length?rows.map(card).join(""):'<div class="empty">Под эти фильтры сделок нет. Сбросьте страну или тип закупки.</div>';
+  ROWS=D.filter(d=>(state.s==="all"||d.s===state.s)&&(state.region==="all"||d.r===state.region)&&(!state.fresh||isNew(d))&&(state.cat==="all"||d.k===state.cat)&&(state.country==="all"||d.c===state.country)&&(state.year==="all"||Math.max(2022,Math.floor(d.y))===+state.year)&&(!band||(hasSum(d)&&d.e>=band[0]&&d.e<band[1]))&&(!state.sum||hasSum(d))&&(!q||[d.c,d.b,d.p,d.w,d.u,d.v].join(" ").toLowerCase().includes(q)));
+  if(state.sort==="date")ROWS.sort((a,b)=>b.y-a.y);
+  else if(state.sort==="date_old")ROWS.sort((a,b)=>a.y-b.y);
+  else if(state.sort==="sum_desc")ROWS.sort((a,b)=>(b.e??-1)-(a.e??-1));
+  else if(state.sort==="sum_asc")ROWS.sort((a,b)=>(hasSum(a)?a.e:Infinity)-(hasSum(b)?b.e:Infinity));
+  else ROWS.sort((a,b)=>a.c.localeCompare(b.c,"ru")||b.y-a.y);
+  const n=ROWS.length,act=activeCount();
+  const cnt=$("count"),word=pl(n,["сделка","сделки","сделок"]);
+  cnt.innerHTML=n===D.length?`Все <b>${n}</b> ${word}`:`Найдено <b>${n}</b> ${word} из ${D.length}`;
+  cnt.classList.remove("flash");void cnt.offsetWidth;cnt.classList.add("flash");
+  $("f-found").innerHTML=`· найдено <b>${n}</b>`;
+  $("f-badge").hidden=act===0;$("f-badge").textContent=act;
+  $("f-reset").hidden=act===0&&!state.q;
+  $("f-apply").textContent=n?`Показать ${n} ${pl(n,["сделку","сделки","сделок"])}`:"Ничего не найдено";
+  shown=PAGE;paint(false);
 }
 
 function boot(){
   $("list").innerHTML='<div class="empty">Загружаю сделки…</div>';
+  if(mq.matches)document.querySelectorAll(".fgroup").forEach((g,i)=>{if(i>0)g.open=false;});
   fetch("data/deals.json",{cache:"no-store"}).then(r=>{if(!r.ok)throw new Error(r.status);return r.json();}).then(j=>{
     META=j;D=j.deals||[];
-    $("updated").textContent=`Сводка · 2022–2026 · пополнено ${ruDate(j.updated)}`+(j.checked&&j.checked!==j.updated?` · проверено ${ruDate(j.checked)}`:"");
+    $("updated").innerHTML=`Пополнено <b>${ruDate(j.updated)}</b>`+(j.checked&&j.checked!==j.updated?` · проверено <b>${ruDate(j.checked)}</b>`:"")+` · данные за 2022–2026 · <a href="#f-h">главные выводы</a>`;
     stats();initControls();render();
   }).catch(()=>{$("list").innerHTML='<div class="empty">Не удалось загрузить список сделок. Обновите страницу через минуту.</div>';});
 }

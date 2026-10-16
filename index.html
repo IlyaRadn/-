@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Сделки государств, институтов ЕС, НАТО и банков по закупке ИИ: сумма, срок, условия, источник.">
+<title>ИИ-закупки Европы и США</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Unbounded:wght@600;700&display=swap">
+<style>
+/* Layout: register of deals — summary + findings on top, sticky filter bar, then a ledger of deal records (label/value rows) */
+:root{
+  --bg:#F2F4F3; --surface:#FFFFFF; --ink:#14181A; --muted:#5B6467; --line:#DCE1E0;
+  --accent:#0E6B66; --accent-soft:#E2F0EE;
+  --ok:#1D7A4A; --ok-soft:#E3F2EA; --warn:#9A6200; --warn-soft:#FBF0DA; --bad:#B0262E; --bad-soft:#F9E3E4; --neutral-soft:#EEF1F1;
+  --font-display:"Unbounded","Golos Text",system-ui,sans-serif;
+  --font-body:"Golos Text",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --font-mono:"JetBrains Mono",ui-monospace,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0F1314; --surface:#171D1E; --ink:#E7ECEB; --muted:#9AA5A6; --line:#2A3335;
+  --accent:#4FC3B6; --accent-soft:#16302E;
+  --ok:#5CCB8E; --ok-soft:#163024; --warn:#E3AE4F; --warn-soft:#33270F; --bad:#F07C82; --bad-soft:#3A1A1D; --neutral-soft:#20282A; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0F1314; --surface:#171D1E; --ink:#E7ECEB; --muted:#9AA5A6; --line:#2A3335;
+  --accent:#4FC3B6; --accent-soft:#16302E;
+  --ok:#5CCB8E; --ok-soft:#163024; --warn:#E3AE4F; --warn-soft:#33270F; --bad:#F07C82; --bad-soft:#3A1A1D; --neutral-soft:#20282A; color-scheme:dark}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+.chip.new{background:var(--accent);color:var(--bg);font-weight:600}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font-body);font-size:15px;line-height:1.5;padding-inline:16px;padding-block:28px 64px}
+.wrap{max-width:1120px;margin:0 auto;display:flex;flex-direction:column;gap:28px}
+a{color:var(--accent)}
+a:focus-visible,button:focus-visible,select:focus-visible,input:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.eyebrow{font-family:var(--font-mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+h1{font-family:var(--font-display);font-weight:700;font-size:clamp(28px,4.4vw,44px);line-height:1.08;margin:8px 0 12px;letter-spacing:-.01em;text-wrap:balance}
+.lede{margin:0;color:var(--muted);max-width:70ch;font-size:16px}
+.stats{display:flex;flex-wrap:wrap;gap:12px 36px;margin-top:22px}
+.stat b{display:block;font-family:var(--font-mono);font-weight:600;font-size:26px;font-variant-numeric:tabular-nums;color:var(--ink)}
+.stat span{font-size:13px;color:var(--muted)}
+h2{font-size:18px;margin:0 0 14px;font-weight:700}
+.findings{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:22px}
+.findings ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px 28px}
+@media (max-width:760px){.findings ul{grid-template-columns:1fr}}
+.findings li{min-width:0;padding-left:16px;position:relative}
+.findings li::before{content:"";position:absolute;left:0;top:.62em;width:6px;height:6px;border-radius:50%;background:var(--accent)}
+.findings li strong{font-weight:600}
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);padding-block:10px;border-bottom:1px solid var(--line);display:flex;flex-direction:column;gap:10px}
+.row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:999px;overflow:hidden;background:var(--surface)}
+.seg button{border:0;background:transparent;color:var(--ink);font:inherit;font-size:14px;padding:7px 14px;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+select,input[type="search"]{font:inherit;font-size:14px;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:7px 10px;min-width:0}
+input[type="search"]{flex:1 1 220px}
+label.chk{display:inline-flex;gap:6px;align-items:center;font-size:14px;color:var(--ink);cursor:pointer}
+.count{font-size:13px;color:var(--muted)}
+.list{display:flex;flex-direction:column;gap:12px}
+.deal{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px 18px;display:flex;flex-direction:column;gap:10px;min-width:0}
+.tags{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.country{font-family:var(--font-mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink);font-weight:600;margin-right:4px}
+.chip{font-size:12px;padding:2px 9px;border-radius:999px;background:var(--neutral-soft);color:var(--muted);white-space:nowrap}
+.chip.cat{background:var(--accent-soft);color:var(--accent)}
+.chip.s-mou,.chip.s-ctx,.chip.s-free{background:var(--neutral-soft);color:var(--ink)}
+.chip.s-pilot,.chip.s-tender{background:var(--warn-soft);color:var(--warn)}
+.chip.s-noaward,.chip.s-blocked{background:var(--bad-soft);color:var(--bad)}
+.chip.q-d{background:var(--ok-soft);color:var(--ok)}
+.chip.q-w{background:var(--warn-soft);color:var(--warn)}
+.who{display:flex;flex-direction:column;gap:2px}
+.who .buyer{font-weight:700;font-size:16px}
+.who .sup{color:var(--muted)}
+dl{display:grid;grid-template-columns:130px minmax(0,1fr);gap:6px 16px;margin:0}
+dt{color:var(--muted);font-size:13px;padding-top:2px}
+dd{margin:0;min-width:0;overflow-wrap:anywhere}
+dd.money{font-family:var(--font-mono);font-weight:600;font-variant-numeric:tabular-nums}
+dd.money .eur{display:block;font-family:var(--font-body);font-weight:400;font-size:13px;color:var(--muted)}
+@media (max-width:560px){dl{grid-template-columns:1fr;gap:0}dt{padding-top:8px}}
+.src a{margin-right:12px;font-size:13px}
+.empty{padding:28px;text-align:center;color:var(--muted);background:var(--surface);border:1px dashed var(--line);border-radius:12px}
+.note{font-size:13px;color:var(--muted);max-width:80ch}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header>
+    <div class="eyebrow" id="updated">Сводка · 2022–2026</div>
+    <h1>ИИ-закупки Европы и США</h1>
+    <p class="lede">Что государства, институты ЕС, НАТО и банки покупали из ИИ: ассистенты и лицензии, ноутейкеры и расшифровка, свои модели, аналитика. По каждой сделке указаны сумма, срок, условия и источник. Список пополняется раз в день; новые сделки отмечены меткой «Новое».</p>
+    <div class="stats" id="stats"></div>
+  </header>
+
+  <section class="findings" aria-labelledby="f-h">
+    <h2 id="f-h">Главное</h2>
+    <ul>
+      <li><strong>Цена Copilot для госсектора — около €295–306 за место в год</strong> (испанские MUFACE и Кастилия и Леон). На Мальте ≈€500 на человека за 2 года вместе с обучением. Barclays, по оценке прессы, платит около $30 за место в месяц.</li>
+      <li><strong>ChatGPT Enterprise для государства</strong>: Минюст Великобритании купил 2 500 мест за £6,75 млн на 2 года, это ≈£1 350 за место в год. Данные хранятся в Великобритании.</li>
+      <li><strong>Сроки</strong>: пилоты — 3–12 месяцев; лицензии — 1–3 года; рамочные договоры — 2–4 года с продлением на 1–2 года; партнёрства с Mistral — 3 года с продлением до 5.</li>
+      <li><strong>Ноутейкеры в соцсфере Великобритании</strong> покупают прямой закупкой без конкурса: от £18 тыс. за 3-месячный пилот до £175 тыс. за год на всё графство. Больницы заключают договоры на 3–4 года: £1,9 млн в Лестере, €1,7–2,1 млн на регион в Финляндии.</li>
+      <li><strong>Суверенность продаёт</strong>: Mistral выигрывает госзаказы с условием работы на серверах государства (Люксембург — €40 млн на 3 года, армия Франции, Австрия на открытых моделях). Свои национальные модели (Испания, Португалия, Польша, Литва) строят госцентры без конкурса за €5–12 млн.</li>
+      <li><strong>Банки суммы почти не раскрывают</strong>, зато раскрывают число мест: BBVA — 120 000 (ChatGPT), Barclays — 100 000 (Copilot), UBS — 50 000+, Lloyds — 30–40 тыс. Типичный формат — многолетнее партнёрство без эксклюзива.</li>
+      <li><strong>Институты ЕС</strong> прямых контрактов с OpenAI, Anthropic или Mistral не заключали. ИИ идёт через общие рамки: облако Cloud III (€550 млн) и ИТ-услуги DIGIT-TM III (потолок ≈€4 млрд).</li>
+      <li><strong>Крупнейшие суммы</strong> в оборонном и медицинском ИИ: Palantir для Минобороны Великобритании — £240,6 млн на 3 года без конкурса, итальянская рамка Consip для здравоохранения — €662 млн, дроны Helsing для бундесвера — €269 млн за первый заказ.</li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="l-h">
+    <div class="bar">
+      <div class="row">
+        <div class="seg" role="group" aria-label="Сектор" id="seg">
+          <button type="button" data-s="all" aria-pressed="true">Все</button>
+          <button type="button" data-s="g" aria-pressed="false">Госсектор</button>
+          <button type="button" data-s="e" aria-pressed="false">ЕС и НАТО</button>
+          <button type="button" data-s="b" aria-pressed="false">Банки</button>
+        </div>
+        <select id="f-region" aria-label="Регион">
+          <option value="all">Европа и США</option>
+          <option value="eu">Европа</option>
+          <option value="us">США</option>
+        </select>
+        <select id="f-cat" aria-label="Тип закупки"></select>
+        <select id="f-country" aria-label="Страна"></select>
+        <select id="f-year" aria-label="Год"></select>
+      </div>
+      <div class="row">
+        <select id="f-sort" aria-label="Сортировка">
+          <option value="date">Сначала новые</option>
+          <option value="date_old">Сначала старые</option>
+          <option value="sum_desc">Сначала дорогие</option>
+          <option value="sum_asc">Сначала дешёвые</option>
+          <option value="country">По стране</option>
+        </select>
+        <select id="f-band" aria-label="Сумма сделки">
+          <option value="all">Любая сумма</option>
+          <option value="0">до €100 тыс.</option>
+          <option value="1">€100 тыс. – €1 млн</option>
+          <option value="2">€1 – 10 млн</option>
+          <option value="3">€10 – 100 млн</option>
+          <option value="4">больше €100 млн</option>
+        </select>
+      </div>
+      <div class="row">
+        <input type="search" id="f-q" placeholder="Поиск: Mistral, Copilot, Palantir, Magic Notes…" aria-label="Поиск">
+        <label class="chk"><input type="checkbox" id="f-sum"> Только с суммой</label>
+        <label class="chk"><input type="checkbox" id="f-new"> Только новые и обновлённые</label>
+        <span class="count" id="count"></span>
+      </div>
+    </div>
+    <h2 id="l-h" style="margin-top:16px">Сделки</h2>
+    <div class="list" id="list"></div>
+  </section>
+
+  <p class="note">Суммы приведены как в источниках. Строка «для сравнения ≈ €…» — грубый пересчёт в евро для сортировки и фильтра по сумме (£1 ≈ €1,17); где в источнике диапазон или потолок, взят потолок или середина. Метка «по документу закупки» значит, что цифры сверены с официальным уведомлением (TED, Find a Tender, решение органа). «Пресса» — пресс-релиз или СМИ. «Не до конца подтверждено» — единственный вторичный источник или источники расходятся. Не найденное не значит, что сделки не было: часть порталов закупок поиск не покрыл.</p>
+</div>
+
+<script>
+const CAT={gpt:"ИИ-ассистенты и лицензии",notes:"Ноутейкеры и распознавание речи",build:"Свои модели и разработки",data:"Аналитика, полиция, оборона",frame:"Рамочные договоры",infra:"Инфраструктура и облако",fraud:"Антифрод и AML",code:"ИИ для разработчиков"};
+const SEC={g:"Госсектор",e:"ЕС и НАТО",b:"Банк"};
+const ST={mou:"Меморандум, без денег",pilot:"Пилот",tender:"Идёт тендер",noaward:"Без победителя",blocked:"Заблокирована",free:"Бесплатно / грант",ctx:"Справочно, сделки нет"};
+const Q={d:"По документу закупки",p:"Пресса",w:"Не до конца подтверждено"};
+const N="не раскрыто";
+
+let D=[],META={};
+
+const $=id=>document.getElementById(id);
+const state={s:"all",region:"all",cat:"all",country:"all",year:"all",band:"all",sort:"date",q:"",sum:false,fresh:false};
+const NEW_DAYS=14;
+const recent=s=>!!s&&!!META.baseline&&s>META.baseline&&(Date.now()-new Date(s+"T00:00:00Z").getTime())/864e5<=NEW_DAYS;
+const isAdded=d=>recent(d.added);
+const isChanged=d=>!isAdded(d)&&recent(d.changed);
+const isNew=d=>isAdded(d)||isChanged(d);
+const ruDate=s=>{const [y,m,dd]=s.split("-");return `${dd}.${m}.${y}`;};
+try{const saved=JSON.parse(localStorage.getItem("ai-eu-filters")||"null");if(saved)Object.assign(state,saved);}catch(e){}
+if(state.sort==="sum")state.sort="sum_desc";
+const BANDS=[[0,1e5],[1e5,1e6],[1e6,1e7],[1e7,1e8],[1e8,Infinity]];
+const fmtEur=n=>{const f=(x,d)=>x.toLocaleString("ru-RU",{maximumFractionDigits:d});if(n>=1e9)return "€"+f(n/1e9,2)+" млрд";if(n>=1e6)return "€"+f(n/1e6,n>=1e8?0:1)+" млн";if(n>=1e3)return "€"+f(n/1e3,0)+" тыс.";return "€"+f(n,0);};
+function save(){try{localStorage.setItem("ai-eu-filters",JSON.stringify(state));}catch(e){}}
+const hasSum=d=>d.e!=null;
+const esc=s=>String(s).replace(/[&<>"]/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[ch]));
+const host=u=>{try{return new URL(u).hostname.replace(/^www\./,"");}catch(e){return "источник";}};
+
+function initControls(){
+  $("f-cat").innerHTML='<option value="all">Все типы</option>'+Object.entries(CAT).map(([k,v])=>`<option value="${k}">${v}</option>`).join("");
+  const countries=[...new Set(D.map(d=>d.c))].sort((a,b)=>a.localeCompare(b,"ru"));
+  $("f-country").innerHTML='<option value="all">Все страны</option>'+countries.map(c=>`<option value="${esc(c)}">${esc(c)}</option>`).join("");
+  if(!countries.includes(state.country))state.country="all";
+  const years=[...new Set(D.map(d=>Math.max(2022,Math.floor(d.y))))].sort((a,b)=>b-a);
+  $("f-year").innerHTML='<option value="all">Все годы</option>'+years.map(y=>`<option value="${y}">${y}${y===2022?" и раньше":""}</option>`).join("");
+  if(state.year!=="all"&&!years.includes(+state.year))state.year="all";
+  $("f-cat").value=state.cat;$("f-country").value=state.country;$("f-year").value=state.year;$("f-band").value=state.band;$("f-sort").value=state.sort;$("f-q").value=state.q;$("f-sum").checked=state.sum;
+  $("f-region").value=state.region;$("f-new").checked=state.fresh;
+  $("f-region").addEventListener("change",e=>{state.region=e.target.value;render();});
+  $("f-new").addEventListener("change",e=>{state.fresh=e.target.checked;render();});
+  $("f-year").addEventListener("change",e=>{state.year=e.target.value;render();});
+  $("f-band").addEventListener("change",e=>{state.band=e.target.value;render();});
+  document.querySelectorAll("#seg button").forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.s===state.s)));
+  document.querySelectorAll("#seg button").forEach(b=>b.addEventListener("click",()=>{state.s=b.dataset.s;document.querySelectorAll("#seg button").forEach(x=>x.setAttribute("aria-pressed",String(x===b)));render();}));
+  $("f-cat").addEventListener("change",e=>{state.cat=e.target.value;render();});
+  $("f-country").addEventListener("change",e=>{state.country=e.target.value;render();});
+  $("f-sort").addEventListener("change",e=>{state.sort=e.target.value;render();});
+  $("f-q").addEventListener("input",e=>{state.q=e.target.value;render();});
+  $("f-sum").addEventListener("change",e=>{state.sum=e.target.checked;render();});
+}
+
+function stats(){
+  const countries=new Set(D.filter(d=>!["ЕС","НАТО"].includes(d.c)).map(d=>d.c)).size;
+  const items=[[D.length,"сделок и закупок"],[D.filter(hasSum).length,"с раскрытой суммой"],[countries,"стран"],[D.filter(d=>d.r==="us").length,"в США"],[D.filter(d=>d.s==="b").length,"сделок банков"],[D.filter(isNew).length,"новых за "+NEW_DAYS+" дней"]];
+  $("stats").innerHTML=items.filter(([n])=>n>0).map(([n,l])=>`<div class="stat"><b>${n}</b><span>${l}</span></div>`).join("");
+}
+
+function card(d){
+  const chips=[...(isAdded(d)?[`<span class="chip new">Новое · ${ruDate(d.added)}</span>`]:isChanged(d)?[`<span class="chip new">Обновлено · ${ruDate(d.changed)}</span>`]:[]),`<span class="country">${esc(d.c)}</span>`,`<span class="chip">${SEC[d.s]}</span>`,`<span class="chip cat">${CAT[d.k]}</span>`];
+  if(d.st)chips.push(`<span class="chip s-${d.st}">${ST[d.st]}</span>`);
+  chips.push(`<span class="chip q-${d.q}">${Q[d.q]}</span>`);
+  const src=d.src.length?d.src.map(u=>`<a href="${esc(u)}" target="_blank" rel="noopener">${esc(host(u))}</a>`).join(""):"<span>ссылка не сохранена</span>";
+  return `<article class="deal">
+    <div class="tags">${chips.join("")}</div>
+    <div class="who"><span class="buyer">${esc(d.b)}</span><span class="sup">${esc(d.p)}</span></div>
+    <dl>
+      <dt>Что купили</dt><dd>${esc(d.w)}</dd>
+      <dt>Сумма</dt><dd class="money">${esc(d.v)}${hasSum(d)?`<span class="eur">для сравнения ≈ ${fmtEur(d.e)}</span>`:""}</dd>
+      <dt>Срок</dt><dd>${esc(d.t)}</dd>
+      <dt>Условия</dt><dd>${esc(d.u)}</dd>
+      <dt>Дата</dt><dd>${esc(d.d)}</dd>
+      <dt>Источник</dt><dd class="src">${src}</dd>
+    </dl>
+  </article>`;
+}
+
+function render(){
+  save();
+  const q=state.q.trim().toLowerCase();
+  const band=state.band==="all"?null:BANDS[+state.band];
+  let rows=D.filter(d=>(state.s==="all"||d.s===state.s)&&(state.region==="all"||d.r===state.region)&&(!state.fresh||isNew(d))&&(state.cat==="all"||d.k===state.cat)&&(state.country==="all"||d.c===state.country)&&(state.year==="all"||Math.max(2022,Math.floor(d.y))===+state.year)&&(!band||(hasSum(d)&&d.e>=band[0]&&d.e<band[1]))&&(!state.sum||hasSum(d))&&(!q||[d.c,d.b,d.p,d.w,d.u,d.v].join(" ").toLowerCase().includes(q)));
+  if(state.sort==="date")rows.sort((a,b)=>b.y-a.y);
+  else if(state.sort==="date_old")rows.sort((a,b)=>a.y-b.y);
+  else if(state.sort==="sum_desc")rows.sort((a,b)=>(b.e??-1)-(a.e??-1));
+  else if(state.sort==="sum_asc")rows.sort((a,b)=>(hasSum(a)?a.e:Infinity)-(hasSum(b)?b.e:Infinity));
+  else rows.sort((a,b)=>a.c.localeCompare(b.c,"ru")||b.y-a.y);
+  $("count").textContent=`Показано: ${rows.length} из ${D.length}`;
+  $("list").innerHTML=rows.length?rows.map(card).join(""):'<div class="empty">Под эти фильтры сделок нет. Сбросьте страну или тип закупки.</div>';
+}
+
+function boot(){
+  $("list").innerHTML='<div class="empty">Загружаю сделки…</div>';
+  fetch("data/deals.json",{cache:"no-store"}).then(r=>{if(!r.ok)throw new Error(r.status);return r.json();}).then(j=>{
+    META=j;D=j.deals||[];
+    $("updated").textContent=`Сводка · 2022–2026 · пополнено ${ruDate(j.updated)}`+(j.checked&&j.checked!==j.updated?` · проверено ${ruDate(j.checked)}`:"");
+    stats();initControls();render();
+  }).catch(()=>{$("list").innerHTML='<div class="empty">Не удалось загрузить список сделок. Обновите страницу через минуту.</div>';});
+}
+boot();
+</script>
+</body>
+</html>

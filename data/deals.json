@@ -11364,6 +11364,29 @@
     "https://economymiddleeast.com/news/leap-2025-stc-group-inks-75-agreements-with-global-digital-giants"
    ],
    "added": "2026-10-16"
+  },
+  {
+   "id": "us-173",
+   "r": "us",
+   "c": "США",
+   "s": "g",
+   "k": "build",
+   "st": null,
+   "b": "Федеральные ведомства США (FBI, NASA, Береговая охрана, Минэнерго, Минветеранов, CBP, командования CENTCOM и SOUTHCOM)",
+   "p": "BigBear.ai — генИИ-решения (25+ контрактов)",
+   "w": "Более 25 новых контрактов на генеративный ИИ для федеральных ведомств, включая переконкурсы (CBP) и закрытые контракты разведсообщества",
+   "v": "более $225 млн совокупно с июля 2026 (потенциальная стоимость, по данным компании)",
+   "e": 207,
+   "t": "не раскрыто",
+   "u": "Данные пресс-релиза поставщика за июль–октябрь 2026; суммы по отдельным контрактам не раскрыты, часть — переконкурсы; профинансировано лишь 29% бэклога компании",
+   "d": "Окт 2026",
+   "y": 2026.1,
+   "q": "p",
+   "src": [
+    "https://finviz.com/news/401883/bigbearai-secures-more-than-225-million-in-contract-awards-across-homeland-security-defense-intelligence-and-federal-civilian-agencies",
+    "https://247wallst.com/investing/2026/10/13/bigbear-ai-climbs-5-on-more-than-225m-in-federal-contract-awards-palantir-and-ambarella-ease/"
+   ],
+   "added": "2026-10-16"
   }
  ]
 }

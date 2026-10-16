@@ -5,7 +5,7 @@ import { readFileSync } from "node:fs";
 const file = new URL("../data/deals.json", import.meta.url);
 const data = JSON.parse(readFileSync(file, "utf8"));
 
-const REGION = ["eu", "us", "anz", "gulf", "asia"];
+const REGION = ["eu", "us", "anz", "gulf", "asia", "cis"];
 const SECTOR = ["g", "e", "b", "u", "i", "c", "m", "t"];
 const CATEGORY = ["gpt", "notes", "build", "data", "frame", "infra", "fraud", "code", "mna"];
 const STATUS = [null, "mou", "pilot", "tender", "noaward", "blocked", "free", "ctx"];

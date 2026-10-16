@@ -68,7 +68,16 @@ h2{font-size:19px;margin:0;font-weight:700;letter-spacing:-.005em}
 
 /* findings */
 .findings{background:var(--surface);box-shadow:var(--shadow-md);border-radius:16px;padding:20px 22px 8px}
-.findings h2{margin-bottom:6px}
+.findings{padding-block:6px}
+.findings[open]{padding-bottom:8px}
+.f-sum{list-style:none;display:flex;align-items:center;gap:12px;flex-wrap:wrap;cursor:pointer;min-height:48px;padding-block:8px}
+.f-sum::-webkit-details-marker{display:none}
+.f-sum h2{margin:0}
+.f-n{font-size:13px;color:var(--muted)}
+.f-sum svg{margin-left:auto;color:var(--muted);transition:transform .2s var(--ease-out)}
+.findings[open]>.f-sum svg{transform:rotate(180deg)}
+.f-sum:hover h2{color:var(--accent)}
+.findings[open]>.f-sum{margin-bottom:4px;border-bottom:1px solid var(--line)}
 .fgroup{border-top:1px solid var(--line)}
 .fgroup:first-of-type{border-top:0}
 .fgroup summary{list-style:none;display:flex;align-items:center;gap:10px;padding:14px 0;cursor:pointer;min-height:44px}
@@ -79,7 +88,7 @@ h2{font-size:19px;margin:0;font-weight:700;letter-spacing:-.005em}
 .fgroup[open] summary svg{transform:rotate(180deg)}
 .fgroup summary:hover h3{color:var(--ink)}
 .fgroup ul{list-style:none;margin:0;padding:0 0 18px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px 32px}
-@media (max-width:759px){.fgroup ul{grid-template-columns:1fr}.findings{padding:18px 18px 4px}}
+@media (max-width:759px){.fgroup ul{grid-template-columns:1fr}.findings{padding:4px 16px}}
 .fgroup li{min-width:0;padding-left:16px;position:relative;text-wrap:pretty}
 .fgroup li::before{content:"";position:absolute;left:0;top:.62em;width:6px;height:6px;border-radius:50%;background:var(--accent)}
 .fgroup li strong{font-weight:600}
@@ -281,8 +290,8 @@ body.lock .totop{opacity:0;pointer-events:none}
     <button type="button" class="btn btn-ghost more" id="more" hidden></button>
   </section>
 
-  <section class="findings" aria-labelledby="f-h">
-    <h2 id="f-h">Главное</h2>
+  <details class="findings" id="findings">
+    <summary class="f-sum"><h2 id="f-h">Главное</h2><span class="f-n">20 выводов по регионам и секторам</span><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
     <details class="fgroup" open>
       <summary><h3>США</h3><span class="n">6</span><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
       <ul>
@@ -323,7 +332,7 @@ body.lock .totop{opacity:0;pointer-events:none}
         <li><strong>Страховщики, частная медицина и телеком суммы почти не раскрывают</strong>: Allianz и Travelers взяли Claude, Legal &amp; General — Copilot для всех 10 000 сотрудников на 3 года, Kaiser держит условия Abridge в тайне. В телекоме — крупные многолетние сделки: Vodafone и Microsoft — $1,5 млрд на 10 лет, SoftBank платит OpenAI $3 млрд в год.</li>
       </ul>
     </details>
-  </section>
+  </details>
 
   <p class="note">Суммы приведены как в источниках. Строка «для сравнения ≈ €…» — грубый пересчёт в евро для сортировки и фильтра по сумме (£1 ≈ €1,17); где в источнике диапазон или потолок, взят потолок или середина. Метка «по документу закупки» значит, что цифры сверены с официальным уведомлением (TED, Find a Tender, решение органа). «Пресса» — пресс-релиз или СМИ. «Не до конца подтверждено» — единственный вторичный источник или источники расходятся. Не найденное не значит, что сделки не было: часть порталов закупок поиск не покрыл.</p>
 </div>
@@ -509,14 +518,16 @@ function initTop(){
   });
   upd();
 }
+function openFindings(){const f=$("findings");if(!f.open)f.open=true;requestAnimationFrame(()=>f.scrollIntoView({block:"start"}));}
 function initShare(){
+  document.addEventListener("click",e=>{const a=e.target.closest('a[href="#f-h"]');if(a){e.preventDefault();openFindings();}});
+  if(location.hash==="#f-h")openFindings();
   $("list").addEventListener("click",e=>{const b=e.target.closest(".share");if(b)shareDeal(b.dataset.id);});
   $("focus-all").addEventListener("click",()=>{FOCUS=null;history.replaceState(null,"",location.pathname+location.search);render();});
   addEventListener("hashchange",()=>{const id=dealFromHash();if(id){FOCUS=id;render();$("l-h").scrollIntoView({block:"start"});}});
 }
 function boot(){
   $("list").innerHTML='<div class="empty">Загружаю сделки…</div>';
-  if(mq.matches)document.querySelectorAll(".fgroup").forEach((g,i)=>{if(i>0)g.open=false;});
   fetch("data/deals.json",{cache:"no-store"}).then(r=>{if(!r.ok)throw new Error(r.status);return r.json();}).then(j=>{
     META=j;D=j.deals||[];
     $("updated").innerHTML=`Пополнено <b>${ruDate(j.updated)}</b>`+(j.checked&&j.checked!==j.updated?` · проверено <b>${ruDate(j.checked)}</b>`:"")+` · данные за 2022–2026 · <a href="#f-h">главные выводы</a>`;

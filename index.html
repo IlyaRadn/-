@@ -87,7 +87,7 @@ dd.money .eur{display:block;font-family:var(--font-body);font-weight:400;font-si
   <header>
     <div class="eyebrow" id="updated">Сводка · 2022–2026</div>
     <h1>ИИ-закупки</h1>
-    <p class="lede">Что государства, институты ЕС, НАТО и банки Европы и США покупали из ИИ: ассистенты и лицензии, ноутейкеры и расшифровка, свои модели, аналитика, оборона. По каждой сделке указаны сумма, срок, условия и источник. Список пополняется раз в день; новые сделки отмечены меткой «Новое».</p>
+    <p class="lede">Что покупали из ИИ государства, институты ЕС и НАТО, банки, университеты, страховые, консалтинг, частная медицина и телеком: ассистенты и лицензии, ноутейкеры и расшифровка, свои модели, аналитика, оборона. По каждой сделке указаны сумма, срок, условия и источник. Список пополняется раз в день; новые сделки отмечены меткой «Новое».</p>
     <div class="stats" id="stats"></div>
   </header>
 
@@ -117,17 +117,8 @@ dd.money .eur{display:block;font-family:var(--font-body);font-weight:400;font-si
   <section aria-labelledby="l-h">
     <div class="bar">
       <div class="row">
-        <div class="seg" role="group" aria-label="Сектор" id="seg">
-          <button type="button" data-s="all" aria-pressed="true">Все</button>
-          <button type="button" data-s="g" aria-pressed="false">Госсектор</button>
-          <button type="button" data-s="e" aria-pressed="false">ЕС и НАТО</button>
-          <button type="button" data-s="b" aria-pressed="false">Банки</button>
-        </div>
-        <div class="seg" role="group" aria-label="Регион" id="seg-r">
-          <button type="button" data-r="all" aria-pressed="true">Все регионы</button>
-          <button type="button" data-r="eu" aria-pressed="false">Европа</button>
-          <button type="button" data-r="us" aria-pressed="false">США</button>
-        </div>
+        <select id="f-region" aria-label="Регион"></select>
+        <select id="f-sector" aria-label="Сектор"></select>
         <select id="f-cat" aria-label="Тип закупки"></select>
         <select id="f-country" aria-label="Страна"></select>
         <select id="f-year" aria-label="Год"></select>
@@ -165,7 +156,8 @@ dd.money .eur{display:block;font-family:var(--font-body);font-weight:400;font-si
 
 <script>
 const CAT={gpt:"ИИ-ассистенты и лицензии",notes:"Ноутейкеры и распознавание речи",build:"Свои модели и разработки",data:"Аналитика, полиция, оборона",frame:"Рамочные договоры",infra:"Инфраструктура и облако",fraud:"Антифрод и AML",code:"ИИ для разработчиков",mna:"Покупка ИИ-компаний"};
-const SEC={g:"Госсектор",e:"ЕС и НАТО",b:"Банк"};
+const SEC={g:"Госсектор",e:"ЕС и НАТО",b:"Банки и финансы",u:"Образование",i:"Страхование",c:"Консалтинг и юрфирмы",m:"Частная медицина",t:"Телеком"};
+const REG={eu:"Европа",us:"США",anz:"Канада, Австралия, НЗ",gulf:"Персидский залив",asia:"Азия"};
 const ST={mou:"Меморандум, без денег",pilot:"Пилот",tender:"Идёт тендер",noaward:"Без победителя",blocked:"Заблокирована",free:"Бесплатно / грант",ctx:"Справочно, сделки нет"};
 const Q={d:"По документу закупки",p:"Пресса",w:"Не до конца подтверждено"};
 const N="не раскрыто";
@@ -199,14 +191,17 @@ function initControls(){
   if(state.year!=="all"&&!years.includes(+state.year))state.year="all";
   $("f-cat").value=state.cat;$("f-country").value=state.country;$("f-year").value=state.year;$("f-band").value=state.band;$("f-sort").value=state.sort;$("f-q").value=state.q;$("f-sum").checked=state.sum;
   $("f-new").checked=state.fresh;
-  const rb=document.querySelectorAll("#seg-r button");
-  rb.forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.r===state.region)));
-  rb.forEach(b=>b.addEventListener("click",()=>{state.region=b.dataset.r;rb.forEach(x=>x.setAttribute("aria-pressed",String(x===b)));render();}));
+  const regs=new Set(D.map(d=>d.r)),secs=new Set(D.map(d=>d.s));
+  $("f-region").innerHTML='<option value="all">Все регионы</option>'+Object.entries(REG).filter(([k])=>regs.has(k)).map(([k,v])=>`<option value="${k}">${v} · ${D.filter(d=>d.r===k).length}</option>`).join("");
+  $("f-sector").innerHTML='<option value="all">Все сектора</option>'+Object.entries(SEC).filter(([k])=>secs.has(k)).map(([k,v])=>`<option value="${k}">${v} · ${D.filter(d=>d.s===k).length}</option>`).join("");
+  if(state.region!=="all"&&!regs.has(state.region))state.region="all";
+  if(state.s!=="all"&&!secs.has(state.s))state.s="all";
+  $("f-region").value=state.region;$("f-sector").value=state.s;
+  $("f-region").addEventListener("change",e=>{state.region=e.target.value;render();});
+  $("f-sector").addEventListener("change",e=>{state.s=e.target.value;render();});
   $("f-new").addEventListener("change",e=>{state.fresh=e.target.checked;render();});
   $("f-year").addEventListener("change",e=>{state.year=e.target.value;render();});
   $("f-band").addEventListener("change",e=>{state.band=e.target.value;render();});
-  document.querySelectorAll("#seg button").forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.s===state.s)));
-  document.querySelectorAll("#seg button").forEach(b=>b.addEventListener("click",()=>{state.s=b.dataset.s;document.querySelectorAll("#seg button").forEach(x=>x.setAttribute("aria-pressed",String(x===b)));render();}));
   $("f-cat").addEventListener("change",e=>{state.cat=e.target.value;render();});
   $("f-country").addEventListener("change",e=>{state.country=e.target.value;render();});
   $("f-sort").addEventListener("change",e=>{state.sort=e.target.value;render();});
@@ -216,7 +211,9 @@ function initControls(){
 
 function stats(){
   const countries=new Set(D.filter(d=>!["ЕС","НАТО"].includes(d.c)).map(d=>d.c)).size;
-  const items=[[D.length,"сделок и закупок"],[D.filter(hasSum).length,"с раскрытой суммой"],[countries,"стран"],[D.filter(d=>d.r==="us").length,"в США"],[D.filter(d=>d.s==="b").length,"сделок банков"],[D.filter(isNew).length,"новых за "+NEW_DAYS+" дней"]];
+  const pl=(n,f)=>{const a=n%10,b=n%100;return f[a===1&&b!==11?0:a>=2&&a<=4&&(b<12||b>14)?1:2];};
+  const nD=D.length,nS=D.filter(hasSum).length,nSec=new Set(D.map(d=>d.s)).size,nNew=D.filter(isNew).length;
+  const items=[[nD,pl(nD,["сделка","сделки","сделок"])],[nS,"с раскрытой суммой"],[countries,pl(countries,["страна","страны","стран"])],[nSec,pl(nSec,["сектор","сектора","секторов"])],[nNew,pl(nNew,["новая","новые","новых"])+" за "+NEW_DAYS+" дней"]];
   $("stats").innerHTML=items.filter(([n])=>n>0).map(([n,l])=>`<div class="stat"><b>${n}</b><span>${l}</span></div>`).join("");
 }
 

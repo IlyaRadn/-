@@ -193,6 +193,13 @@ select:hover,input[type="search"]:hover{box-shadow:0 2px 3px -1px rgba(0,0,0,.08
 .deal.focus{box-shadow:0 0 0 2px var(--accent),var(--shadow-sm)}
 .focus-bar{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 16px;padding:12px 16px;border-radius:12px;background:var(--accent-soft);color:var(--ink);font-size:14px}
 .focus-bar .btn{min-height:40px;font-size:14px;background:var(--surface)}
+.totop{position:fixed;right:max(16px,env(safe-area-inset-right,0px));bottom:calc(20px + env(safe-area-inset-bottom,0px));z-index:18;width:48px;height:48px;border-radius:50%;border:0;background:var(--surface);color:var(--ink);box-shadow:var(--shadow-md);display:grid;place-items:center;cursor:pointer;opacity:0;transform:translateY(10px);pointer-events:none;transition:opacity .2s var(--ease-out),transform .2s var(--ease-out),background .15s}
+.totop svg{width:22px;height:22px;stroke-width:2}
+.totop.on{opacity:1;transform:none;pointer-events:auto}
+.totop:hover{background:var(--accent);color:var(--accent-ink)}
+.totop:active{transform:scale(.94)}
+body.lock .totop{opacity:0;pointer-events:none}
+@media (min-width:760px){.totop{right:max(24px,calc((100vw - 1120px)/2 - 72px));width:52px;height:52px}}
 .toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));z-index:50;transform:translate(-50%,8px);opacity:0;background:var(--ink);color:var(--bg);padding:10px 16px;border-radius:10px;font-size:14px;font-weight:600;box-shadow:var(--shadow-md);transition:opacity .2s var(--ease-out),transform .2s var(--ease-out);pointer-events:none;max-width:calc(100vw - 32px);text-align:center}
 .toast.on{opacity:1;transform:translate(-50%,0)}
 .empty{padding:28px;text-align:center;color:var(--muted);background:var(--surface);border:1px dashed var(--line);border-radius:14px}
@@ -270,6 +277,7 @@ select:hover,input[type="search"]:hover{box-shadow:0 2px 3px -1px rgba(0,0,0,.08
     <div class="focus-bar" id="focus-bar" hidden><span>Показана одна сделка по ссылке</span><button type="button" class="btn" id="focus-all">Показать все сделки</button></div>
     <div class="list" id="list"></div>
     <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <button type="button" class="totop" id="totop" aria-label="Наверх страницы" title="Наверх"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M5.5 11.5 12 5l6.5 6.5"/></svg></button>
     <button type="button" class="btn btn-ghost more" id="more" hidden></button>
   </section>
 
@@ -490,6 +498,17 @@ async function shareDeal(id){
   if(!box){box=document.createElement("label");box.className="linkbox";box.innerHTML=`<span>Скопируйте ссылку:</span><input type="text" readonly>`;card.querySelector(".tags").after(box);}
   const inp=box.querySelector("input");inp.value=url;inp.focus();inp.select();
 }
+function initTop(){
+  const b=$("totop");
+  const upd=()=>{const on=scrollY>innerHeight*1.2;if(on!==b.classList.contains("on"))b.classList.toggle("on",on);};
+  addEventListener("scroll",upd,{passive:true});addEventListener("resize",upd,{passive:true});
+  b.addEventListener("click",()=>{
+    const reduce=matchMedia("(prefers-reduced-motion: reduce)").matches,start=scrollY;
+    scrollTo({top:0,behavior:reduce?"auto":"smooth"});
+    setTimeout(()=>{if(scrollY>=start-5)scrollTo(0,0);},700);
+  });
+  upd();
+}
 function initShare(){
   $("list").addEventListener("click",e=>{const b=e.target.closest(".share");if(b)shareDeal(b.dataset.id);});
   $("focus-all").addEventListener("click",()=>{FOCUS=null;history.replaceState(null,"",location.pathname+location.search);render();});
@@ -501,7 +520,7 @@ function boot(){
   fetch("data/deals.json",{cache:"no-store"}).then(r=>{if(!r.ok)throw new Error(r.status);return r.json();}).then(j=>{
     META=j;D=j.deals||[];
     $("updated").innerHTML=`Пополнено <b>${ruDate(j.updated)}</b>`+(j.checked&&j.checked!==j.updated?` · проверено <b>${ruDate(j.checked)}</b>`:"")+` · данные за 2022–2026 · <a href="#f-h">главные выводы</a>`;
-    stats();initControls();initShare();
+    stats();initControls();initShare();initTop();
     FOCUS=dealFromHash();render();
     if(FOCUS)requestAnimationFrame(()=>$("l-h").scrollIntoView({block:"start"}));
   }).catch(()=>{$("list").innerHTML='<div class="empty">Не удалось загрузить список сделок. Обновите страницу через минуту.</div>';});

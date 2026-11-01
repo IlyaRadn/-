@@ -1,6 +1,6 @@
 {
- "updated": "2026-10-18",
- "checked": "2026-10-25",
+ "updated": "2026-11-01",
+ "checked": "2026-11-01",
  "baseline": "2026-10-16",
  "deals": [
   {
@@ -21896,6 +21896,30 @@
     "https://finviz.com/news/401883/bigbearai-secures-more-than-225-million-in-contract-awards-across-homeland-security-defense-intelligence-and-federal-civilian-agencies"
    ],
    "added": "2026-10-18"
+  },
+  {
+   "id": "eu-431",
+   "r": "eu",
+   "c": "Швеция",
+   "s": "g",
+   "k": "gpt",
+   "st": "ctx",
+   "b": "Правительственная канцелярия Швеции (Regeringskansliet)",
+   "p": "Microsoft 365 Copilot (одобрен); ChatGPT и Claude заблокированы",
+   "w": "Новой закупки нет: с 26.10.2026 на рабочих компьютерах заблокирован прямой доступ к ChatGPT и Claude, оставлен Microsoft Copilot, прошедший проверку безопасности",
+   "v": "не раскрыто",
+   "e": null,
+   "t": "не раскрыто",
+   "u": "Причина по сообщениям СМИ — нет договоров с OpenAI и Anthropic и случаи проблемного использования; доступ к моделям — через собственную ИИ-платформу канцелярии",
+   "d": "Окт 2026",
+   "y": 2026.1,
+   "q": "w",
+   "src": [
+    "https://cryptobriefing.com/sweden-government-blocks-chatgpt-claude-copilot/",
+    "https://decrypt.co/381763/sweden-government-offices-block-chatgpt-claude"
+   ],
+   "added": "2026-11-01",
+   "pd": "ИИ-ассистент в Word, Excel, Outlook и Teams"
   }
  ]
 }

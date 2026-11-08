@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-01",
- "checked": "2026-11-01",
+ "updated": "2026-11-08",
+ "checked": "2026-11-08",
  "baseline": "2026-10-16",
  "deals": [
   {
@@ -21920,6 +21920,31 @@
    ],
    "added": "2026-11-01",
    "pd": "ИИ-ассистент в Word, Excel, Outlook и Teams"
+  },
+  {
+   "id": "gulf-038",
+   "r": "gulf",
+   "c": "ОАЭ",
+   "s": "g",
+   "k": "gpt",
+   "st": "pilot",
+   "b": "Правительство Абу-Даби",
+   "p": "OpenAI — инициатива «машиночитаемое правительство»",
+   "w": "Соглашение о переводе госполитик и регуляторных норм в формат, понятный ИИ-системам; первый пилот уже работает в Управлении по сельскому хозяйству и безопасности пищевых продуктов (ADAFSA), импорт продовольствия",
+   "v": "не раскрыто",
+   "e": null,
+   "t": "не раскрыто",
+   "u": "Одно из четырёх соглашений Абу-Даби с OpenAI, подписанных 2.11.2026 на ADIPEC в присутствии наследного принца; остальные — с ADNOC, Mubadala и пятилетнее с Inception42 (G42). Источники расходятся, участвует ли Inception42 в госсоглашении",
+   "d": "Ноя 2026",
+   "y": 2026.11,
+   "q": "w",
+   "src": [
+    "https://aiweekly.co/alerts/abu-dhabi-signs-four-openai-deals-at-adipec-adnoc-on-frontier",
+    "https://www.khaleejtimes.com/uae/abu-dhabi-crown-prince-openai-altman-4-deals-key-sectors",
+    "https://www.middleeastainews.com/p/abu-dhabi-signs-deals-with-openai"
+   ],
+   "added": "2026-11-08",
+   "pd": "перевод госполитик в формат для ИИ"
   }
  ]
 }
